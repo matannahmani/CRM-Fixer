@@ -10,10 +10,59 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_09_075314) do
+ActiveRecord::Schema.define(version: 2020_09_09_103812) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "calloptions", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "help_option_id"
+    t.boolean "active"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["help_option_id"], name: "index_calloptions_on_help_option_id"
+    t.index ["user_id"], name: "index_calloptions_on_user_id"
+  end
+
+  create_table "calls", force: :cascade do |t|
+    t.string "name"
+    t.string "lastname"
+    t.integer "phone"
+    t.string "address"
+    t.bigint "city_id"
+    t.string "email"
+    t.string "description"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean "healthcheck"
+    t.index ["city_id"], name: "index_calls_on_city_id"
+    t.index ["user_id"], name: "index_calls_on_user_id"
+  end
+
+  create_table "cities", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "help_options", force: :cascade do |t|
+    t.string "descriptionvol"
+    t.string "descriptioncall"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "useroptions", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "help_option_id"
+    t.boolean "active"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["help_option_id"], name: "index_useroptions_on_help_option_id"
+    t.index ["user_id"], name: "index_useroptions_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -23,8 +72,26 @@ ActiveRecord::Schema.define(version: 2020_09_09_075314) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "lastname"
+    t.string "name"
+    t.boolean "gender"
+    t.integer "phone"
+    t.string "address"
+    t.boolean "student"
+    t.bigint "city_id"
+    t.integer "adminlevel", default: 0
+    t.integer "israelid"
+    t.boolean "healthcheck"
+    t.index ["city_id"], name: "index_users_on_city_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "calloptions", "help_options"
+  add_foreign_key "calloptions", "users"
+  add_foreign_key "calls", "cities"
+  add_foreign_key "calls", "users"
+  add_foreign_key "useroptions", "help_options"
+  add_foreign_key "useroptions", "users"
+  add_foreign_key "users", "cities"
 end
