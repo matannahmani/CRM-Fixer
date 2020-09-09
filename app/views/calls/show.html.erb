@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @call.name %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @call.lastname %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @call.phone %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @call.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @call.city %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @call.email %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @call.description %>
+</p>
+
+<p>
+  <strong>Healthcheck:</strong>
+  <%= @call.healthcheck %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @call.user %>
+</p>
+
+<%= link_to 'Edit', edit_call_path(@call) %> |
+<%= link_to 'Back', calls_path %>

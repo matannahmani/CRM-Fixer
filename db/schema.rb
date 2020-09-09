@@ -33,10 +33,10 @@ ActiveRecord::Schema.define(version: 2020_09_09_103812) do
     t.bigint "city_id"
     t.string "email"
     t.string "description"
+    t.boolean "healthcheck"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "healthcheck"
     t.index ["city_id"], name: "index_calls_on_city_id"
     t.index ["user_id"], name: "index_calls_on_user_id"
   end
