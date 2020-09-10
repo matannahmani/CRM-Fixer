@@ -30,4 +30,22 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      user:
+        email: "איימל"
+        password: "סיסמה"
+    errors:
+      models:
+        user:
+          attributes:
+            email: 
+              blank: "נדרש"
+              too_short: "is too short (minimum is %{count} characters)"
+            password: 
+              blank: "נדרשת"
+              confirmation: "does not match"
+              too_short: "is too short (minimum is %{count} characters)"
+        devise:
+          attributes:
+            login: "error"

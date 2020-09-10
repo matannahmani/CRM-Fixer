@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  before_save :checkphone
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   validates :name, presence: true, length: { in: 3..20 }
@@ -12,4 +13,6 @@ class User < ApplicationRecord
   validates :healthcheck, presence: true
   validates :adminlevel, presence: true
   validates :israelid, presence: true, numericality: true
+  has_many :call
+  belongs_to :city
 end

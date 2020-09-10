@@ -4,18 +4,17 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :lastname %>
-    <%= f.input :phone %>
-    <%= f.input :address %>
-    <%= f.association :city %>
-    <%= f.input :email %>
-    <%= f.input :description %>
-    <%= f.input :healthcheck %>
-    <%#= f.association :user %>
+    <%= f.input :name, label: "שם פרטי" %>
+    <%= f.input :lastname, label: "שם משפחה" %>
+    <%= f.input :phone, label: "טלפון" %>
+    <%= f.input :address, label: "כתובת מלאה" %>
+    <%= f.association :city, label: "ישוב" %>
+    <%= f.input :email, label: "איימל" %>
+    <%= f.input :description, label: "תיאור" %>
+    <%= f.input :healthcheck, label: "בדיקת בריאות" %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, "אישור", class: "btn btn-primary" %>
   </div>
 <% end %>

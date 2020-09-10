@@ -1,49 +1,54 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>שם:</strong>
   <%= @call.name %>
 </p>
 
 <p>
-  <strong>Lastname:</strong>
+  <strong>שם משפחה:</strong>
   <%= @call.lastname %>
 </p>
 
 <p>
-  <strong>Phone:</strong>
+  <strong>טלפון:</strong>
   <%= @call.phone %>
 </p>
 
 <p>
-  <strong>Address:</strong>
+  <strong>כתובת:</strong>
   <%= @call.address %>
 </p>
 
 <p>
-  <strong>City:</strong>
-  <%= @call.city %>
+  <strong>ישוב:</strong>
+  <%= @call.city.name %>
 </p>
 
 <p>
-  <strong>Email:</strong>
+  <strong>איימל:</strong>
   <%= @call.email %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>תיאור:</strong>
   <%= @call.description %>
 </p>
 
 <p>
-  <strong>Healthcheck:</strong>
-  <%= @call.healthcheck %>
+  <strong>בדיקת בריאות:</strong>
+  <%= @call.healthcheck ? "כן" : "לא" %>
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= @call.user %>
+  <% if !@call.user.nil? %>
+  <strong>שם מתנדב:</strong>
+  <%= @call.user.name%>
+  <% else %>
+  <strong>כרגע לא נמצא מתנדב</strong>
+  <% end %>
 </p>
-
-<%= link_to 'Edit', edit_call_path(@call) %> |
-<%= link_to 'Back', calls_path %>
+<% if !current_user.nil? && current_user.adminlevel > 4 %>
+<%= link_to 'ערוך', edit_call_path(@call) %>
+<%= link_to 'חזרה', calls_path %>
+<% end %>

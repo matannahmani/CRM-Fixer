@@ -8,10 +8,10 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
 
-  <body>
+  <body style="direction: rtl;text-align:right">
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
     <%= yield %>

@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2020_09_09_103812) do
   create_table "calls", force: :cascade do |t|
     t.string "name"
     t.string "lastname"
-    t.integer "phone"
+    t.string "phone"
     t.string "address"
     t.bigint "city_id"
     t.string "email"
@@ -75,7 +75,7 @@ ActiveRecord::Schema.define(version: 2020_09_09_103812) do
     t.string "lastname"
     t.string "name"
     t.boolean "gender"
-    t.integer "phone"
+    t.string "phone"
     t.string "address"
     t.boolean "student"
     t.bigint "city_id"

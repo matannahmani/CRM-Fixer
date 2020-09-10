@@ -3,7 +3,7 @@ class CreateCalls < ActiveRecord::Migration[5.2]
     create_table :calls do |t|
       t.string :name
       t.string :lastname
-      t.integer :phone
+      t.string :phone
       t.string :address
       t.references :city, foreign_key: true
       t.string :email

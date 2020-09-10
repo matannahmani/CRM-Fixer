@@ -1,0 +1,6 @@
+he:
+  activerecord:
+    attributes:
+      user:
+        email: "איימל"
+        password: "סיסמה"

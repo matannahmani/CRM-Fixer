@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Calls</h1>
+<h1>לוח קריאות</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Lastname</th>
-      <th>Phone</th>
-      <th>Address</th>
-      <th>City</th>
-      <th>Email</th>
-      <th>Description</th>
-      <th>Healthcheck</th>
-      <th>User</th>
+      <th>שם</th>
+      <th>שם משפחה</th>
+      <th>טלפון</th>
+      <th>כתובת</th>
+      <th>עיר</th>
+      <th>איימל</th>
+      <th>תיאור</th>
+      <th>הצהרת בריאות</th>
+      <th>מתנדב</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -25,14 +25,14 @@
         <td><%= call.lastname %></td>
         <td><%= call.phone %></td>
         <td><%= call.address %></td>
-        <td><%= call.city %></td>
+        <td><%= call.city.name %></td>
         <td><%= call.email %></td>
         <td><%= call.description %></td>
         <td><%= call.healthcheck %></td>
-        <td><%= call.user %></td>
-        <td><%= link_to 'Show', call %></td>
-        <td><%= link_to 'Edit', edit_call_path(call) %></td>
-        <td><%= link_to 'Destroy', call, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= call.user.nil? ? "לא נלקח" : call.user.name %></td>
+        <td><%= link_to 'צפייה', call %></td>
+        <td><%= link_to 'עריכה', edit_call_path(call) %></td>
+        <td><%= link_to 'מחיקה', call, method: :delete, data: { confirm: 'האם אתה בטוח?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -40,4 +40,4 @@
 
 <br>
 
-<%= link_to 'New Call', new_call_path %>
+<%= link_to 'פתיחת קריאה', new_call_path %>

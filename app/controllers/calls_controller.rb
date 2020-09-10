@@ -1,7 +1,7 @@
 class CallsController < ApplicationController
   before_action :set_call, only: [:show, :edit, :update, :destroy]
-  before_action :checkadmin, except: [:new,:create]
-  skip_before_action :authenticate_user!, only: [:new,:create]
+  before_action :checkadmin, except: [:new, :create, :show]
+  skip_before_action :authenticate_user!, only: [:new, :create]
 
   # GET /calls
   # GET /calls.json
@@ -76,6 +76,6 @@ class CallsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def call_params
-      params.require(:call).permit(:name, :lastname, :phone, :address, :city_id, :email, :description, :healthcheck, :user_id)
+      params.require(:call).permit(:name, :lastname, :phone, :address, :city_id, :email, :description, :healthcheck)
     end
 end
