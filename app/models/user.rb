@@ -15,4 +15,29 @@ class User < ApplicationRecord
   validates :israelid, presence: true, numericality: true
   has_many :call
   belongs_to :city
+
+  ADMIN = 3 # OWNER
+  SUPERVISOR = 2 # SUPERVISOR
+  CALLER = 1 # CALLER
+  VOLUENNTER = 0 # VOL
+
+  def fullname
+    name + " " + lastname
+  end
+
+  def fullnameid
+    name + " " + lastname + " " + israelid
+  end
+
+  def isadmin?
+    adminlevel == 3
+  end
+
+  def issuper?
+    adminlevel == 2 || adminlevel == 3
+  end
+
+  def iscaller?
+    adminlevel == 1
+  end
 end

@@ -1,5 +1,5 @@
 class CallsController < ApplicationController
-  before_action :set_call, only: [:show, :edit, :update, :destroy]
+  before_action :set_call, only: [:show, :edit, :update, :destroy,:takecall]
   before_action :checkadmin, except: [:new, :create, :show]
   skip_before_action :authenticate_user!, only: [:new, :create]
 
@@ -12,6 +12,27 @@ class CallsController < ApplicationController
   # GET /calls/1
   # GET /calls/1.json
   def show
+    if @call.user.nil?
+      @taken = false
+    elsif @call.user == current_user || current_user.issuper?
+      @taken = true
+    else
+      redirect_to :root, notice: "Call is taken!"
+    end
+  end
+
+  def takecall
+    if params[:take] == "true"
+      if @call.user == current_user
+        @call.update(user: nil, healthcheck: false)
+        redirect_to :root, notice: "Call untaken"
+      else
+        redirect_to :root, notice: "Not owner"
+      end
+    else
+      @call.update(user: current_user, healthcheck: true)
+      redirect_to :root, notice: "Call taken"
+    end
   end
 
   # GET /calls/new
@@ -65,11 +86,11 @@ class CallsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_call
-        @call = Call.find(params[:id])
+      @call = Call.find(params[:id])
     end
 
     def checkadmin
-      if current_user.adminlevel < 10
+      if !current_user.issuper?
         redirect_to :root, notice: "Insufficient rights!"
       end
     end

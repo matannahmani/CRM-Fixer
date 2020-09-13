@@ -48,7 +48,15 @@
   <strong>כרגע לא נמצא מתנדב</strong>
   <% end %>
 </p>
-<% if !current_user.nil? && current_user.adminlevel > 4 %>
+
+  <% if @taken %>
+    <%= link_to 'ביטול קריאה', takecall_path(id: @call.id, take: "true") %>
+  <% elsif !@taken%>
+    <h3>לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>
+    <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
+    <%= link_to 'לקיחת קריאה', takecall_path(id: @call.id, take: "false") %>
+  <% end %>
+<% if !current_user.nil? && current_user.issuper? %>
 <%= link_to 'ערוך', edit_call_path(@call) %>
 <%= link_to 'חזרה', calls_path %>
 <% end %>

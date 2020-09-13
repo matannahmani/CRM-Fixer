@@ -1,5 +1,5 @@
 class Call < ApplicationRecord
-  before_save :checkphone, :checkemail
+  before_validation :checkphone, :checkemail
   belongs_to :city
   # belongs_to :CallOption
   belongs_to :user, optional: true
@@ -8,5 +8,5 @@ class Call < ApplicationRecord
   validates :phone, presence: true
   validates :address, presence: true
   validates :email, presence: true
-  validates :healthcheck, presence: true
+  validates_inclusion_of :healthcheck, in: [true, false]
 end
