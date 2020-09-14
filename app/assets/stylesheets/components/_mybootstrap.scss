@@ -25,15 +25,16 @@
   margin: 16px;
 }
 .btn-flatgreen {
-  color: white;
+  color: white !important;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #E85685;
+  background: #B4185F;
+  color-adjust: exact;
   transition: background 0.3s ease;
 }
 
 .btn-flatgreen:hover {
-  background: #E89FB6;
+  background: #e83e8c;
   color: white;
 }
 
@@ -42,12 +43,12 @@
   text-align: center;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #E85685;
+  background: #B4185F;
   transition: background 0.3s ease;
 }
 
 .btn-flat:hover {
-  background: #E89FB6;
+  background: #e83e8c;
   color: white;
   text-decoration: none;
 }
@@ -95,9 +96,9 @@
 }
 
 .form-check-input {
-  position: absolute;
-  margin-top: 1.2rem;
-  margin-right: -5rem;
+  position: initial;
+  margin-top: 0.25rem;
+  margin-right: 0;
   transform: scale(2);
 }
 
@@ -111,7 +112,11 @@
 .form-check{
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-left: 0;
+  .form-check-label{
+    margin-right: 3rem;
+  }
 }
 
 .form-inputs {
