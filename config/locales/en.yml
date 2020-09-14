@@ -69,6 +69,7 @@ en:
         address: "כתובת"
         city: "ישוב"
         remember_me: "זכור אותי"
+        israelid: "תעודת זהות"
     errors: 
       messages: 
         record_invalid: "האימות נכשל: %{errors}"

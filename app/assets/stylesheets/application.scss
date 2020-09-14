@@ -11,3 +11,24 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// global css
+ @import "components/mybootstrap";
+ @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Montserrat&family=Open+Sans&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+ body {
+  background: #FAFAFA;
+  direction: rtl;
+  text-align: right;
+  font-family: 'Bellefair', sans-serif;
+  font-size: 16px;
+ }
+ // font-family: 'Heebo', sans-serif;
+ // font-family: 'Rubik', sans-serif;
+ // font-family: 'Bellefair', serif;
+ // font-family: 'Frank Ruhl Libre', serif;
+ // font-family: 'Montserrat', sans-serif;
+
+ // font-family: 'Open Sans', sans-serif;

@@ -1,0 +1,171 @@
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
+
+.btn {
+  font-family: 'Heebo', sans-serif;
+  font-size: 24px;
+  width: 220px;
+  margin: 16px;
+}
+.btn-sm {
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  width: 120px;
+  margin: 16px;
+}
+.btn-flatgreen {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+.btn-flatgreen:hover {
+  background: #1BCB7F;
+  color: white;
+}
+
+.btn-flat {
+  color: white;
+  text-align: center;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #f95738;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #ee964b;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#167FFB, #0F60C4);
+  transition: background 0.3s ease;
+  border: 1px solid #0F60C4;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#147EFF, #0F67DA);
+  color: white;
+}
+
+.dropdown-item {
+  text-align: center;
+  font-size: 32px;
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-control{
+  width: 80%;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.form-inputs label {
+  font-size: 32px;
+}
+
+.form-check-input {
+  position: absolute;
+  margin-top: 1rem;
+  margin-right: -3.5rem;
+  transform: scale(1.5);
+}
+
+.nav-item{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.form-check { padding-left: 0; }
+
+.form-inputs {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.invalid-feedback {
+  width: initial;
+  font-size: 20px;
+}
+
+.healthcheck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  a{ font-size: 32px; }
+  margin: 40px;
+}
+
+.headline {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Heebo";
+  margin: 40px;
+  position:relative;
+}
+
+.headline:after {
+    content:'';
+    position:absolute;
+    right:0;
+    left: 0;
+    top:100%;
+    margin: 8px auto;
+    width:200px;
+    height:2px;
+    background:#E31E78;
+}
+.callshow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  p{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form-group {
+    width: 80%;
+  }
+  .healthcheck{
+    margin: 8px;
+    h3 {text-align: center; font-size: 24px;}
+  }
+}

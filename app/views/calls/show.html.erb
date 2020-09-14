@@ -1,62 +1,65 @@
 <p id="notice"><%= notice %></p>
+<div class="callshow">
+  <p>
+    <strong>שם:</strong>
+    <%= @call.name %>
+  </p>
 
-<p>
-  <strong>שם:</strong>
-  <%= @call.name %>
-</p>
+  <p>
+    <strong>שם משפחה:</strong>
+    <%= @call.lastname %>
+  </p>
 
-<p>
-  <strong>שם משפחה:</strong>
-  <%= @call.lastname %>
-</p>
+  <p>
+    <strong>טלפון:</strong>
+    <%= @call.phone %>
+  </p>
 
-<p>
-  <strong>טלפון:</strong>
-  <%= @call.phone %>
-</p>
+  <p>
+    <strong>כתובת:</strong>
+    <%= @call.address %>
+  </p>
 
-<p>
-  <strong>כתובת:</strong>
-  <%= @call.address %>
-</p>
+  <p>
+    <strong>ישוב:</strong>
+    <%= @call.city.name %>
+  </p>
 
-<p>
-  <strong>ישוב:</strong>
-  <%= @call.city.name %>
-</p>
+  <p>
+    <strong>איימל:</strong>
+    <%= @call.email %>
+  </p>
 
-<p>
-  <strong>איימל:</strong>
-  <%= @call.email %>
-</p>
+  <p>
+    <strong>תיאור:</strong>
+    <%= @call.description %>
+  </p>
 
-<p>
-  <strong>תיאור:</strong>
-  <%= @call.description %>
-</p>
+  <p>
+    <strong>בדיקת בריאות:</strong>
+    <%= @call.healthcheck ? "כן" : "לא" %>
+  </p>
 
-<p>
-  <strong>בדיקת בריאות:</strong>
-  <%= @call.healthcheck ? "כן" : "לא" %>
-</p>
+  <p>
+    <% if !@call.user.nil? %>
+    <strong>שם מתנדב:</strong>
+    <%= @call.user.name%>
+    <% else %>
+    <strong>כרגע לא נמצא מתנדב</strong>
+    <% end %>
+  </p>
 
-<p>
-  <% if !@call.user.nil? %>
-  <strong>שם מתנדב:</strong>
-  <%= @call.user.name%>
-  <% else %>
-  <strong>כרגע לא נמצא מתנדב</strong>
+    <% if @taken %>
+      <%= link_to 'ביטול קריאה', takecall_path(id: @call.id, take: "true") %>
+    <% elsif !@taken%>
+    <div class="healthcheck">
+        <h3>לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>
+        <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
+    </div>
+        <%= link_to 'לקיחת קריאה', takecall_path(id: @call.id, take: "false"), class: "btn btn-primary" %>
+    <% end %>
+  <% if !current_user.nil? && current_user.issuper? %>
+  <%= link_to 'ערוך', edit_call_path(@call), class: "btn btn-primary" %>
+  <%= link_to 'חזרה', calls_path, class: "btn btn-primary" %>
   <% end %>
-</p>
-
-  <% if @taken %>
-    <%= link_to 'ביטול קריאה', takecall_path(id: @call.id, take: "true") %>
-  <% elsif !@taken%>
-    <h3>לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>
-    <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
-    <%= link_to 'לקיחת קריאה', takecall_path(id: @call.id, take: "false") %>
-  <% end %>
-<% if !current_user.nil? && current_user.issuper? %>
-<%= link_to 'ערוך', edit_call_path(@call) %>
-<%= link_to 'חזרה', calls_path %>
-<% end %>
+</div>

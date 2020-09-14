@@ -16,12 +16,12 @@
       <div class="healthcheck">
         <h3>לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>
         <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
-        <%= f.input :healthcheck, label: false %>
       </div>
     <% end %>
   </div>
 
   <div class="form-actions">
     <%= f.button :submit, "אישור", class: "btn btn-primary" %>
+    <%= link_to 'חזרה', calls_path, class: "btn btn btn-primary" %>
   </div>
 <% end %>
