@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 <div class="callshow">
   <p>
+    <strong>מספר קריאה:</strong>
+    <%= @call.id %>
+  </p>
+  <p>
     <strong>שם:</strong>
     <%= @call.name %>
   </p>
@@ -48,6 +52,10 @@
     <strong>כרגע לא נמצא מתנדב</strong>
     <% end %>
   </p>
+    <p>
+    <strong>תאריך פתיחה:</strong>
+    <%= @call.created_at.strftime('%F') %>
+  </p>
 
     <% if @taken %>
       <%= link_to 'ביטול קריאה', takecall_path(id: @call.id, take: "true") %>
@@ -56,10 +64,10 @@
         <h3>לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>
         <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
     </div>
-        <%= link_to 'לקיחת קריאה', takecall_path(id: @call.id, take: "false"), class: "btn btn-primary" %>
+        <%= link_to 'לקיחת קריאה', takecall_path(id: @call.id, take: "false"), class: "btn btn-sm btn-flatgreen" %>
     <% end %>
   <% if !current_user.nil? && current_user.issuper? %>
-  <%= link_to 'ערוך', edit_call_path(@call), class: "btn btn-primary" %>
-  <%= link_to 'חזרה', calls_path, class: "btn btn-primary" %>
+  <%= link_to 'ערוך', edit_call_path(@call), class: "btn btn-sm btn-flatgreen" %>
+  <%= link_to 'חזרה', calls_path, class: "btn btn-sm btn-flatgreen" %>
   <% end %>
 </div>

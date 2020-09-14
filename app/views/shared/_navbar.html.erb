@@ -12,11 +12,14 @@
     <ul class="navbar-nav">
       <% if user_signed_in? %>
         <li class="nav-item">
-            <%= link_to "התנתק", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+            <%= link_to "התנתק", destroy_user_session_path, method: :delete, class: "btn btn-sm btn-flatgreen" %>
         </li>
       <% else %>
         <li class="nav-item">
           <%= link_to "התחבר", new_user_session_path, class: "nav-link btn btn-sm btn-flatgreen" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "הצטרף", new_user_registration_path, class: "nav-link btn btn-sm btn-flatgreen" %>
         </li>
       <% end %>
     </ul>

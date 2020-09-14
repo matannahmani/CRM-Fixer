@@ -1,5 +1,4 @@
 <div class="calltoaction">
-    <%= link_to 'התחבר', new_user_session_path, :class => "btn btn-flat" if (current_user.nil?) %>
     <%= link_to 'לצפייה בקריאות', calls_path, :class => "btn btn-flat" if (!current_user.nil? && current_user.issuper? ) %>
     <%= link_to 'פתיחת קריאה', new_call_path, :class => "btn btn-flat" %>
 </div>
