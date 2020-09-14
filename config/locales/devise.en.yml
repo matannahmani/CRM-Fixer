@@ -2,6 +2,10 @@
 
 en:
   devise:
+    failure:
+      invalid: 'איימל או סיסמה שגואים'
+      unauthenticated: 'נא התחבר על מנת לצפות בדף זה'
+      already_authenticated: 'הינך מחובר למשתמש'
     sessions:
       link: 'התחבר/י'
       signed_in: 'התחברת בהצלחה'

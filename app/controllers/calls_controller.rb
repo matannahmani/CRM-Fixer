@@ -2,6 +2,13 @@ class CallsController < ApplicationController
   before_action :set_call, only: [:show, :edit, :update, :destroy,:takecall]
   before_action :checkadmin, except: [:new, :create, :show]
   skip_before_action :authenticate_user!, only: [:new, :create]
+  CALL_TAKEN = "הקריאה נלקחה בהצלחה!"
+  CALL_UNTAKEN = "הקריאה שוחררה בהצלחה!"
+  CALL_UNAUTH = "אינך בעל הקריאה!"
+  CALL_UPDATED = "הקריאה עודכנה בהצלחה!"
+  CALL_DESTROYED = "הקריאה נמחקה בהצלחה!"
+  CALL_ERROR = "שגיאה"
+  CALL_INSUFFICIENT = "אינך רשאי לבצע פעולה זאת!"
 
   # GET /calls
   # GET /calls.json
@@ -17,7 +24,7 @@ class CallsController < ApplicationController
     elsif @call.user == current_user || current_user.issuper?
       @taken = true
     else
-      redirect_to :root, notice: "Call is taken!"
+      redirect_to :root, notice: CALL_ERROR
     end
   end
 
@@ -25,13 +32,13 @@ class CallsController < ApplicationController
     if params[:take] == "true"
       if @call.user == current_user
         @call.update(user: nil, healthcheck: false)
-        redirect_to :root, notice: "Call untaken"
+        redirect_to :root, notice: CALL_UNTAKEN
       else
-        redirect_to :root, notice: "Not owner"
+        redirect_to :root, notice: CALL_UNAUTH
       end
     else
       @call.update(user: current_user, healthcheck: true)
-      redirect_to :root, notice: "Call taken"
+      redirect_to :root, notice: CALL_TAKEN
     end
   end
 
@@ -51,7 +58,7 @@ class CallsController < ApplicationController
 
     respond_to do |format|
       if @call.save
-        format.html { redirect_to "https://solidarity.org.il/%d7%a4%d7%a0%d7%99%d7%99%d7%aa%d7%9a-%d7%94%d7%aa%d7%a7%d7%91%d7%9c%d7%94/", notice: 'Call was successfully created.' }
+        format.html { redirect_to "https://solidarity.org.il/%d7%a4%d7%a0%d7%99%d7%99%d7%aa%d7%9a-%d7%94%d7%aa%d7%a7%d7%91%d7%9c%d7%94/", notice: CALL_TAKEN }
       else
         format.html { render :new }
         format.json { render json: @call.errors, status: :unprocessable_entity }
@@ -64,7 +71,7 @@ class CallsController < ApplicationController
   def update
     respond_to do |format|
       if @call.update(call_params)
-        format.html { redirect_to @call, notice: 'Call was successfully updated.' }
+        format.html { redirect_to @call, notice: CALL_UPDATED }
         format.json { render :show, status: :ok, location: @call }
       else
         format.html { render :edit }
@@ -78,7 +85,7 @@ class CallsController < ApplicationController
   def destroy
     @call.destroy
     respond_to do |format|
-      format.html { redirect_to calls_url, notice: 'Call was successfully destroyed.' }
+      format.html { redirect_to calls_url, notice: CALL_DESTROYED }
       format.json { head :no_content }
     end
   end
@@ -91,7 +98,7 @@ class CallsController < ApplicationController
 
     def checkadmin
       if !current_user.issuper?
-        redirect_to :root, notice: "Insufficient rights!"
+        redirect_to :root, notice: CALL_INSUFFICIENT
       end
     end
 

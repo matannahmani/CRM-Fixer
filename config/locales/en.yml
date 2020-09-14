@@ -70,6 +70,7 @@ en:
         city: "ישוב"
         remember_me: "זכור אותי"
         israelid: "תעודת זהות"
+        student: "סטודנט"
     errors: 
       messages: 
         record_invalid: "האימות נכשל: %{errors}"

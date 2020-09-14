@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  before_save :checkphone
+  before_validation :checkphone, :checkemail, :healthauto
   after_create { self.healthcheck = true }
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
@@ -11,9 +11,10 @@ class User < ApplicationRecord
   validates :city_id, presence: true
   validates :address, presence: true
   validates :student, presence: true
-  validates :healthcheck, presence: true
+  validates_inclusion_of :healthcheck, in: [true, false]
+  validates_inclusion_of :student, in: [true, false]
   validates :adminlevel, presence: true
-  validates :israelid, presence: true, numericality: true
+  validates :israelid, presence: true, uniqueness: true, numericality: true
   has_many :call
   belongs_to :city
 
@@ -40,5 +41,9 @@ class User < ApplicationRecord
 
   def iscaller?
     adminlevel == 1
+  end
+
+  def healthauto
+    self.healthcheck = true
   end
 end
