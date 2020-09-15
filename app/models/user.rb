@@ -10,14 +10,13 @@ class User < ApplicationRecord
   validates :phone, presence: true, numericality: true
   validates :city_id, presence: true
   validates :address, presence: true
-  validates :student, presence: true
   validates_inclusion_of :healthcheck, in: [true, false]
   validates_inclusion_of :student, in: [true, false]
   validates :adminlevel, presence: true
   validates :israelid, presence: true, uniqueness: true, numericality: true
   has_many :call
+  has_many :user_option
   belongs_to :city
-
   ADMIN = 3 # OWNER
   SUPERVISOR = 2 # SUPERVISOR
   CALLER = 1 # CALLER

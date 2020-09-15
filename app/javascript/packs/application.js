@@ -25,10 +25,18 @@ console.log('Hello World from Webpacker')
 
 // External imports
 import "bootstrap";
+const FileSaver = require('file-saverjs');
+const TableExport = require('tableexport');
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+const exportxl = document.getElementById('exportexl');
+if (exportexl !== 'null'){
+  exportexl.addEventListener('click', (btn) => {
+    var table = TableExport(document.getElementsByTagName("table"));
+  });
 
+}
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();

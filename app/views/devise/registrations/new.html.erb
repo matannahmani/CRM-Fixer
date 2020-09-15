@@ -42,6 +42,13 @@
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "city" }%>
+    <%= f.association :user_option,
+                required: true,
+                autofocus: true,
+                as: :check_boxes,
+                collection: HelpOption.all.map { |opt| opt.descriptionvol },
+                input_html: { autocomplete: "city"  }%>
+
     <div class="healthcheck">
       <h3>הצטרפות מותנת באישור הצהרת בריאות אנא עיין בהצרה</h3>
       <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>

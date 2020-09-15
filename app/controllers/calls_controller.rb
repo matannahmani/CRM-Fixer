@@ -1,14 +1,7 @@
 class CallsController < ApplicationController
-  before_action :set_call, only: [:show, :edit, :update, :destroy,:takecall]
+  before_action :set_call, only: [:show, :edit, :update, :destroy, :takecall]
   before_action :checkadmin, except: [:new, :create, :show]
   skip_before_action :authenticate_user!, only: [:new, :create]
-  CALL_TAKEN = "הקריאה נלקחה בהצלחה!"
-  CALL_UNTAKEN = "הקריאה שוחררה בהצלחה!"
-  CALL_UNAUTH = "אינך בעל הקריאה!"
-  CALL_UPDATED = "הקריאה עודכנה בהצלחה!"
-  CALL_DESTROYED = "הקריאה נמחקה בהצלחה!"
-  CALL_ERROR = "שגיאה"
-  CALL_INSUFFICIENT = "אינך רשאי לבצע פעולה זאת!"
 
   # GET /calls
   # GET /calls.json
@@ -91,19 +84,14 @@ class CallsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_call
-      @call = Call.find(params[:id])
-    end
 
-    def checkadmin
-      if !current_user.issuper?
-        redirect_to :root, notice: CALL_INSUFFICIENT
-      end
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_call
+    @call = Call.find(params[:id])
+  end
 
-    # Only allow a list of trusted parameters through.
-    def call_params
-      params.require(:call).permit(:name, :lastname, :phone, :address, :city_id, :email, :description, :healthcheck)
-    end
+  # Only allow a list of trusted parameters through.
+  def call_params
+    params.require(:call).permit(:name, :lastname, :phone, :address, :city_id, :email, :description, :healthcheck)
+  end
 end

@@ -25,8 +25,8 @@
         <td><%= call.address %></td>
         <td><%= call.city.name %></td>
         <td><%= call.email %></td>
-        <td><%= call.description %></td>
-        <td><%= call.healthcheck %></td>
+        <td><%= call.description[0..60] %></td>
+        <td><%= call.healthcheck ? "אושר" : "מחכה לאישור" %></td>
         <td><%= call.user.nil? ? "לא נלקח" : call.user.name %></td>
         <td><%= link_to 'צפייה', call %></td>
         <td><%= link_to 'עריכה', edit_call_path(call) %></td>
@@ -35,5 +35,5 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
+<button class="btn btnsm btngreen" id="exportexl">EXPORT</button>

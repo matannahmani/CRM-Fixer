@@ -1,4 +1,5 @@
 <div class="calltoaction">
     <%= link_to 'לצפייה בקריאות', calls_path, :class => "btn btn-flat" if (!current_user.nil? && current_user.issuper? ) %>
     <%= link_to 'פתיחת קריאה', new_call_path, :class => "btn btn-flat" %>
+    <%= link_to 'תעודת מתנדב', mypdf_path(:format => :pdf), :class => "btn btn-flat" unless current_user.nil? %>
 </div>

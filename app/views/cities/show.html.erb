@@ -1,0 +1,8 @@
+<div class="callshow">
+  <p>
+    <strong>שם:</strong>
+    <%= @city.name %>
+  </p>
+<%= link_to 'עריכה', edit_city_path(@city), class: "btn btn-sm btn-flatgreen" %>
+<%= link_to 'לכל הישובים', cities_path, class: "btn btn-sm btn-flatgreen" %>
+</div>

@@ -71,6 +71,8 @@ en:
         remember_me: "זכור אותי"
         israelid: "תעודת זהות"
         student: "סטודנט"
+      city:
+        name: "שם" 
     errors: 
       messages: 
         record_invalid: "האימות נכשל: %{errors}"

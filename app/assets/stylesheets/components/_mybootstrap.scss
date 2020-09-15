@@ -170,12 +170,16 @@
   }
 }
 .table{
- th{
-  font-size: 24px;
- }
- td{
-  font-size: 20px;
- }
+  th{
+    font-size: 24px;
+  }
+ td {
+	font-size: 20px;
+	height: 100px !important;
+	overflow: scroll;
+	max-width: 100px;
+	word-wrap: break-word;
+  }
 }
 @media only screen and (max-width: 768px) {
   .form-group {
