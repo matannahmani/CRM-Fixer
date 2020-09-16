@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_15_093014) do
+ActiveRecord::Schema.define(version: 2020_09_16_080419) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,8 @@ ActiveRecord::Schema.define(version: 2020_09_15_093014) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "region_id"
+    t.index ["region_id"], name: "index_cities_on_region_id"
   end
 
   create_table "help_options", force: :cascade do |t|
@@ -59,6 +61,12 @@ ActiveRecord::Schema.define(version: 2020_09_15_093014) do
     t.bigint "help_option_id", null: false
     t.index ["help_option_id", "user_id"], name: "index_help_options_users_on_help_option_id_and_user_id"
     t.index ["user_id", "help_option_id"], name: "index_help_options_users_on_user_id_and_help_option_id"
+  end
+
+  create_table "regions", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "user_options", force: :cascade do |t|
@@ -108,6 +116,7 @@ ActiveRecord::Schema.define(version: 2020_09_15_093014) do
   add_foreign_key "calloptions", "users"
   add_foreign_key "calls", "cities"
   add_foreign_key "calls", "users"
+  add_foreign_key "cities", "regions"
   add_foreign_key "user_options", "help_options"
   add_foreign_key "user_options", "users"
   add_foreign_key "useroptions", "help_options"

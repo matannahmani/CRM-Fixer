@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :regions
   resources :calls, :path => "admin/calls"
   resources :cities, :path => "admin/cities/"
   get 'call/:id', to: 'calls#show', as: 'showcall'

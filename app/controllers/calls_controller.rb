@@ -1,12 +1,16 @@
 class CallsController < ApplicationController
   before_action :set_call, only: [:show, :edit, :update, :destroy, :takecall]
-  before_action :checkadmin, except: [:new, :create, :show]
+  before_action :checkadmin, except: [:new, :create, :show, :takecall]
   skip_before_action :authenticate_user!, only: [:new, :create]
 
   # GET /calls
   # GET /calls.json
   def index
     @calls = Call.all
+    unless params["call"].nil?
+      city_id = params["call"]["city_id"]
+      @calls = Call.where(city_id: city_id.to_i) unless city_id.empty?
+    end
   end
 
   # GET /calls/1
@@ -31,7 +35,7 @@ class CallsController < ApplicationController
       end
     else
       @call.update(user: current_user, healthcheck: true)
-      redirect_to :root, notice: CALL_TAKEN
+      redirect_to showcall_path(@call.id), notice: CALL_TAKEN
     end
   end
 

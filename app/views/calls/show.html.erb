@@ -1,4 +1,5 @@
 <div class="callshow">
+<% if @call.user == current_user || current_user.issuper? %>
   <p>
     <strong>מספר קריאה:</strong>
     <%= @call.id %>
@@ -42,6 +43,20 @@
     <strong>בדיקת בריאות:</strong>
     <%= @call.healthcheck ? "כן" : "לא" %>
   </p>
+<% else %>
+  <p>
+    <strong>שם:</strong>
+    <%= @call.name %>
+  </p>
+  <p>
+    <strong>ישוב:</strong>
+    <%= @call.city.name %>
+  </p>
+  <p>
+    <strong>תיאור:</strong>
+    <%= @call.description %>
+  </p>
+<% end %>
 
   <p>
     <% if !@call.user.nil? %>

@@ -15,9 +15,6 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-console.log('Hello World from Webpacker')
-
-
 // ----------------------------------------------------
 // Note(lewagon): ABOVE IS RAILS DEFAULT CONFIGURATION
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
@@ -33,7 +30,10 @@ const TableExport = require('tableexport');
 const exportxl = document.getElementById('exportexl');
 if (exportexl !== 'null'){
   exportexl.addEventListener('click', (btn) => {
-    var table = TableExport(document.getElementsByTagName("table"));
+    const table = new TableExport(document.getElementsByTagName("table"), {exportButtons: false});
+    var exportData = table.getExportData();
+    var xlsxData = exportData['tableexport-1'].xlsx
+    table.export2file(xlsxData.data, xlsxData.mimeType, xlsxData.filename, xlsxData.fileExtension, xlsxData.merges, xlsxData.RTL, xlsxData.sheetname)
   });
 
 }

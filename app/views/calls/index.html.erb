@@ -1,5 +1,9 @@
 <h2 class="headline">לוח קריאות</h1>
-
+  <%= simple_form_for Call.new, url: calls_path, method: "GET", html: { class: 'form-inline' } do |f| %>
+  <%= f.association :city %>
+  <%#= f.input :taken, label: "בטיפול" , as: :boolean, input_html: {checked: false} %>
+  <%= f.submit "Search", class: "btn btn-sm btn-flat" %>
+  <% end%>
 <table class="table table-responsive-xl">
   <thead>
     <tr>
@@ -36,4 +40,4 @@
   </tbody>
 </table>
 <br>
-<button class="btn btnsm btngreen" id="exportexl">EXPORT</button>
+<button class="btn btn-sm btn-flat" id="exportexl">EXPORT</button>

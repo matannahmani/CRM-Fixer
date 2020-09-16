@@ -3,6 +3,10 @@
     <strong>שם:</strong>
     <%= @city.name %>
   </p>
+  <p>
+    <strong>איזור:</strong>
+    <%= @city.region.name %>
+  </p>
 <%= link_to 'עריכה', edit_city_path(@city), class: "btn btn-sm btn-flatgreen" %>
 <%= link_to 'לכל הישובים', cities_path, class: "btn btn-sm btn-flatgreen" %>
 </div>

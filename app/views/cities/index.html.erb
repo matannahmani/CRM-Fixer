@@ -4,6 +4,7 @@
   <thead>
     <tr>
       <th scope="1">שם</th>
+      <th scope="1">איזור</th>
       <th colspan="3">פעולות</th>
     </tr>
   </thead>
@@ -12,6 +13,7 @@
     <% @cities.each do |city| %>
       <tr>
         <td><%= city.name %></td>
+        <td><%= city.region.name %></td>
         <td><%= link_to 'צפייה', city %></td>
         <td><%= link_to 'עריכה', edit_city_path(city) %></td>
         <td><%= link_to 'מחיקה', city, method: :delete, data: { confirm: 'אתה בטוח?' } %></td>
@@ -19,7 +21,6 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
-
+<button class="btn btn-sm btn-flat" id="exportexl">EXPORT</button>
 <%= link_to 'יצירת יישוב', new_city_path,class: "btn btn-sm btn-flatgreen" %>

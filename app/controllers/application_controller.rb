@@ -11,7 +11,9 @@ class ApplicationController < ActionController::Base
   CALL_DESTROYED = "הקריאה נמחקה בהצלחה!"
   CALL_ERROR = "שגיאה"
   CALL_INSUFFICIENT = "אינך רשאי לבצע פעולה זאת!"
-
+  UPDATE_MSG = "עודכנה בהצלחה!"
+  DESTORY_MSG = "נמחקה בהצלחה!"
+  CREATE_MSG = "נוצרה בהצלחה!"
   def checkadmin
     redirect_to :root, notice: CALL_INSUFFICIENT unless current_user.issuper?
   end
