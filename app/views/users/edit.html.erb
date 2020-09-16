@@ -1,0 +1,7 @@
+<h2 class="headline">עריכת משתמש</h2>
+
+<%= render 'form', user: @user %>
+<div class="callshow">
+  <%= link_to 'הצגה', @user, class: "btn btn-sm btn-flat" %>
+  <%= link_to 'חזרה', users_path, class: "btn btn-sm btn-flat" %>
+</div>

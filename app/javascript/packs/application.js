@@ -27,15 +27,20 @@ const TableExport = require('tableexport');
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
-const exportxl = document.getElementById('exportexl');
-if (exportexl !== 'null'){
-  exportexl.addEventListener('click', (btn) => {
+let exportxl = document.getElementById('exportexl');
+const exportfunc = (exportexl) =>{
+    exportexl.addEventListener('click', (btn) => {
     const table = new TableExport(document.getElementsByTagName("table"), {exportButtons: false});
     var exportData = table.getExportData();
     var xlsxData = exportData['tableexport-1'].xlsx
     table.export2file(xlsxData.data, xlsxData.mimeType, xlsxData.filename, xlsxData.fileExtension, xlsxData.merges, xlsxData.RTL, xlsxData.sheetname)
   });
-
+}
+if (exportexl !== 'null' || exportexl !== 'undefined'){
+  exportfunc(exportexl);
+}
+else{
+  location.reload();
 }
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:

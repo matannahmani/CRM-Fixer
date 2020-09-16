@@ -29,7 +29,7 @@ class HelpOptionsController < ApplicationController
 
     respond_to do |format|
       if @help_option.save
-        format.html { redirect_to @help_option, notice: 'Help option was successfully created.' }
+        format.html { redirect_to @help_option, notice: "תצוגה #{CREATE_MSG}" }
         format.json { render :show, status: :created, location: @help_option }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class HelpOptionsController < ApplicationController
   def update
     respond_to do |format|
       if @help_option.update(help_option_params)
-        format.html { redirect_to @help_option, notice: 'Help option was successfully updated.' }
+        format.html { redirect_to @help_option, notice: "תצוגה #{UPDATE_MSG}" }
         format.json { render :show, status: :ok, location: @help_option }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class HelpOptionsController < ApplicationController
   def destroy
     @help_option.destroy
     respond_to do |format|
-      format.html { redirect_to help_options_url, notice: 'Help option was successfully destroyed.' }
+      format.html { redirect_to help_options_url, notice: "תצוגה #{DESTROY_MSG}" }
       format.json { head :no_content }
     end
   end

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :regions, path: "admin/region"
   resources :calls, path: "admin/calls"
   resources :cities, path: "admin/cities/"
+  resources :users, path: "admin/users/"
   get 'call/:id', to: 'calls#show', as: 'showcall'
   devise_for :users, controllers: { registrations: "registrations" }
   # devise_for :users

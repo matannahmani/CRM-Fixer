@@ -1,6 +1,7 @@
 <h2 class="headline">עריכת קריאה</h2>
 
 <%= render 'form', call: @call %>
-
-<%= link_to 'צפייה', @call %>
-<%= link_to 'חזרה', calls_path %>
+<div class="callshow">
+  <%= link_to 'צפייה', @call %>
+  <%= link_to 'חזרה', calls_path %>
+</div>

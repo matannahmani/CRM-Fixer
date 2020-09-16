@@ -1,0 +1,58 @@
+<div class="callshow">
+  <p>
+    <strong>איימל:</strong>
+    <%= @user.email %>
+  </p>
+
+  <p>
+    <strong>שם משפחה:</strong>
+    <%= @user.lastname %>
+  </p>
+
+  <p>
+    <strong>שם פרטי:</strong>
+    <%= @user.name %>
+  </p>
+
+  <p>
+    <strong>מגדר:</strong>
+    <%= @user.gender ? 'גבר' : 'אישה' %>
+  </p>
+
+  <p>
+    <strong>טלפון:</strong>
+    <%= @user.phone %>
+  </p>
+
+  <p>
+    <strong>כתובת:</strong>
+    <%= @user.address %>
+  </p>
+
+  <p>
+    <strong>סטודנט?:</strong>
+    <%= @user.student ? 'כן' : 'לא' %>
+  </p>
+
+  <p>
+    <strong>עיר:</strong>
+    <%= @user.city.name %>
+  </p>
+
+  <p>
+    <strong>רמת ניהול:</strong>
+    <%= @user.admin_to_s %>
+  </p>
+
+  <p>
+    <strong>תעודת זהות:</strong>
+    <%= @user.israelid %>
+  </p>
+
+  <p>
+    <strong>אישור בריאות:</strong>
+    <%= @user.healthcheck ? 'כן' : 'לא'  %>
+  </p>
+  <%= link_to 'עריכה', edit_user_path(@user), class: "btn btn-sm btn-flat" %>
+  <%= link_to 'חזרה', users_path, class: "btn btn-sm btn-flat" %>
+</div>
