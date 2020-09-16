@@ -1,7 +1,11 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home]
+  before_action :checkadmin, only: [:adminpanel]
 
   def home
+  end
+
+  def adminpanel
   end
 
   def show
@@ -19,7 +23,7 @@ class PagesController < ApplicationController
       end
     end
   end
-  def volcard
 
+  def volcard
   end
 end

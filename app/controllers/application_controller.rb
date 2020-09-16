@@ -18,12 +18,8 @@ class ApplicationController < ActionController::Base
     redirect_to :root, notice: CALL_INSUFFICIENT unless current_user.issuper?
   end
 
-  def after_sign_up_path_for(resource)
-    pry.byebug
-  end
-
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :student, :lastname, :phone, :address, :israelid, :city_id])
-    devise_parameter_sanitizer.permit(:account_update, keys: [:name, :student, :lastname, :phone, :address, :israelid, :city_id])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :student, :lastname, :phone, :address, :israelid, :city_id, :user_option_ids => []])
+    devise_parameter_sanitizer.permit(:account_update, keys: [:name, :student, :lastname, :phone, :address, :israelid, :city_id, :user_option_ids => []])
   end
 end

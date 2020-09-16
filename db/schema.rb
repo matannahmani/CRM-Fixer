@@ -10,19 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_16_080419) do
+ActiveRecord::Schema.define(version: 2020_09_16_105227) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "calloptions", force: :cascade do |t|
-    t.bigint "user_id"
+  create_table "call_options", force: :cascade do |t|
+    t.bigint "call_id"
     t.bigint "help_option_id"
     t.boolean "active"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["help_option_id"], name: "index_calloptions_on_help_option_id"
-    t.index ["user_id"], name: "index_calloptions_on_user_id"
+    t.index ["call_id"], name: "index_call_options_on_call_id"
+    t.index ["help_option_id"], name: "index_call_options_on_help_option_id"
   end
 
   create_table "calls", force: :cascade do |t|
@@ -112,8 +112,8 @@ ActiveRecord::Schema.define(version: 2020_09_16_080419) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "calloptions", "help_options"
-  add_foreign_key "calloptions", "users"
+  add_foreign_key "call_options", "help_options"
+  add_foreign_key "call_options", "users", column: "call_id"
   add_foreign_key "calls", "cities"
   add_foreign_key "calls", "users"
   add_foreign_key "cities", "regions"

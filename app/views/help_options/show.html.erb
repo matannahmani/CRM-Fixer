@@ -1,0 +1,13 @@
+<div class="callshow">
+  <p>
+    <strong>תצוגת מתנדב:</strong>
+    <%= @help_option.descriptionvol %>
+  </p>
+
+  <p>
+    <strong>תצוגת קריאה:</strong>
+    <%= @help_option.descriptioncall %>
+  </p>
+  <%= link_to 'עריכה', edit_help_option_path(@help_option), class: "btn btn-sm btn-flat" %>
+  <%= link_to 'חזרה', help_options_path, class: "btn btn-sm btn-flat" %>
+</div>

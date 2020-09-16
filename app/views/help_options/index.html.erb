@@ -1,0 +1,29 @@
+<h2 class="headline">מסך ניהול אופציות עזרה</h2>
+
+<table class="table table-responsive-xl">
+  <thead>
+    <tr>
+      <th scope="col">תצוגת מתנדב</th>
+      <th scope="col">תצוגת קריאה</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @help_options.each do |help_option| %>
+      <tr>
+        <td><%= help_option.descriptionvol %></td>
+        <td><%= help_option.descriptioncall %></td>
+        <td><%= link_to 'הצגה', help_option %></td>
+        <td><%= link_to 'עריכה', edit_help_option_path(help_option) %></td>
+        <td><%= link_to 'מחיקה', help_option, method: :delete, data: { confirm: 'האם אתה בטוח?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'אופציה חדשה', new_help_option_path, class: "btn btn-sm btn-flat" %>
+<%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-flat" %>
+<button class="btn btn-sm btn-flat" id="exportexl">EXPORT</button>

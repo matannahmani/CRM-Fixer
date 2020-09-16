@@ -1,10 +1,10 @@
-<h1>כל הישובים הקיימות במערכת</h1>
+<h2 class="headline">כל הישובים הקיימות במערכת</h2>
 
 <table class="table table-responsive-xl">
   <thead>
     <tr>
-      <th scope="1">שם</th>
-      <th scope="1">איזור</th>
+      <th scope="col">שם</th>
+      <th scope="col">איזור</th>
       <th colspan="3">פעולות</th>
     </tr>
   </thead>
@@ -22,5 +22,6 @@
   </tbody>
 </table>
 <br>
-<button class="btn btn-sm btn-flat" id="exportexl">EXPORT</button>
 <%= link_to 'יצירת יישוב', new_city_path,class: "btn btn-sm btn-flatgreen" %>
+<%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-flat" %>
+<button class="btn btn-sm btn-flat" id="exportexl">EXPORT</button>
