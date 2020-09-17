@@ -272,7 +272,6 @@ DEPENDENCIES
   redis (~> 4.0)
   sass-rails (~> 5.0)
   sassc (~> 2.4)
-  select2-rails (~> 3.5.2)
   select2_simple_form!
   selenium-webdriver
   simple_form
