@@ -75,3 +75,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wicked_pdf", "~> 2.1"
 
 gem "wkhtmltopdf-binary", "~> 0.12.6"
+
+gem "sassc", "~> 2.4"

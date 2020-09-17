@@ -1,5 +1,5 @@
 {
-  "name": "CRM-Fixer",
+  "name": "crm-fixer",
   "private": true,
   "dependencies": {
     "@rails/webpacker": "5.2.1",
@@ -12,5 +12,25 @@
   },
   "devDependencies": {
     "webpack-dev-server": "^3.11.0"
-  }
+  },
+  "description": "Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.",
+  "version": "1.0.0",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matannahmani/CRM-Fixer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matannahmani/CRM-Fixer/issues"
+  },
+  "homepage": "https://github.com/matannahmani/CRM-Fixer#readme"
 }
