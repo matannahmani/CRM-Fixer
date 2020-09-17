@@ -27,6 +27,7 @@ const TableExport = require('tableexport');
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+// import "select2";
 let exportxl = document.getElementById('exportexl');
 const exportfunc = (exportexl) =>{
     exportexl.addEventListener('click', (btn) => {

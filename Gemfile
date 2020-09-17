@@ -9,6 +9,8 @@ gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
+# SELECT 2
+gem 'select2_simple_form', github: 'lndl/select2_simple_form', tag: '0.7.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -76,3 +78,5 @@ gem "wicked_pdf", "~> 2.1"
 gem "wkhtmltopdf-binary", "~> 0.12.6"
 
 gem "sassc", "~> 2.4"
+
+gem "jquery-rails", "~> 4.4"

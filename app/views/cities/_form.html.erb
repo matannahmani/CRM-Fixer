@@ -5,7 +5,7 @@
 
   <div class="form-inputs">
     <%= f.input :name %>
-    <%= f.association :region %>
+    <%= f.association :region, label: "איזור", include_blank: false %>
   </div>
 
   <div class="form-actions">

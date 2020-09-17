@@ -8,11 +8,11 @@
     <%= f.input :lastname, label: "שם משפחה" %>
     <%= f.input :phone, label: "טלפון" %>
     <%= f.input :address, label: "כתובת מלאה" %>
-    <%= f.association :city, label: "ישוב" %>
+    <%= f.association :city, label: "ישוב", include_blank: false %>
     <%= f.association :user, label_method: :fullname, label: "מתנדב" if params["action"] == "edit" %>
     <%= f.input :email, label: "איימל", error: true %>
     <%= f.input :description, label: "תיאור" %>
-    <%= f.association :call_option, label: "אופציה עזרה", as: :check_boxes, collection: HelpOption.all, label_method: :descriptioncall, value_method: :id %>
+    <%= f.input :call_option, as: :check_boxes, label: "אופציה עזרה", collection: HelpOption.all, label_method: :descriptioncall, value_method: :id%>
     <% if params["action"] == "edit" %>
       <div class="healthcheck">
         <h3>לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>

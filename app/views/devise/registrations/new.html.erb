@@ -39,7 +39,7 @@
                 as: :string,
                 input_html: { autocomplete: "id" }%>
     <%= f.association :city,
-                required: true,
+                include_blank: false,
                 autofocus: true,
                 input_html: { autocomplete: "city" }%>
     <%= f.association :user_option, label: "אופציה עזרה", as: :check_boxes, collection: HelpOption.all, label_method: :descriptionvol, value_method: :id %>
