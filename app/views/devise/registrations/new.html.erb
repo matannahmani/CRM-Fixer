@@ -1,6 +1,11 @@
+<div class="sessioncon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="sessionform">
+    <div class="sessionheadline">
+      <%= render "devise/shared/links" %>
+    </div>
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
-
   <div class="form-inputs">
     <%= f.input :email,
                 required: true,
@@ -8,7 +13,6 @@
                 input_html: { autocomplete: "email" }%>
     <%= f.input :password,
                 required: true,
-                hint: ("מינימום #{@minimum_password_length} תויים" if @minimum_password_length),
                 input_html: { autocomplete: "new-password" } %>
     <%= f.input :password_confirmation,
                 required: true,
@@ -44,15 +48,14 @@
                 input_html: { autocomplete: "city" }%>
     <%= f.association :user_option, label: "אופציה עזרה", as: :check_boxes, collection: HelpOption.all, label_method: :descriptionvol, value_method: :id %>
 
-    <div class="healthcheck">
-      <h3>הצטרפות מותנת באישור הצהרת בריאות אנא עיין בהצרה</h3>
+  <div class="form-actions">
+    <div class="healthcheck p-0">
+      <h3 class="healthcheck-text">הצטרפות מותנת באישור הצהרת בריאות אנא עיין בהצרה</h3>
       <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
     </div>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "הצטרפות", class: "btn btn-flatgreen" %>
-    <%= render "devise/shared/links" %>
+    <%= f.button :submit, "הצטרף", class: "btn btn-flatgreen" %>
   </div>
 <% end %>
-
+  </div>
+</div>
+</div>

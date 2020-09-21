@@ -1,0 +1,117 @@
+.sessioncon{
+  display: flex;
+  flex-direction :column;
+  align-items: center;
+  justify-items: center;
+  img{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    max-width: 90vw;
+  }
+  .sessionform{
+    background: #f4f4f4;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+    width: 90vw;
+    max-width: 800px;
+    h2 {
+      font-size: 1.5rem;
+      text-align: right;
+      margin-right: 16px;
+      margin-top: 24px;
+      font-family: Heebo, sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.75px;
+      line-height: 18px;
+      opacity: 0.92;
+      color: #222222;
+    }
+    form{
+      .form-inputs {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 24px;
+        .form-actions{
+          padding-left: 24px;
+        }
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            align-items: unset;
+            width: 100%;
+            justify-content: unset;
+              label{
+                color: #888888;
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: 1.8px;
+                line-height: 18px;
+            }
+            input{
+                color: #aaaaaa;
+                background: transparent;
+                border: unset;
+                border-bottom: 2px solid #cccccc;
+            }
+            input[type="checkbox"]{
+              transform: unset;
+              margin-top: 1px !important;
+            }
+            .form-check {
+              margin: 0;
+              padding-left: 3rem;
+              margin-top: 8px;
+              label{
+                font-size: 16px;
+              }
+            }
+        }
+      }
+    }
+  }
+}
+.sessionheadline {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid #ff2287;
+  a{
+  flex-grow: 1;
+  font-size: 16px;
+  }
+}
+.border-left{
+  border-left: 3px solid #ff2287;
+}
+.btn-nav{
+  font-size: 14px;
+  color: #cccccc;
+  font-family: Heebo, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  line-height: 18px;
+}
+.btn-nav:hover{
+  color: #ff2287;
+}
+.btn-nav-active{
+  color: #ff2287;
+}
+
+.f-down{
+    display: flex !important;
+    justify-content: center;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 8px;
+}
+
+@media only screen and (max-width: 768px){
+  .form-group{
+    label { font-size: 14px; }
+  }
+}

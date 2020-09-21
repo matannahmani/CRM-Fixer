@@ -1,4 +1,13 @@
-
+<div class="sessioncon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="sessionform">
+    <div class="sessionheadline p-4">
+      <% if controller.action_name == "new" %>
+        <h2 class="headline">פתיחת קריאה חדשה</h2>
+        <% elsif controller.action_name == "edit" %>
+        <h2 class="headline">עריכת קריאה</h2>
+        <% end %>
+</div>
 <%= simple_form_for(@call) do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
@@ -14,15 +23,19 @@
     <%= f.input :description, label: "תיאור" %>
     <%= f.input :call_option, as: :check_boxes, label: "אופציה עזרה", collection: HelpOption.all, label_method: :descriptioncall, value_method: :id%>
     <% if params["action"] == "edit" %>
-      <div class="healthcheck">
-        <h3>לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>
+      <div class="healthcheck padding-left">
+        <h3 class="healthcheck-text">לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>
         <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
       </div>
     <% end %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "אישור", class: "btn btn-sm btn-flatgreen" %>
-    <%= link_to 'חזרה', root_path, class: "btn btn-sm btn-flatgreen" %>
+    <% if controller.action_name == "new"%>
+      <%= f.button :submit, "אישור", class: "btn btn-sm btn-flatgreen" %>
+      <%= link_to 'חזרה', root_path, class: "btn btn-sm btn-flatgreen" %>
+    <% end %>
   </div>
 <% end %>
+  </div>
+</div>

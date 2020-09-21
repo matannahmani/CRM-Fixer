@@ -1,9 +1,14 @@
+<div class="sessioncon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="sessionform">
+    <div class="sessionheadline p-4">
+      <h2 class="headline">
+        <strong>מספר קריאה:</strong>
+        <%= @call.id %>
+      </h2>
+    </div>
 <div class="callshow">
 <% if @call.user == current_user || current_user.issuper? %>
-  <p>
-    <strong>מספר קריאה:</strong>
-    <%= @call.id %>
-  </p>
   <p>
     <strong>שם:</strong>
     <%= @call.name %>
@@ -59,10 +64,11 @@
 <% end %>
 
   <p>
-    <% if !@call.user.nil? %>
+    <% if !@call.user.nil? && current_user.issuper? %>
     <strong>שם מתנדב:</strong>
     <%= @call.user.name%>
     <% else %>
+    <strong>שם מתנדב:</strong>
     <strong>כרגע לא נמצא מתנדב</strong>
     <% end %>
   </p>
@@ -75,13 +81,17 @@
       <%= link_to 'ביטול קריאה', takecall_path(id: @call.id, take: "true"), class: "btn btn-sm btn-flatgreen" %>
     <% elsif !@taken%>
     <div class="healthcheck">
-        <h3>לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>
+        <h3 class="healthcheck-text">לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>
         <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
     </div>
+  <div class="action">
         <%= link_to 'לקיחת קריאה', takecall_path(id: @call.id, take: "false"), class: "btn btn-sm btn-flatgreen" %>
     <% end %>
-  <% if !current_user.nil? && current_user.issuper? %>
-  <%= link_to 'ערוך', edit_call_path(@call), class: "btn btn-sm btn-flatgreen" %>
-  <%= link_to 'חזרה', calls_path, class: "btn btn-sm btn-flatgreen" %>
-  <% end %>
+    <% if !current_user.nil? && current_user.issuper? %>
+    <%= link_to 'ערוך', edit_call_path(@call), class: "btn btn-sm btn-flatgreen" %>
+    <%= link_to 'חזרה', calls_path, class: "btn btn-sm btn-flatgreen" %>
+    <% end %>
+  </div>
+</div>
+</div>
 </div>

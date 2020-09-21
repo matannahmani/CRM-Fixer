@@ -1,0 +1,20 @@
+.footer{
+  margin-top: 40px;
+  text-align: center;
+  color: #ffffff;
+ span{
+  width: 203px;
+  height: 21px;
+  color: #ffffff;
+  font-family: 'Heebo', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.97px;
+  line-height: 22px;
+ }
+}
+@media only screen and (max-width: 600px){
+  .footer{
+    margin-top: 80px;
+  }
+}

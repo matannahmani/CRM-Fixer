@@ -12,17 +12,19 @@
 @import "pages/index";
 
 // global css
- @import "components/mybootstrap";
  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Montserrat&family=Open+Sans&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
  body {
-  background: #FAFAFA;
+  background: #ff2287;
   direction: rtl;
   text-align: right;
-  font-family: 'Bellefair', sans-serif;
+  font-family: 'Heebo', sans-serif;
   font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  line-height: 18px;
  }
  .volbg{
   background-image:url(/images/vol.png);

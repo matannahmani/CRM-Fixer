@@ -1,20 +1,27 @@
 <!-- <h2>התחבר</h2 -->
+<div class="sessioncon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="sessionform">
+    <div class="sessionheadline">
+      <%= render "devise/shared/links" %>
+    </div>
+    <h2>התחבר למשתמש שלך</h2>
+    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="form-inputs">
+        <%= f.input :email,
+                    required: false,
+                    autofocus: true,
+                    input_html: { autocomplete: "email" } %>
+        <%= f.input :password,
+                    required: false,
+                    input_html: { autocomplete: "current-password" } %>
+        <%= f.input :remember_me, as: :boolean, boolean_style: :inline if devise_mapping.rememberable? %>
+      </div>
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-    <%= f.input :password,
-                required: false,
-                input_html: { autocomplete: "current-password" } %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+      <div class="form-actions">
+        <%= f.button :submit, "התחברות", class: "btn btn-flatgreen" %>
+      </div>
+        <%= link_to "למקרה שכחת, שחזר סיסמא?", new_password_path(resource_name), class: "f-down btn btn-nav btn-nav-active" %><br />
+    <% end %>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "התחבר", class: "btn btn-flatgreen" %>
-    <%= render "devise/shared/links" %>
-  </div>
-<% end %>
-
+</div>

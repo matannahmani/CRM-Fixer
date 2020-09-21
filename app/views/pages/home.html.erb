@@ -1,5 +1,12 @@
-<div class="calltoaction">
-    <%= link_to 'מסך ניהול', adminpanel_path, class: "btn btn-flat" if (!current_user.nil? && current_user.issuper?) %>
-    <%= link_to 'פתיחת קריאה', new_call_path, class: "btn btn-flat" %>
-    <%= link_to 'תעודת מתנדב', mypdf_path(:format => :pdf),target: :_blank, :class => "btn btn-flat" unless current_user.nil? %>
+<div class="homecon">
+    <%= image_tag("logo.png")%>
+    <%= link_to 'מסך ניהול', adminpanel_path, class: "btn btn-main" if (!current_user.nil? && current_user.issuper?) %>
+    <%= link_to 'פתיחת קריאה', new_call_path, class: "btn btn-main" %>
+    <%= link_to 'תעודת מתנדב', mypdf_path(:format => :pdf),target: :_blank, :class => "btn btn-main" unless current_user.nil? %>
+    <% if (current_user.nil?) %>
+      <%= link_to 'כניסה', new_user_session_path, class: "btn btn-main" %>
+      <%= link_to 'הצטרפות', new_user_registration_path, class: "btn btn-main" %>
+    <% else %>
+      <%= link_to 'התנתק', destroy_user_session_path, class: "btn btn-main", :method => :delete %>
+    <% end %>
 </div>
