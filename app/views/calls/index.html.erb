@@ -1,9 +1,16 @@
-<h2 class="headline">לוח קריאות</h1>
+<div class="homecon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="index-page">
+  <h2 class="headline-text">לוח קריאות</h2>
   <%= simple_form_for Call.new, url: calls_path, method: "GET", html: { class: 'form-inline' } do |f| %>
-  <%= f.association :city %>
-  <%#= f.input :taken, label: "בטיפול" , as: :boolean, input_html: {checked: false} %>
-  <%= f.submit "Search", class: "btn btn-sm btn-flat" %>
+    <%= f.association :city, label: "עיר", :include_blank => "הצג הכל" %>
+    <%= simple_form_for Region.new do |t| %>
+      <%= t.input :name,label: "איזור", :collection => Region.all, :include_blank => "הצג הכל" %>
+      <%= f.input :user, label: "בטיפול" , as: :select, :include_blank => "הצג הכל" , input_html: {checked: false} %>
+      <%= f.submit "Search", class: "btn btn-main btn-sm" %>
+    <% end %>
   <% end%>
+<!-- </div> -->
 <table class="table table-responsive-xl">
   <thead>
     <tr>
@@ -40,5 +47,9 @@
   </tbody>
 </table>
 <br>
-<%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-flat" %>
-<button class="btn btn-sm btn-flat" id="exportexl">EXPORT</button>
+<div class="d-flex justify-content-center">
+  <%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-main" %>
+  <button class="btn btn-sm btn-main" id="exportexl">EXPORT</button>
+</div>
+</div>
+</div>
