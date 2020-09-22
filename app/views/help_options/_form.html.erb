@@ -1,14 +1,26 @@
+<div class="sessioncon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="sessionform">
+    <div class="sessionheadline p-4">
+      <% if controller.action_name == "new" %>
+        <h2 class="headline">פתיחת אופציה חדשה</h2>
+        <% elsif controller.action_name == "edit" %>
+        <h2 class="headline">עריכת אופציה</h2>
+        <% end %>
+    </div>
+    <%= simple_form_for(@help_option) do |f| %>
+      <%= f.error_notification %>
+      <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-<%= simple_form_for(@help_option) do |f| %>
-  <%= f.error_notification %>
-  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+      <div class="form-inputs">
+        <%= f.input :descriptionvol, label: "תצוגת מתנדב" %>
+        <%= f.input :descriptioncall, label: "תצוגת קריאה" %>
+      </div>
 
-  <div class="form-inputs">
-    <%= f.input :descriptionvol, label: "תצוגת מתנדב" %>
-    <%= f.input :descriptioncall, label: "תצוגת קריאה" %>
+      <div class="form-actions">
+        <%= f.button :submit, "שמירה", class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to 'חזרה', help_options_path, class: "btn btn-sm btn-flatgreen" %>
+      </div>
+    <% end %>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "שמירה", class: "btn btn-sm btn-flat" %>
-  </div>
-<% end %>
+</div>

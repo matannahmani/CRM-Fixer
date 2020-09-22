@@ -1,14 +1,27 @@
+<div class="sessioncon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="sessionform">
+    <div class="sessionheadline p-4">
+      <% if controller.action_name == "new" %>
+        <h2 class="headline">פתיחת עיר חדשה</h2>
+        <% elsif controller.action_name == "edit" %>
+        <h2 class="headline">עריכת עיר</h2>
+        <% end %>
+    </div>
+      <%= simple_form_for(@city) do |f| %>
+        <%= f.error_notification %>
+        <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-<%= simple_form_for(@city) do |f| %>
-  <%= f.error_notification %>
-  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+        <div class="form-inputs">
+          <%= f.input :name %>
+          <%= f.association :region, label: "איזור", include_blank: false %>
+        </div>
 
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.association :region, label: "איזור", include_blank: false %>
+        <div class="form-actions">
+          <%= f.button :submit, "אישור", class: "btn btn-sm btn-flatgreen" %>
+          <%= link_to 'חזרה', cities_path,class: "btn btn-sm btn-flatgreen" %>
+        </div>
+      <% end %>
+    </div>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "אישור", class: "btn btn-sm btn-flatgreen" %>
-  </div>
-<% end %>
+</div>

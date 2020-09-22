@@ -1,58 +1,71 @@
-<div class="callshow">
-  <p>
-    <strong>איימל:</strong>
-    <%= @user.email %>
-  </p>
+<div class="sessioncon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="sessionform">
+    <div class="sessionheadline p-4">
+      <h2 class="headline">
+        <strong>מספר משתמש:</strong>
+        <%= @user.id %>
+      </h2>
+    </div>
+    <div class="callshow">
+      <p>
+        <strong>איימל:</strong>
+        <%= @user.email %>
+      </p>
 
-  <p>
-    <strong>שם משפחה:</strong>
-    <%= @user.lastname %>
-  </p>
+      <p>
+        <strong>שם משפחה:</strong>
+        <%= @user.lastname %>
+      </p>
 
-  <p>
-    <strong>שם פרטי:</strong>
-    <%= @user.name %>
-  </p>
+      <p>
+        <strong>שם פרטי:</strong>
+        <%= @user.name %>
+      </p>
 
-  <p>
-    <strong>מגדר:</strong>
-    <%= @user.gender ? 'גבר' : 'אישה' %>
-  </p>
+      <p>
+        <strong>מגדר:</strong>
+        <%= @user.gender ? 'גבר' : 'אישה' %>
+      </p>
 
-  <p>
-    <strong>טלפון:</strong>
-    <%= @user.phone %>
-  </p>
+      <p>
+        <strong>טלפון:</strong>
+        <%= @user.phone %>
+      </p>
 
-  <p>
-    <strong>כתובת:</strong>
-    <%= @user.address %>
-  </p>
+      <p>
+        <strong>כתובת:</strong>
+        <%= @user.address %>
+      </p>
 
-  <p>
-    <strong>סטודנט?:</strong>
-    <%= @user.student ? 'כן' : 'לא' %>
-  </p>
+      <p>
+        <strong>סטודנט?:</strong>
+        <%= @user.student ? 'כן' : 'לא' %>
+      </p>
 
-  <p>
-    <strong>עיר:</strong>
-    <%= @user.city.name %>
-  </p>
+      <p>
+        <strong>עיר:</strong>
+        <%= @user.city.name %>
+      </p>
 
-  <p>
-    <strong>רמת ניהול:</strong>
-    <%= @user.admin_to_s %>
-  </p>
+      <p>
+        <strong>רמת ניהול:</strong>
+        <%= @user.admin_to_s %>
+      </p>
 
-  <p>
-    <strong>תעודת זהות:</strong>
-    <%= @user.israelid %>
-  </p>
+      <p>
+        <strong>תעודת זהות:</strong>
+        <%= @user.israelid %>
+      </p>
 
-  <p>
-    <strong>אישור בריאות:</strong>
-    <%= @user.healthcheck ? 'כן' : 'לא'  %>
-  </p>
-  <%= link_to 'עריכה', edit_user_path(@user), class: "btn btn-sm btn-flat" %>
-  <%= link_to 'חזרה', users_path, class: "btn btn-sm btn-flat" %>
+      <p>
+        <strong>אישור בריאות:</strong>
+        <%= @user.healthcheck ? 'כן' : 'לא'  %>
+      </p>
+      <div class="action">
+        <%= link_to 'עריכה', edit_user_path(@user), class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to 'חזרה', users_path, class: "btn btn-sm btn-flatgreen" %>
+      </div>
+    </div>
+  </div>
 </div>

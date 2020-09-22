@@ -23,7 +23,7 @@
     <%= f.input :description, label: "תיאור" %>
     <%= f.input :call_option, as: :check_boxes, label: "אופציה עזרה", collection: HelpOption.all, label_method: :descriptioncall, value_method: :id%>
     <% if params["action"] == "edit" %>
-      <div class="healthcheck padding-left">
+      <div class="healthcheck padding-left pd-right-unset">
         <h3 class="healthcheck-text">לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>
         <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
       </div>

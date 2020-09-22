@@ -1,12 +1,25 @@
-<div class="callshow">
-  <p>
-    <strong>שם:</strong>
-    <%= @city.name %>
-  </p>
-  <p>
-    <strong>איזור:</strong>
-    <%= @city.region.name %>
-  </p>
-<%= link_to 'עריכה', edit_city_path(@city), class: "btn btn-sm btn-flatgreen" %>
-<%= link_to 'לכל הישובים', cities_path, class: "btn btn-sm btn-flatgreen" %>
+<div class="sessioncon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="sessionform">
+    <div class="sessionheadline p-4">
+      <h2 class="headline">
+        <strong>מספר עיר:</strong>
+        <%= @city.id %>
+      </h2>
+    </div>
+    <div class="callshow">
+      <p>
+        <strong>שם:</strong>
+        <%= @city.name %>
+      </p>
+      <p>
+        <strong>איזור:</strong>
+        <%= @city.region.name %>
+      </p>
+      <div class="action">
+        <%= link_to 'עריכה', edit_city_path(@city), class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to 'לכל הישובים', cities_path, class: "btn btn-sm btn-flatgreen" %>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,55 +1,54 @@
 <div class="homecon">
   <%= link_to image_tag("logo.png"), root_path%>
   <div class="index-page">
-  <h2 class="headline-text">לוח קריאות</h2>
-  <%= simple_form_for Call.new, url: calls_path, method: "GET", html: { class: 'form-inline' } do |f| %>
-    <%= f.association :city, label: "עיר", :include_blank => "הצג הכל" %>
-    <%= simple_form_for Region.new do |t| %>
-      <%= t.input :name,label: "איזור", :collection => Region.all, :include_blank => "הצג הכל" %>
-      <%= f.input :user, label: "בטיפול" , as: :select, :include_blank => "הצג הכל" , input_html: {checked: false} %>
-      <%= f.submit "Search", class: "btn btn-main btn-sm" %>
-    <% end %>
-  <% end%>
-<!-- </div> -->
-<table class="table table-responsive-xl">
-  <thead>
-    <tr>
-      <th scope="col">שם</th>
-      <th scope="col">שם משפחה</th>
-      <th scope="col">טלפון</th>
-      <th scope="col">כתובת</th>
-      <th scope="col">עיר</th>
-      <th scope="col">איימל</th>
-      <th scope="col">תיאור</th>
-      <th scope="col">הצהרת בריאות</th>
-      <th scope="col">מתנדב</th>
-      <th colspan="3">פעולות</th>
-    </tr>
-  </thead>
+    <h2 class="headline-text">לוח קריאות</h2>
+    <%= simple_form_for Call.new, url: calls_path, method: "GET", html: { class: 'form-inline' } do |f| %>
+      <%= f.association :city, label: "עיר", :include_blank => "הצג הכל" %>
+      <%= simple_form_for Region.new do |t| %>
+        <%= t.input :name,label: "איזור", :collection => Region.all, :include_blank => "הצג הכל" %>
+        <%= f.input :user, label: "בטיפול" , as: :select, :include_blank => "הצג הכל" , input_html: {checked: false} %>
+        <%= f.submit "חפש", class: "btn btn-main btn-sm" %>
+      <% end %>
+    <% end%>
+    <table class="table table-responsive-xl">
+      <thead>
+        <tr>
+          <th scope="col">שם</th>
+          <th scope="col">שם משפחה</th>
+          <th scope="col">טלפון</th>
+          <th scope="col">כתובת</th>
+          <th scope="col">עיר</th>
+          <th scope="col">איימל</th>
+          <th scope="col">תיאור</th>
+          <th scope="col">הצהרת בריאות</th>
+          <th scope="col">מתנדב</th>
+          <th colspan="3">פעולות</th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @calls.each do |call| %>
-      <tr>
-        <td><%= call.name %></td>
-        <td><%= call.lastname %></td>
-        <td><%= call.phone %></td>
-        <td><%= call.address %></td>
-        <td><%= call.city.name %></td>
-        <td><%= call.email %></td>
-        <td><%= call.description[0..60] %></td>
-        <td><%= call.healthcheck ? "אושר" : "מחכה לאישור" %></td>
-        <td><%= call.user.nil? ? "לא נלקח" : call.user.name %></td>
-        <td><%= link_to 'צפייה', call %></td>
-        <td><%= link_to 'עריכה', edit_call_path(call) %></td>
-        <td><%= link_to 'מחיקה', call, method: :delete, data: { confirm: 'האם אתה בטוח?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
-<div class="d-flex justify-content-center">
-  <%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-main" %>
-  <button class="btn btn-sm btn-main" id="exportexl">EXPORT</button>
-</div>
-</div>
+      <tbody>
+        <% @calls.each do |call| %>
+          <tr>
+            <td><%= call.name %></td>
+            <td><%= call.lastname %></td>
+            <td><%= call.phone %></td>
+            <td><%= call.address %></td>
+            <td><%= call.city.name %></td>
+            <td><%= call.email %></td>
+            <td><%= call.description[0..60] %></td>
+            <td><%= call.healthcheck ? "אושר" : "מחכה לאישור" %></td>
+            <td><%= call.user.nil? ? "לא נלקח" : call.user.name %></td>
+            <td><%= link_to 'צפייה', call %></td>
+            <td><%= link_to 'עריכה', edit_call_path(call) %></td>
+            <td><%= link_to 'מחיקה', call, method: :delete, data: { confirm: 'האם אתה בטוח?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <br>
+    <div class="d-flex justify-content-center flex-wrap"">
+      <%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-main" %>
+      <button class="btn btn-sm btn-main" id="exportexl">EXPORT</button>
+    </div>
+  </div>
 </div>

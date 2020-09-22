@@ -1,25 +1,32 @@
-<h2 class="headline">רשימת איזורים</h2>
+<div class="homecon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="index-page">
+    <h2 class="headline-text">רשימת איזורים</h2>
 
-<table class="table table-responsive-xl">
-  <thead>
-    <tr>
-      <th scope="">שם</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <table class="table table-responsive-xl">
+      <thead>
+        <tr>
+          <th scope="">שם</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @regions.each do |region| %>
-      <tr>
-        <td><%= region.name %></td>
-        <td><%= link_to 'צפייה', region %></td>
-        <td><%= link_to 'עריכה', edit_region_path(region) %></td>
-        <td><%= link_to 'מחיקה', region, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
-<button class="btn btn-sm btn-flat" id="exportexl">EXPORT</button>
-<%= link_to 'יצירת איזור', new_region_path, class: "btn btn-sm btn-flat" %>
-<%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-flat" %>
+      <tbody>
+        <% @regions.each do |region| %>
+          <tr>
+            <td><%= region.name %></td>
+            <td><%= link_to 'צפייה', region %></td>
+            <td><%= link_to 'עריכה', edit_region_path(region) %></td>
+            <td><%= link_to 'מחיקה', region, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <br>
+    <div class="d-flex justify-content-center flex-wrap"">
+      <%= link_to 'יצירת איזור', new_region_path, class: "btn btn-sm btn-main" %>
+      <%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-main" %>
+      <button class="btn btn-sm btn-main" id="exportexl">EXPORT</button>
+    </div>
+  </div>
+</div>

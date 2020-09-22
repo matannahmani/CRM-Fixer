@@ -1,27 +1,33 @@
-<h2 class="headline">כל הישובים הקיימות במערכת</h2>
+<div class="homecon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="index-page">
+    <h2 class="headline-text">כל הישובים הקיימות במערכת</h2>
+      <table class="table table-responsive-xl">
+        <thead>
+          <tr>
+            <th scope="col">שם</th>
+            <th scope="col">איזור</th>
+            <th colspan="3">פעולות</th>
+          </tr>
+        </thead>
 
-<table class="table table-responsive-xl">
-  <thead>
-    <tr>
-      <th scope="col">שם</th>
-      <th scope="col">איזור</th>
-      <th colspan="3">פעולות</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @cities.each do |city| %>
-      <tr>
-        <td><%= city.name %></td>
-        <td><%= city.region.name %></td>
-        <td><%= link_to 'צפייה', city %></td>
-        <td><%= link_to 'עריכה', edit_city_path(city) %></td>
-        <td><%= link_to 'מחיקה', city, method: :delete, data: { confirm: 'אתה בטוח?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
-<%= link_to 'יצירת יישוב', new_city_path,class: "btn btn-sm btn-flatgreen" %>
-<%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-flat" %>
-<button class="btn btn-sm btn-flat" id="exportexl">EXPORT</button>
+        <tbody>
+          <% @cities.each do |city| %>
+            <tr>
+              <td><%= city.name %></td>
+              <td><%= city.region.name %></td>
+              <td><%= link_to 'צפייה', city %></td>
+              <td><%= link_to 'עריכה', edit_city_path(city) %></td>
+              <td><%= link_to 'מחיקה', city, method: :delete, data: { confirm: 'אתה בטוח?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <br>
+      <div class="d-flex justify-content-center flex-wrap"">
+        <%= link_to 'יצירת יישוב', new_city_path,class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-flatgreen" %>
+        <button class="btn btn-sm btn-flatgreen" id="exportexl">EXPORT</button>
+    </div>
+  </div>
+</div>

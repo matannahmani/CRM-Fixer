@@ -1,46 +1,51 @@
-<h2 class="headline">מסך משתמשים</h2>
+<div class="homecon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="index-page">
+    <h2 class="headline-text">מסך משתמשים</h2>
 
-<table class="table table-responsive-xl">
-  <thead>
-    <tr>
-      <th scope="col">איימל</th>
-      <th scope="col">שם משפחה</th>
-      <th scope="col">שם פרטי</th>
-      <th scope="col">מגדר</th>
-      <th scope="col">טלפון</th>
-      <th scope="col">כתובת</th>
-      <th scope="col">סטודנט?</th>
-      <th scope="col">עיר</th>
-      <th scope="col">רמת ניהול</th>
-      <th scope="col">תעודת זהות</th>
-      <th scope="col">אישור בריאות</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <table class="table table-responsive-xl">
+      <thead>
+        <tr>
+          <th scope="col">איימל</th>
+          <th scope="col">שם משפחה</th>
+          <th scope="col">שם פרטי</th>
+          <th scope="col">מגדר</th>
+          <th scope="col">טלפון</th>
+          <th scope="col">כתובת</th>
+          <th scope="col">סטודנט?</th>
+          <th scope="col">עיר</th>
+          <th scope="col">רמת ניהול</th>
+          <th scope="col">תעודת זהות</th>
+          <th scope="col">אישור בריאות</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.email %></td>
-        <td><%= user.lastname %></td>
-        <td><%= user.name %></td>
-        <td><%= user.gender ? "גבר" : "אישה" %></td>
-        <td><%= user.phone %></td>
-        <td><%= user.address %></td>
-        <td><%= user.student ? "כן" : "לא" %></td>
-        <td><%= user.city.name %></td>
-        <td><%= user.admin_to_s %></td>
-        <td><%= user.israelid %></td>
-        <td><%= user.healthcheck %></td>
-        <td><%= link_to 'הצגה', user %></td>
-        <td><%= link_to 'עריכה', edit_user_path(user) %></td>
-        <td><%= link_to 'מחיקה', user, method: :delete, data: { confirm: 'אתה בטוח?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
-<%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-flat" %>
-<button class="btn btn-sm btn-flat" id="exportexl">EXPORT</button>
-
-<%#= link_to 'New User', new_user_path %>
+      <tbody>
+        <% @users.each do |user| %>
+          <tr>
+            <td><%= user.email %></td>
+            <td><%= user.lastname %></td>
+            <td><%= user.name %></td>
+            <td><%= user.gender ? "גבר" : "אישה" %></td>
+            <td><%= user.phone %></td>
+            <td><%= user.address %></td>
+            <td><%= user.student ? "כן" : "לא" %></td>
+            <td><%= user.city.name %></td>
+            <td><%= user.admin_to_s %></td>
+            <td><%= user.israelid %></td>
+            <td><%= user.healthcheck %></td>
+            <td><%= link_to 'הצגה', user %></td>
+            <td><%= link_to 'עריכה', edit_user_path(user) %></td>
+            <td><%= link_to 'מחיקה', user, method: :delete, data: { confirm: 'אתה בטוח?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <br>
+    <div class="d-flex justify-content-center flex-wrap"">
+      <%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-main" %>
+      <button class="btn btn-sm btn-main" id="exportexl">EXPORT</button>
+    </div>
+  </div>
+</div>

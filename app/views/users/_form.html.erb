@@ -1,23 +1,35 @@
-
-<%= simple_form_for(@user) do |f| %>
-  <%= f.error_notification %>
-  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
-
-  <div class="form-inputs">
-    <%= f.input :email %>
-    <%= f.input :lastname %>
-    <%= f.input :name %>
-    <%#= f.input :gender, label: "מגדר" %>
-    <%= f.input :phone %>
-    <%= f.input :address %>
-    <%= f.input :student %>
-    <%= f.association :city, label: "ישוב", include_blank: false %>
-    <%= f.input :adminlevel, label: "רמת ניהול", collection: [['מתנדב',0],['טלפן',1],['מנהל',2],['מנהל ארצי',3]], include_blank: false %>
-    <%= f.input :israelid %>
-    <%= f.input :healthcheck, label: "הצהרת בריאות" %>
+<div class="sessioncon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="sessionform">
+    <div class="sessionheadline p-4">
+      <% if controller.action_name == "new" %>
+        <h2 class="headline">פתיחת משתמש חדש</h2>
+        <% elsif controller.action_name == "edit" %>
+        <h2 class="headline">עריכת משתמש</h2>
+        <% end %>
   </div>
+    <%= simple_form_for(@user) do |f| %>
+      <%= f.error_notification %>
+      <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="form-actions">
-    <%= f.button :submit, "שמירה", class: "btn btn-sm btn-flat" %>
+      <div class="form-inputs">
+        <%= f.input :email %>
+        <%= f.input :lastname %>
+        <%= f.input :name %>
+        <%#= f.input :gender, label: "מגדר" %>
+        <%= f.input :phone %>
+        <%= f.input :address %>
+        <%= f.input :student %>
+        <%= f.association :city, label: "ישוב", include_blank: false %>
+        <%= f.input :adminlevel, label: "רמת ניהול", collection: [['מתנדב',0],['טלפן',1],['מנהל',2],['מנהל ארצי',3]], include_blank: false %>
+        <%= f.input :israelid %>
+        <%= f.input :healthcheck, label: "הצהרת בריאות" %>
+      </div>
+
+      <div class="form-actions">
+        <%= f.button :submit, "שמירה", class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to 'חזרה', users_path, class: "btn btn-sm btn-flatgreen" %>
+      <% end %>
+    </div>
   </div>
-<% end %>
+</div>

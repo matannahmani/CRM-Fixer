@@ -1,13 +1,26 @@
-<div class="callshow">
-  <p>
-    <strong>תצוגת מתנדב:</strong>
-    <%= @help_option.descriptionvol %>
-  </p>
+<div class="sessioncon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="sessionform">
+    <div class="sessionheadline p-4">
+      <h2 class="headline">
+        <strong>מספר עזרה:</strong>
+        <%= @help_option.id %>
+      </h2>
+    </div>
+    <div class="callshow">
+      <p>
+        <strong>תצוגת מתנדב:</strong>
+        <%= @help_option.descriptionvol %>
+      </p>
 
-  <p>
-    <strong>תצוגת קריאה:</strong>
-    <%= @help_option.descriptioncall %>
-  </p>
-  <%= link_to 'עריכה', edit_help_option_path(@help_option), class: "btn btn-sm btn-flat" %>
-  <%= link_to 'חזרה', help_options_path, class: "btn btn-sm btn-flat" %>
+      <p>
+        <strong>תצוגת קריאה:</strong>
+        <%= @help_option.descriptioncall %>
+      </p>
+      <div class="action">
+        <%= link_to 'עריכה', edit_help_option_path(@help_option), class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to 'חזרה', help_options_path, class: "btn btn-sm btn-flatgreen" %>
+      </div>
+    </div>
+  </div>
 </div>
