@@ -34,7 +34,7 @@
             <td><%= user.city.name %></td>
             <td><%= user.admin_to_s %></td>
             <td><%= user.israelid %></td>
-            <td><%= user.healthcheck %></td>
+            <td><%= user.healthcheck ? "אושר" : "נדחה" %></td>
             <td><%= link_to 'הצגה', user %></td>
             <td><%= link_to 'עריכה', edit_user_path(user) %></td>
             <td><%= link_to 'מחיקה', user, method: :delete, data: { confirm: 'אתה בטוח?' } %></td>

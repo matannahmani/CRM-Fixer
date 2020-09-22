@@ -19,9 +19,11 @@
       </div>
 
       <div class="form-actions">
-        <%= f.button :submit, "התחברות", class: "btn btn-flatgreen" %>
+        <%= f.button :submit, "התחברות", class: "btn btn-sm btn-flatgreen" %>
       </div>
-        <%= link_to "למקרה שכחת, שחזר סיסמא?", new_password_path(resource_name), class: "f-down btn btn-nav btn-nav-active" %><br />
+      <div class="f-down">
+        <%= link_to "למקרה שכחת, שחזר סיסמא?", new_password_path(resource_name), class: "btn btn-nav btn-nav-active" %><br />
+      </div>
     <% end %>
   </div>
 </div>
