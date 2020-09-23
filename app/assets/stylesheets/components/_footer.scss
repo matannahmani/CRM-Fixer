@@ -1,9 +1,15 @@
-.footer{
-  clear: both;
+#page-container {
   position: relative;
-  height: 40px;
-  margin-top: -40px;
-  padding: 40px;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 60px;    /* Footer height + 20px spacer */
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;            /* Footer height */
   text-align: center;
   color: #ffffff;
  span{

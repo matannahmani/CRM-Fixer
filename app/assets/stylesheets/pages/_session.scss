@@ -77,9 +77,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 55px;
   border-bottom: 3px solid #ff2287;
   a{
   flex-grow: 1;
+  height: 100%;
   font-size: 16px;
   }
 }

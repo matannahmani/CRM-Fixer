@@ -8,13 +8,16 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
-    <%#= render 'shared/navbar' %>
+    <div id="page-container">
+      <div id="content-wrap">
     <%= render 'shared/flashes' %>
     <%= yield %>
+      </div>
     <%= render 'shared/footer' %>
+    </div>
   </body>
 </html>
