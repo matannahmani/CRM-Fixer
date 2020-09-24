@@ -38,6 +38,14 @@
     <strong>איימל:</strong>
     <%= @call.email %>
   </p>
+  <p>
+    <strong>זמינות:</strong>
+    <% @call.availability.nil? ? 'זמינות לא דווחה' : if @call.availability.include?("כל היום") %>
+      כל היום
+    <% else %>
+      <%= @call.availability.count > 1 ? @call.availability.join(' ') : @call.availability[0] %>
+    <% end %>
+  </p>
 
   <p>
     <strong>תיאור:</strong>
@@ -76,16 +84,24 @@
     <strong>תאריך פתיחה:</strong>
     <%= @call.created_at.strftime('%F') %>
   </p>
+  <% unless @call.call_option.nil?%>
+    <% @call.call_option.each do |callopt|%>
+      <%= callopt.help_option.descriptionvol %>
+      <br><br>
+    <% end %>
+  <% end %>
 
-    <% if @taken %>
-      <%= link_to 'ביטול קריאה', takecall_path(id: @call.id, take: "true"), class: "btn btn-sm btn-flatgreen" %>
-    <% elsif !@taken%>
+    <% if !@taken%>
     <div class="healthcheck">
         <h3 class="healthcheck-text">לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>
         <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
     </div>
+    <% end %>
   <div class="action">
-        <%= link_to 'לקיחת קריאה', takecall_path(id: @call.id, take: "false"), class: "btn btn-sm btn-flatgreen" %>
+    <% if @taken %>
+      <%= link_to 'שיחרור קריאה', takecall_path(id: @call.id, take: "true"), class: "btn btn-sm btn-flatgreen" %>
+    <% else %>
+      <%= link_to 'לקיחת קריאה', takecall_path(id: @call.id, take: "false"), class: "btn btn-sm btn-flatgreen" %>
     <% end %>
     <% if !current_user.nil? && current_user.issuper? %>
     <%= link_to 'ערוך', edit_call_path(@call), class: "btn btn-sm btn-flatgreen" %>

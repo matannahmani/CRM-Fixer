@@ -22,6 +22,7 @@
           <th scope="col">תיאור</th>
           <th scope="col">הצהרת בריאות</th>
           <th scope="col">מתנדב</th>
+          <th scope="col">זמינות</th>
           <th colspan="3">פעולות</th>
         </tr>
       </thead>
@@ -38,6 +39,7 @@
             <td><%= call.description[0..60] %></td>
             <td><%= call.healthcheck ? "אושר" : "מחכה לאישור" %></td>
             <td><%= call.user.nil? ? "לא נלקח" : call.user.name %></td>
+            <td><%= call.availability.join(' ') unless call.availability.nil? %></td>
             <td><%= link_to 'צפייה', call %></td>
             <td><%= link_to 'עריכה', edit_call_path(call) %></td>
             <td><%= link_to 'מחיקה', call, method: :delete, data: { confirm: 'האם אתה בטוח?' } %></td>

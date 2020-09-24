@@ -69,8 +69,15 @@ class CallsController < ApplicationController
   # PATCH/PUT /calls/1
   # PATCH/PUT /calls/1.json
   def update
+    @opts = call_params[:call_option_ids]
+    # binding.pry
     respond_to do |format|
-      if @call.update(call_params)
+      if @call.update(call_params.except(:call_option_ids))
+        callopts = CallOption.find_by(call: @call)
+        callopts.destroy unless callopts.nil?
+        @opts.each do |opt|
+          CallOption.create(call: @call, help_option_id: opt.to_i, active: true) unless opt.empty?
+        end
         format.html { redirect_to @call, notice: CALL_UPDATED }
         format.json { render :show, status: :ok, location: @call }
       else
@@ -99,6 +106,6 @@ class CallsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def call_params
-    params.require(:call).permit(:name, :lastname, :phone, :address, :city_id, :email, :description, :healthcheck, :call_option_ids =>[])
+    params.require(:call).permit(:user_id, :name, :lastname, :phone, :address, :city_id, :email, :description, :healthcheck, :availability => [], :call_option_ids =>[])
   end
 end

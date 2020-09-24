@@ -2,7 +2,7 @@
   <%= link_to image_tag("logo.png"), root_path%>
   <div class="sessionform">
     <div class="sessionheadline p-4">
-      <% if controller.action_name == "new" %>
+      <% if controller.action_name == "create" || controller.action_name == "new"  %>
         <h2 class="headline">פתיחת קריאה חדשה</h2>
         <% elsif controller.action_name == "edit" %>
         <h2 class="headline">עריכת קריאה</h2>
@@ -21,7 +21,8 @@
     <%= f.association :user, label_method: :fullname, label: "מתנדב" if params["action"] == "edit" %>
     <%= f.input :email, label: "איימל", error: true %>
     <%= f.input :description, label: "תיאור" %>
-    <%= f.input :call_option, as: :check_boxes, label: "אופציה עזרה", collection: HelpOption.all, label_method: :descriptioncall, value_method: :id%>
+    <%= f.input :availability, label: "זמינות", as: :check_boxes, include_hidden: false, collection: Call.availabilitylist, include_blank: false, multiple: true, class: 'multiselectuser' %>
+    <%= f.association :call_option, as: :check_boxes, label: "אופציה עזרה", collection: HelpOption.all, label_method: :descriptioncall, value_method: :id%>
     <% if params["action"] == "edit" %>
       <div class="healthcheck padding-left pd-right-unset">
         <h3 class="healthcheck-text">לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>
@@ -31,10 +32,8 @@
   </div>
 
   <div class="form-actions">
-    <% if controller.action_name == "new"%>
       <%= f.button :submit, "אישור", class: "btn btn-sm btn-flatgreen" %>
       <%= link_to 'חזרה', root_path, class: "btn btn-sm btn-flatgreen" %>
-    <% end %>
   </div>
 <% end %>
   </div>

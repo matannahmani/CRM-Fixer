@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_16_105227) do
+ActiveRecord::Schema.define(version: 2020_09_23_105515) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 2020_09_16_105227) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "availability", array: true
     t.index ["city_id"], name: "index_calls_on_city_id"
     t.index ["user_id"], name: "index_calls_on_user_id"
   end
@@ -107,6 +108,28 @@ ActiveRecord::Schema.define(version: 2020_09_16_105227) do
     t.integer "adminlevel", default: 0
     t.integer "israelid"
     t.boolean "healthcheck"
+    t.date "birthday"
+    t.boolean "joinlocal"
+    t.string "langauges", array: true
+    t.boolean "getupdates"
+    t.date "lastcontact"
+    t.string "contactname"
+    t.boolean "keepvolunteer"
+    t.integer "pastvolunteervolume"
+    t.boolean "volunteerusefull"
+    t.string "availability", array: true
+    t.string "workfield"
+    t.string "specality"
+    t.string "pastvolunteer"
+    t.boolean "helplocal"
+    t.boolean "helpcalls"
+    t.boolean "solidaritycampus"
+    t.string "campus", array: true
+    t.string "campusactivity"
+    t.boolean "studentactivist"
+    t.boolean "intrestedinsolidarity"
+    t.boolean "localwhatsapp"
+    t.string "othermentions"
     t.index ["city_id"], name: "index_users_on_city_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
