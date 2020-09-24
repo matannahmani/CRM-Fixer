@@ -4,6 +4,7 @@
 @import "config/bootstrap_variables";
 
 // External libraries
+@import "bootstrap-sprockets";
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
@@ -37,3 +38,4 @@
  // font-family: 'Montserrat', sans-serif;
 
  // font-family: 'Open Sans', sans-serif;
+// @import "bootstrap-responsive";

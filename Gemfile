@@ -82,3 +82,6 @@ gem "wkhtmltopdf-binary", "~> 0.12.6"
 gem "sassc", "~> 2.4"
 
 gem "jquery-rails", "~> 4.4"
+
+
+gem "bootstrap-sass", "~> 3.4"

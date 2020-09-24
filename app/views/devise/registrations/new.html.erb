@@ -25,6 +25,14 @@
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "lastname" }%>
+    <%= f.input :gender,
+                required: true,
+                autofocus: true, as: :select, collection: ['אישה','גבר'],
+                input_html: { autocomplete: "gender" }%>
+    <%= f.input :birthday,
+                required: true,
+                autofocus: true,
+                input_html: {min: 1945, max: Date.today.year-14, autocomplete: "birthday" }%>
     <%= f.input :student,
                 required: true,
                 autofocus: true,
@@ -46,12 +54,17 @@
                 include_blank: false,
                 autofocus: true,
                 input_html: { autocomplete: "city" }%>
+    <%= f.input :langauges, autofocus: true, required: true, collection: ["אנגלית","רוסית","גרמנית","פורטוגזית"] %>
     <%= f.association :help_option, label: "אופציה עזרה", as: :check_boxes, label_method: :descriptionvol, value_method: :id %>
 
   <div class="form-actions">
     <div class="healthcheck p-0">
       <h3 class="healthcheck-text">הצטרפות מותנת באישור הצהרת בריאות אנא עיין בהצרה</h3>
       <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
+    <div class="dflex align-items-center mt-3">
+      <%= f.input :healthcheck, label: "אשר הצהרת בריאות", autofocus: true, required: true%>
+      <%= f.input :getupdates, label: "מאשר דיוור", autofocus: true, required: true%>
+    </div>
     </div>
     <%= f.button :submit, "הצטרף", class: "btn btn-flatgreen btn-sm" %>
   </div>

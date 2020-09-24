@@ -15,14 +15,16 @@
 <div id="Layer2"><%= image_tag image_url("Layer2.png") %></div>
 <div id="Rectangle2"><%= image_tag image_url("Rectangle2.png") %></div>
 <div id="layer_314668690">
-  <br><br><span>
-  שם: <%= current_user.name unless current_user.nil?%>
+</div>
+  <div class="volcard">
+  <span>
+  שם: <%= current_user.fullname unless current_user.nil?%>
   </span>
-  <span><br><br><br><br>
+  <span><br><br>
   תז: <%= current_user.israelid unless current_user.nil?%>
-  </span>
-  <span><br><br><br><br>
+  </span><br><br>
+  <span>
   מספר מתנדב: <%= current_user.id unless current_user.nil?%>
   </span>
-</div>
+  </div>
 </div>
