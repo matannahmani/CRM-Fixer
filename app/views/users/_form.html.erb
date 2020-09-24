@@ -24,6 +24,7 @@
         <%= f.input :adminlevel, label: "רמת ניהול", collection: [['מתנדב',0],['טלפן',1],['מנהל',2],['מנהל ארצי',3]], include_blank: false %>
         <%= f.input :israelid %>
         <%= f.input :healthcheck, label: "הצהרת בריאות" %>
+        <%= f.association :help_option, label: "אופציה עזרה", as: :check_boxes, label_method: :descriptionvol, value_method: :id %>
       </div>
 
       <div class="form-actions">

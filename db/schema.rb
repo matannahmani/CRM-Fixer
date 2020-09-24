@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_23_105515) do
+ActiveRecord::Schema.define(version: 2020_09_24_094852) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2020_09_23_105515) do
   create_table "call_options", force: :cascade do |t|
     t.bigint "call_id"
     t.bigint "help_option_id"
-    t.boolean "active"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["call_id"], name: "index_call_options_on_call_id"
@@ -73,7 +72,6 @@ ActiveRecord::Schema.define(version: 2020_09_23_105515) do
   create_table "user_options", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "help_option_id"
-    t.boolean "active"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["help_option_id"], name: "index_user_options_on_help_option_id"

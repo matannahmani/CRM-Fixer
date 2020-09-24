@@ -1,7 +1,7 @@
 class Call < ApplicationRecord
   before_validation :checkphone, :checkemail, :sethealth
   belongs_to :city
-  # has_many :call_option
+  has_many :call_option, :dependent => :destroy
   has_many :help_option, :through => :call_option
   belongs_to :user, optional: true
   validates :name, presence: true
@@ -11,6 +11,11 @@ class Call < ApplicationRecord
   validates :email, presence: true
   validates :availability, presence: true
   validates_inclusion_of :healthcheck, in: [true, false]
+  validate :opts?
+
+  def opts?
+    errors.add(:help_option, :blank, message: 'לא יכול להיות ריק') unless call_option.count.positive?
+  end
 
   def sethealth
     self.healthcheck ||= false

@@ -22,7 +22,7 @@
     <%= f.input :email, label: "איימל", error: true %>
     <%= f.input :description, label: "תיאור" %>
     <%= f.input :availability, label: "זמינות", as: :check_boxes, include_hidden: false, collection: Call.availabilitylist, include_blank: false, multiple: true, class: 'multiselectuser' %>
-    <%= f.association :call_option, as: :check_boxes, label: "אופציה עזרה", collection: HelpOption.all, label_method: :descriptioncall, value_method: :id%>
+    <%= f.association :help_option, as: :check_boxes, label: "אופציה עזרה", include_hidden: false, label_method: :descriptioncall%>
     <% if params["action"] == "edit" %>
       <div class="healthcheck padding-left pd-right-unset">
         <h3 class="healthcheck-text">לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>

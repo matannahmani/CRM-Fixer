@@ -15,12 +15,18 @@ class User < ApplicationRecord
   validates :adminlevel, presence: true
   validates :israelid, presence: true, uniqueness: true, numericality: true
   has_many :call
-  has_many :user_option
+  has_many :user_option, :dependent => :destroy
+  has_many :help_option, :through => :user_option
+  validate :opts?
   belongs_to :city
   ADMIN = 3 # OWNER
   SUPERVISOR = 2 # SUPERVISOR
   CALLER = 1 # CALLER
   VOLUENNTER = 0 # VOL
+
+  def opts?
+    errors.add(:help_option, :blank, message: 'לא יכול להיות ריק') unless user_option.count.positive?
+  end
 
   def fullname
     name + " " + lastname
