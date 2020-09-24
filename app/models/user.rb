@@ -25,7 +25,7 @@ class User < ApplicationRecord
   VOLUENNTER = 0 # VOL
 
   def opts?
-    errors.add(:help_option, :blank, message: 'לא יכול להיות ריק') unless user_option.count.positive?
+    errors.add(:help_option, :blank, message: 'לא יכול להיות ריק') if user_option.empty?
   end
 
   def fullname

@@ -8,7 +8,7 @@
         <h2 class="headline">עריכת קריאה</h2>
         <% end %>
 </div>
-<%= simple_form_for(@call) do |f| %>
+<%= simple_form_for @call, url: postcall_path do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
@@ -21,8 +21,8 @@
     <%= f.association :user, label_method: :fullname, label: "מתנדב" if params["action"] == "edit" %>
     <%= f.input :email, label: "איימל", error: true %>
     <%= f.input :description, label: "תיאור" %>
-    <%= f.input :availability, label: "זמינות", as: :check_boxes, include_hidden: false, collection: Call.availabilitylist, include_blank: false %>
-    <%= f.association :help_option, as: :check_boxes, label: "אופציה עזרה", include_hidden: false, label_method: :descriptioncall %>
+    <%= f.input :availability, label: "זמינות", as: :check_boxes, include_hidden: false, collection: Call.availabilitylist, include_blank: false%>
+    <%= f.association :help_option, as: :check_boxes, label: "אופציה עזרה", include_hidden: false, label_method: :descriptioncall%>
     <% if params["action"] == "edit" %>
       <div class="healthcheck padding-left pd-right-unset">
         <h3 class="healthcheck-text">לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>

@@ -4,8 +4,9 @@ Rails.application.routes.draw do
   resources :calls, path: "admin/calls"
   resources :cities, path: "admin/cities/"
   resources :users, path: "admin/users/"
+  get '/newcall', to: 'calls#new', as: 'newcall'
+  post '/newcall', to: 'calls#create', as: 'postcall'
   get 'call/:id', to: 'calls#show', as: 'showcall'
-  get 'call/new', to: 'calls#new', as: 'newcall'
   devise_for :users, controllers: { registrations: "registrations" }
   # devise_for :users
   root to: 'pages#home'

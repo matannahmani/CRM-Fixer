@@ -14,7 +14,7 @@ class Call < ApplicationRecord
   validate :opts?
 
   def opts?
-    errors.add(:help_option, :blank, message: 'לא יכול להיות ריק') unless call_option.count.positive?
+    errors.add(:help_option, :blank, message: 'לא יכול להיות ריק') if call_option.empty?
   end
 
   def sethealth
