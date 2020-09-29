@@ -26,13 +26,12 @@
                 autofocus: true,
                 input_html: { autocomplete: "lastname" }%>
     <%= f.input :gender,
-                required: true,
-                autofocus: true, as: :select, collection: ['אישה','גבר'],
+                autofocus: true, as: :select, collection: ['אישה','גבר'],include_blank: false,
                 input_html: { autocomplete: "gender" }%>
     <%= f.input :birthday,
                 required: true,
                 autofocus: true,
-                input_html: {min: 1945, max: Date.today.year-14, autocomplete: "birthday" }%>
+                input_html: {min: Date.today.year-75, max: Date.today.year-14, autocomplete: "birthday" }%>
     <%= f.input :student,
                 required: true,
                 autofocus: true,
@@ -54,7 +53,7 @@
                 include_blank: false,
                 autofocus: true,
                 input_html: { autocomplete: "city" }%>
-    <%= f.input :langauges, autofocus: true, required: true, collection: ["אנגלית","רוסית","גרמנית","פורטוגזית"] %>
+    <%= f.input :langauges, autofocus: true, required: false, collection: ["אנגלית","רוסית","גרמנית","פורטוגזית"], include_blank: false, include_hidden: false ,as: :check_boxes, multiple: true %>
     <%= f.association :help_option, label: "אופציה עזרה", as: :check_boxes, label_method: :descriptionvol, value_method: :id %>
 
   <div class="form-actions">
@@ -62,8 +61,8 @@
       <h3 class="healthcheck-text">הצטרפות מותנת באישור הצהרת בריאות אנא עיין בהצרה</h3>
       <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
     <div class="dflex align-items-center mt-3">
-      <%= f.input :healthcheck, label: "אשר הצהרת בריאות", autofocus: true, required: true%>
-      <%= f.input :getupdates, label: "מאשר דיוור", autofocus: true, required: true%>
+      <%= f.input :healthcheck, label: "אשר הצהרת בריאות", autofocus: true, required: true, wrapper_html: { class: 'fixer' } %>
+      <%= f.input :getupdates, label: "מאשר דיוור", autofocus: true, required: true, wrapper_html: { class: 'fixer' } %>
     </div>
     </div>
     <%= f.button :submit, "הצטרף", class: "btn btn-flatgreen btn-sm" %>

@@ -1,0 +1,6412 @@
+[
+  {
+    "name english": "Eshbol",
+    "name": "אשבול",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Bet Qama",
+    "name": "בית קמה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Giv'olim",
+    "name": "גבעולים",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Zimrat",
+    "name": "זמרת",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Zeru'a",
+    "name": "זרועה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Yoshivya",
+    "name": "יושיביה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Kefar Maymon",
+    "name": "כפר מימון",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Mabbu'im",
+    "name": "מבועים",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Melilot",
+    "name": "מלילות",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Ma'galim",
+    "name": "מעגלים",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Mishmar HaNegev",
+    "name": "משמר הנגב",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Nir Moshe",
+    "name": "ניר משה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Nir Aqiva",
+    "name": "ניר עקיבא",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Pa'ame Tashaz",
+    "name": "פעמי תש\"ז",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Qelahim",
+    "name": "קלחים",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Sede Zevi",
+    "name": "שדה צבי",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Shuva",
+    "name": "שובה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Shoval",
+    "name": "שובל",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Shoqeda",
+    "name": "שוקדה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Shibbolim",
+    "name": "שיבולים",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Sharsheret",
+    "name": "שרשרת",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Tushiyya",
+    "name": "תושיה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Talme Bilu",
+    "name": "תלמי ביל\"ו",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Tequma",
+    "name": "תקומה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Abu Juwei'Id",
+    "name": "אבו ג'וויעד (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Abu Sureihan",
+    "name": "אבו סריחאן (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Abu Abdun",
+    "name": "אבו עבדון (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Abu Ammar",
+    "name": "אבו עמאר (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Abu Amre",
+    "name": "אבו עמרה (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Abu Qureinat",
+    "name": "אבו קורינאת (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Abu Rubei'a",
+    "name": "אבו רובייעה (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Abu Ruqayyeq",
+    "name": "אבו רוקייק (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Atrash",
+    "name": "אטרש (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Asad",
+    "name": "אסד (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "A'sam",
+    "name": "אעצם (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Afeinish",
+    "name": "אפיניש (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Be'er Sheva",
+    "name": "באר שבע",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Junnabib",
+    "name": "ג'נאביב (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Devira",
+    "name": "דבירה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Hawashla",
+    "name": "הוואשלה (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Huzayyel",
+    "name": "הוזייל (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Har Amasa",
+    "name": "הר עמשא",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Zabarga",
+    "name": "זבארגה (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Hura",
+    "name": "חורה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Hazerim",
+    "name": "חצרים",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Kuseife",
+    "name": "כסיפה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Keramim",
+    "name": "כרמים",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Lahav",
+    "name": "להב",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Lehavim",
+    "name": "להבים",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Laqye",
+    "name": "לקיה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Mahane Yattir",
+    "name": "מחנה יתיר",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Metar",
+    "name": "מיתר",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Mas'udin Al-'Azazme",
+    "name": "מסעודין אל-עזאזמה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Nevatim",
+    "name": "נבטים",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Nasasra",
+    "name": "נצאצרה (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Sayyid",
+    "name": "סייד (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Omer",
+    "name": "עומר",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Uqbi (Banu Uqba)",
+    "name": "עוקבי (בנו עוקבה)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Atawne",
+    "name": "עטאוונה (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Arad",
+    "name": "ערד",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Aro'er",
+    "name": "ערוער",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Qabbo'a",
+    "name": "קבועה (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Qudeirat As-Sani",
+    "name": "קודייראת א-צאנע (שב",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Qawa'in",
+    "name": "קוואעין (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Rahat",
+    "name": "רהט",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Segev-Shalom",
+    "name": "שגב-שלום",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Shani",
+    "name": "שני",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Tel Sheva",
+    "name": "תל שבע",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Tarabin As-Sani",
+    "name": "תראבין א-צאנע (שבט)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Ashalim",
+    "name": "אשלים",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Dimona",
+    "name": "דימונה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Telalim",
+    "name": "טללים",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Yeroham",
+    "name": "ירוחם",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Kemahin",
+    "name": "כמהין",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Midreshet Ben Gurion",
+    "name": "מדרשת בן גוריון",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Mizpe Ramon",
+    "name": "מצפה רמון",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Mash'abbe Sade",
+    "name": "משאבי שדה",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Nizzana (Qehilat Hinuh)",
+    "name": "ניצנה (קהילת חינוך)",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Nizzane Sinay",
+    "name": "ניצני סיני",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Ezuz",
+    "name": "עזוז",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Revivim",
+    "name": "רביבים",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Retamim",
+    "name": "רתמים",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Sede Boqer",
+    "name": "שדה בוקר",
+    "region": "באר שבע"
+  },
+  {
+    "name english": "Ayyelet HaShahar",
+    "name": "איילת השחר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bet Hillel",
+    "name": "בית הלל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Gonen",
+    "name": "גונן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Dan",
+    "name": "דן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Dafna",
+    "name": "דפנה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "HaGosherim",
+    "name": "הגושרים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hulata",
+    "name": "חולתה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yuval",
+    "name": "יובל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yesud Hama'ala",
+    "name": "יסוד המעלה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Blum",
+    "name": "כפר בלום",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Gil'adi",
+    "name": "כפר גלעדי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Szold",
+    "name": "כפר סאלד",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Lahavot HaBashan",
+    "name": "להבות הבשן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Metula",
+    "name": "מטולה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ma'yan Barukh",
+    "name": "מעין ברוך",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ne'ot Mordekhay",
+    "name": "נאות מרדכי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Amir",
+    "name": "עמיר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Qiryat Shemona",
+    "name": "קרית שמונה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "She'ar Yashuv",
+    "name": "שאר ישוב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sede Eli'ezer",
+    "name": "שדה אליעזר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sede Nehemya",
+    "name": "שדה נחמיה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Shamir",
+    "name": "שמיר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Senir",
+    "name": "שניר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Avivim",
+    "name": "אביבים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Or HaGanuz",
+    "name": "אור הגנוז",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Amirim",
+    "name": "אמירים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Biriyya",
+    "name": "ביריה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bar Yohay",
+    "name": "בר יוחאי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bar'am",
+    "name": "ברעם",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Jish(Gush Halav)",
+    "name": "ג'ש (גוש חלב)",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Dovev",
+    "name": "דוב\"ב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Dishon",
+    "name": "דישון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Dalton",
+    "name": "דלתון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yiftah",
+    "name": "יפתח",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yir'on",
+    "name": "יראון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kahal",
+    "name": "כחל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Hananya",
+    "name": "כפר חנניה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Shammay",
+    "name": "כפר שמאי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kerem Ben Zimra",
+    "name": "כרם בן זמרה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Meron",
+    "name": "מירון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Malkiyya",
+    "name": "מלכיה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mennara",
+    "name": "מנרה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Margaliyyot",
+    "name": "מרגליות",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Misgav Am",
+    "name": "משגב עם",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sasa",
+    "name": "סאסא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sifsofa",
+    "name": "ספסופה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Alma",
+    "name": "עלמה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Amuqqa",
+    "name": "עמוקה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Parod",
+    "name": "פרוד",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ziv'on",
+    "name": "צבעון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Zefat",
+    "name": "צפת",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Reihaniyye",
+    "name": "ריחאניה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ramot Naftali",
+    "name": "רמות נפתלי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Shefer",
+    "name": "שפר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Elifelet",
+    "name": "אליפלט",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Gadot",
+    "name": "גדות",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hazor HaGlilit",
+    "name": "חצור הגלילית",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Tuba-Zangariyye",
+    "name": "טובא-זנגריה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Korazim",
+    "name": "כורזים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar HaNasi",
+    "name": "כפר הנשיא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mahanayim",
+    "name": "מחניים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mishmar Hayarden",
+    "name": "משמר הירדן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ammi'ad",
+    "name": "עמיעד",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Rosh Pinna",
+    "name": "ראש פינה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Oholo",
+    "name": "אוהלו",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Alummot",
+    "name": "אלומות",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Almagor",
+    "name": "אלמגור",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Amnun",
+    "name": "אמנון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Afiqim",
+    "name": "אפיקים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ashdot Ya'aqov(Ihud)",
+    "name": "אשדות יעקב (איחוד)",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ashdot Ya'aqov(Me'Uh",
+    "name": "אשדות יעקב(מאוחד)",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bet Zera",
+    "name": "בית זרע",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ginnosar",
+    "name": "גינוסר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Gesher",
+    "name": "גשר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Deganya Alef",
+    "name": "דגניה א'",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Deganya Bet",
+    "name": "דגניה ב'",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Haon",
+    "name": "האון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Huqoq",
+    "name": "חוקוק",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hamam",
+    "name": "חמאם",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Tiberias",
+    "name": "טבריה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kinneret(Moshava)",
+    "name": "כנרת (מושבה)",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kinneret(Qevuza)",
+    "name": "כנרת (קבוצה)",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kare Deshe",
+    "name": "כרי דשא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Karkom",
+    "name": "כרכום",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Livnim",
+    "name": "לבנים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Migdal",
+    "name": "מגדל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Menahemya",
+    "name": "מנחמיה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Massada",
+    "name": "מסדה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ma'agan",
+    "name": "מעגן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "En Gev",
+    "name": "עין גב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Poriyya-Kefar Avoda",
+    "name": "פוריה - כפר עבודה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Poriyya-Newe Oved",
+    "name": "פוריה - נווה עובד",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Poriyya Illit",
+    "name": "פוריה עילית",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sha'ar Hagolan",
+    "name": "שער הגולן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Tel Qazir",
+    "name": "תל קציר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ilaniyya",
+    "name": "אילניה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Arbel",
+    "name": "ארבל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bet Qeshet",
+    "name": "בית קשת",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Giv'at Avni",
+    "name": "גבעת אבני",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hodayot",
+    "name": "הודיות",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "HaZore'im",
+    "name": "הזורעים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hazon",
+    "name": "חזון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Tefahot",
+    "name": "טפחות",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yavne'el",
+    "name": "יבנאל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kadoorie",
+    "name": "כדורי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kallanit",
+    "name": "כלנית",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Zetim",
+    "name": "כפר זיתים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Hittim",
+    "name": "כפר חיטים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kafar Kama",
+    "name": "כפר כמא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Kish",
+    "name": "כפר קיש",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Tavor",
+    "name": "כפר תבור",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Lavi",
+    "name": "לביא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mughar",
+    "name": "מגאר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Massad",
+    "name": "מסד",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mizpa",
+    "name": "מצפה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Eilabun",
+    "name": "עיילבון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Qaddarim",
+    "name": "קדרים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ravid",
+    "name": "רביד",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sede Ilan",
+    "name": "שדה אילן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Shadmot Devora",
+    "name": "שדמות דבורה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Se'orim",
+    "name": "שעורים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sharona",
+    "name": "שרונה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bet Yosef",
+    "name": "בית יוסף",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bet She'an",
+    "name": "בית שאן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hamadya",
+    "name": "חמדיה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Tirat Zevi",
+    "name": "טירת צבי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yardena",
+    "name": "ירדנה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Ruppin",
+    "name": "כפר רופין",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Merav",
+    "name": "מירב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Malkishua",
+    "name": "מלכישוע",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mesillot",
+    "name": "מסילות",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ma'oz Hayyim",
+    "name": "מעוז חיים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ma'ale Gilboa",
+    "name": "מעלה גלבוע",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Newe Ur",
+    "name": "נווה אור",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Newe Etan",
+    "name": "נווה איתן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Nir Dawid (Tel Amal)",
+    "name": "ניר דוד (תל עמל)",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "En HaNaziv",
+    "name": "עין הנצי\"ב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Rewaya",
+    "name": "רוויה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Rehov",
+    "name": "רחוב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Reshafim",
+    "name": "רשפים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sede Eliyyahu",
+    "name": "שדה אליהו",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sede Nahum",
+    "name": "שדה נחום",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sede Terumot",
+    "name": "שדי תרומות",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sheluhot",
+    "name": "שלוחות",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Tel Te'omim",
+    "name": "תל תאומים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Allonim",
+    "name": "אלונים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bet Zeid",
+    "name": "בית זיד",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bet She'arim",
+    "name": "בית שערים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "HaZorea",
+    "name": "הזורע",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yoqne'am (Moshava)",
+    "name": "יקנעם (מושבה)",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yoqne'am Illit",
+    "name": "יקנעם עילית",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Yehoshua",
+    "name": "כפר יהושע",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ramat Yishay",
+    "name": "רמת ישי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sede Ya'aqov",
+    "name": "שדה יעקב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Even Yizhaq(Gal'ed)",
+    "name": "אבן יצחק (גלעד)",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Elyaqim",
+    "name": "אליקים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Daliyya",
+    "name": "דליה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "En HaEmeq",
+    "name": "עין העמק",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "En HaShofet",
+    "name": "עין השופט",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ramot Menashe",
+    "name": "רמות מנשה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ramat HaShofet",
+    "name": "רמת השופט",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Um Al-Ghanam",
+    "name": "אום אל-גנם",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Iksal",
+    "name": "אכסאל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Allon HaGalil",
+    "name": "אלון הגליל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Allone Abba",
+    "name": "אלוני אבא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bu'eine-Nujeidat",
+    "name": "בועיינה-נוג'ידאת",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bet Lehem Hagelilit",
+    "name": "בית לחם הגלילית",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bet Rimmon",
+    "name": "בית רימון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Basmat Tab'un",
+    "name": "בסמת טבעון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Giv'at Ela",
+    "name": "גבעת אלה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Dabburye",
+    "name": "דבוריה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hosha'Aya",
+    "name": "הושעיה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "HaSolelim",
+    "name": "הסוללים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Harduf",
+    "name": "הרדוף",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Zarzir",
+    "name": "זרזיר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hajajre*",
+    "name": "חג'אג'רה*",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Khawaled",
+    "name": "ח'ואלד (שבט)",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hannaton",
+    "name": "חנתון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Tur'an",
+    "name": "טורעאן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yafi",
+    "name": "יפיע",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ka'abiyye-Tabbash",
+    "name": "כעביה-טבאש",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar HaHoresh",
+    "name": "כפר החורש",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kafar Kanna",
+    "name": "כפר כנא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Migdal Haemeq",
+    "name": "מגדל העמק",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Manshiyyet Zabda",
+    "name": "מנשית זבדה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mizpe Netofa",
+    "name": "מצפה נטופה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Meshhed",
+    "name": "משהד",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Nazareth",
+    "name": "נצרת",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Nazerat Illit",
+    "name": "נצרת עילית",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Uzeir",
+    "name": "עוזייר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ilut",
+    "name": "עילוט",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ein Mahel",
+    "name": "עין מאהל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Zippori",
+    "name": "ציפורי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Rummane",
+    "name": "רומאנה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Rumat Heib",
+    "name": "רומת הייב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Reine",
+    "name": "ריינה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Shibli",
+    "name": "שבלי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Timrat",
+    "name": "תמרת",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": 20,
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": 114,
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": 3,
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Akko s.d.",
+    "name": "נפת עכו",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Shefar'am reg.",
+    "name": "אזור שפרעם",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Avtalyon",
+    "name": "אבטליון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "I'Billin",
+    "name": "אעבלין",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Eshhar",
+    "name": "אשחר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Etgar",
+    "name": "אתגר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bir El-Maksur",
+    "name": "ביר אל-מכסור",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Deir Hanna",
+    "name": "דייר חנא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Demeide",
+    "name": "דמיידה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hararit",
+    "name": "הררית",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hujeirat (Dahra)",
+    "name": "חוג'ייראת (שבט)",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Tamra",
+    "name": "טמרה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yuvalim",
+    "name": "יובלים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yodfat",
+    "name": "יודפת",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ya'ad",
+    "name": "יעד",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kabul",
+    "name": "כאבול",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kaokab Abu Al-Hija",
+    "name": "כאוכב אבו אל-היג'א",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kafar Manda",
+    "name": "כפר מנדא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Moreshet",
+    "name": "מורשת",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Manof",
+    "name": "מנוף",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mizpe Aviv",
+    "name": "מצפה אבי\"ב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Nahal Eshbal",
+    "name": "נח\"ל אשבל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sawa'id(Hamriyye)",
+    "name": "סואעד (חמרייה) (שבט)ׂ",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sakhnin",
+    "name": "סח'נין",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Adi",
+    "name": "עדי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Arrabe",
+    "name": "עראבה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Qoranit",
+    "name": "קורנית",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Raqefet",
+    "name": "רקפת",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Segev",
+    "name": "שגב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Shekhanya",
+    "name": "שכניה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sha'ab",
+    "name": "שעב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Shefar'am",
+    "name": "שפרעם",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Karmiel reg.",
+    "name": "אזור כרמיאל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bi'ne",
+    "name": "בענה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Gilon",
+    "name": "גילון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Deir Al-Asad",
+    "name": "דייר אל-אסד",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kammon",
+    "name": "כמון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Karmi'el",
+    "name": "כרמיאל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Lotem",
+    "name": "לוטם",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Majd Al-Kurum",
+    "name": "מג'ד אל-כרום",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Moran",
+    "name": "מורן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mikhmannim",
+    "name": "מכמנים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Nahef",
+    "name": "נחף",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sajur",
+    "name": "סאג'ור",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sawa'id (Kamane)",
+    "name": "סואעד(כמאנה)(שבט)",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sallama",
+    "name": "סלמה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Zviyya",
+    "name": "צביה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Zurit",
+    "name": "צורית",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Rame",
+    "name": "ראמה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Shorashim",
+    "name": "שורשים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Shezor",
+    "name": "שזור",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Beit Jann",
+    "name": "בית ג'ן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Julis",
+    "name": "ג'ולס",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Gitta",
+    "name": "גיתה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ga'ton",
+    "name": "געתון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hilla",
+    "name": "הילה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hosen",
+    "name": "חוסן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Haluz",
+    "name": "חלוץ",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Harashim",
+    "name": "חרשים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Tal-El",
+    "name": "טל-אל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yanuh-Jat",
+    "name": "יאנוח-ג'ת",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yehi'am",
+    "name": "יחיעם",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yirka",
+    "name": "ירכא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kishor",
+    "name": "כישור",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kelil",
+    "name": "כליל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kisra-Sumei",
+    "name": "כסרא-סמיע",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Weradim",
+    "name": "כפר ורדים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Lavon",
+    "name": "לבון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Lappidot",
+    "name": "לפידות",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Manot",
+    "name": "מנות",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Me'ona",
+    "name": "מעונה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mi'elya",
+    "name": "מעיליא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ma'alot-Tarshiha",
+    "name": "מעלות-תרשיחא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ein Al-Asad",
+    "name": "עין אל-אסד",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "En Ya'aqov",
+    "name": "עין יעקב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Pelekh",
+    "name": "פלך",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Peqi'in (Buqei'a)",
+    "name": "פקיעין (בוקייעה)",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Peqi'in Hadasha",
+    "name": "פקיעין חדשה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Zuri'el",
+    "name": "צוריאל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sheikh Dannun",
+    "name": "שייח' דנון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Tuval",
+    "name": "תובל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": 28,
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": 2,
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Elon reg.",
+    "name": "אזור אילון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Abbirim",
+    "name": "אבירים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Even Menahem",
+    "name": "אבן מנחם",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Adamit",
+    "name": "אדמית",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Elon",
+    "name": "אילון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Elqosh",
+    "name": "אלקוש",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Goren",
+    "name": "גורן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Gornot HaGalil",
+    "name": "גורנות הגליל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hurfeish",
+    "name": "חורפיש",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hanita",
+    "name": "חניתה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ya'ara",
+    "name": "יערה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Rozenwald",
+    "name": "כפר רוזנואלד (זרעית",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mazzuva",
+    "name": "מצובה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mattat",
+    "name": "מתת",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Netu'a",
+    "name": "נטועה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Avdon",
+    "name": "עבדון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Aramsha*",
+    "name": "עראמשה*",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Fassuta",
+    "name": "פסוטה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Shomera",
+    "name": "שומרה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Shetula",
+    "name": "שתולה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": 19,
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Nahariyya reg.",
+    "name": "אזור נהריה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Abu Sinan",
+    "name": "אבו סנאן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Asherat",
+    "name": "אשרת",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bet HaEmeq",
+    "name": "בית העמק",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ben Ammi",
+    "name": "בן עמי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bezet",
+    "name": "בצת",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Gesher HaZiw",
+    "name": "גשר הזיו",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hazrot Yasaf",
+    "name": "חצרות יסף",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kabri",
+    "name": "כברי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kafar Yasif",
+    "name": "כפר יאסיף",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Rosh HaNiqra",
+    "name": "כפר ראש הנקרה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Lohame HaGeta'ot",
+    "name": "לוחמי הגיטאות",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Liman",
+    "name": "לימן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mazra'a",
+    "name": "מזרעה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Nahariyya",
+    "name": "נהריה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Nes Ammim",
+    "name": "נס עמים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Netiv HaShayyara",
+    "name": "נתיב השיירה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sa'ar",
+    "name": "סער",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Evron",
+    "name": "עברון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Amqa",
+    "name": "עמקה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Regba",
+    "name": "רגבה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Shave Ziyyon",
+    "name": "שבי ציון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Shelomi",
+    "name": "שלומי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": 22,
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Akko reg.",
+    "name": "אזור עכו",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ahihud",
+    "name": "אחיהוד",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Afeq",
+    "name": "אפק",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bustan HaGalil",
+    "name": "בוסתן הגליל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Judeide-Maker",
+    "name": "ג'דיידה-מכר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yas'ur",
+    "name": "יסעור",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Masaryk",
+    "name": "כפר מסריק",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mahane Yavor",
+    "name": "מחנה יבור",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "En HaMifraz",
+    "name": "עין המפרץ",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Akko",
+    "name": "עכו",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Shamerat",
+    "name": "שמרת",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": 9,
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": 1,
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": 121,
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": 5,
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": 3,
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Golan s.d.",
+    "name": "נפת גולן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Hermon reg.",
+    "name": "אזור חרמון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Majdal Shams",
+    "name": "מג'דל שמס",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Newe Ativ",
+    "name": "נווה אטי\"ב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Nahal Nimrod",
+    "name": "נח\"ל נמרוד",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ein Qiniyye",
+    "name": "עין קנייא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": 3,
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": 1,
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Northern Golan",
+    "name": "גולן צפוני",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "",
+    "name": "",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Odem",
+    "name": "אודם",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ortal",
+    "name": "אורטל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "El-Rom",
+    "name": "אל-רום",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Allone HaBashan",
+    "name": "אלוני הבשן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Buq'ata",
+    "name": "בוקעאתא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mas'ade",
+    "name": "מסעדה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Merom Golan",
+    "name": "מרום גולן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ghajar",
+    "name": "ע'ג'ר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "En Ziwan",
+    "name": "עין זיוון",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Qela",
+    "name": "קלע",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Qeshet",
+    "name": "קשת",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Sha'al",
+    "name": "שעל",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ani'am",
+    "name": "אניעם",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Had-Nes",
+    "name": "חד-נס",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Yonatan",
+    "name": "יונתן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kanaf",
+    "name": "כנף",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ma'ale Gamla",
+    "name": "מעלה גמלא",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Qidmat Zevi",
+    "name": "קדמת צבי",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Qazrin",
+    "name": "קצרין",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ramot",
+    "name": "רמות",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Avne Etan",
+    "name": "אבני איתן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Eli Al",
+    "name": "אלי על",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Afiq",
+    "name": "אפיק",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bene Yehuda",
+    "name": "בני יהודה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Giv'at Yo'av",
+    "name": "גבעת יואב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Geshur",
+    "name": "גשור",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Haspin",
+    "name": "חספין",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Kefar Haruv",
+    "name": "כפר חרוב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mevo Hamma",
+    "name": "מבוא חמה",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Mezar",
+    "name": "מיצר",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ne'ot Golan",
+    "name": "נאות גולן",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Nov",
+    "name": "נוב",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Natur",
+    "name": "נטור",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Ramat Magshimim",
+    "name": "רמת מגשימים",
+    "region": "גליל גולן"
+  },
+  {
+    "name english": "Bet Zevi",
+    "name": "בית צבי",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Geva Karmel",
+    "name": "גבע כרמל",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Dor",
+    "name": "דור",
+    "region": "חדרה"
+  },
+  {
+    "name english": "HaBonim",
+    "name": "הבונים",
+    "region": "חדרה"
+  },
+  {
+    "name english": "HaHoterim",
+    "name": "החותרים",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Megadim",
+    "name": "מגדים",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Ma'agan Mikha'el",
+    "name": "מעגן מיכאל",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Newe Yam",
+    "name": "נווה ים",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Nahsholim",
+    "name": "נחשולים",
+    "region": "חדרה"
+  },
+  {
+    "name english": "En Ayyala",
+    "name": "עין איילה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "En Karmel",
+    "name": "עין כרמל",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Atlit",
+    "name": "עתלית",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Fureidis",
+    "name": "פוריידיס",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Zerufa",
+    "name": "צרופה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Bet Oren",
+    "name": "בית אורן",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Bat Shelomo",
+    "name": "בת שלמה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Zikhron Ya'aqov",
+    "name": "זכרון יעקב",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Kerem Maharal",
+    "name": "כרם מהר\"ל",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Me'ir Shefeya",
+    "name": "מאיר שפיה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Ma'yan Zevi",
+    "name": "מעין צבי",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Nir Ezyon",
+    "name": "ניר עציון",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Ofer",
+    "name": "עופר",
+    "region": "חדרה"
+  },
+  {
+    "name english": "En Hod",
+    "name": "עין הוד",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Umm Al-Fahm",
+    "name": "אום אל-פחם",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Umm Al-Qutuf",
+    "name": "אום אל-קוטוף",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Al-Aryan",
+    "name": "אל-עריאן",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Bayada",
+    "name": "ביאדה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Barta'a",
+    "name": "ברטעה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Giv'at Nili",
+    "name": "גבעת ניל\"י",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Zalafe",
+    "name": "זלפה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Kafar Qara",
+    "name": "כפר קרע",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Mu'awiye",
+    "name": "מועאוויה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Musmus",
+    "name": "מוצמוץ",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Musheirfe",
+    "name": "מושיירפה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Me Ammi",
+    "name": "מי עמי",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Meiser",
+    "name": "מייסר",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Salem",
+    "name": "סאלם",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Ein As-Sahle",
+    "name": "עין א-סהלה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Iron",
+    "name": "עירון",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Ammiqam",
+    "name": "עמיקם",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Ar'ara",
+    "name": "ערערה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Regavim",
+    "name": "רגבים",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Avi'el",
+    "name": "אביאל",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Or Aqiva",
+    "name": "אור עקיבא",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Allone Yizhaq",
+    "name": "אלוני יצחק",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Baqa Al-Gharbiyye",
+    "name": "באקה אל-גרביה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Bet Hananya",
+    "name": "בית חנניה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Binyamina",
+    "name": "בנימינה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Barqay",
+    "name": "ברקאי",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Giv'at Ada",
+    "name": "גבעת עדה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Gan HaShomeron",
+    "name": "גן השומרון",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Gan Shemu'el",
+    "name": "גן שמואל",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Jisr Az-Zarqa",
+    "name": "ג'סר א-זרקא",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Jatt",
+    "name": "ג'ת",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Hadera",
+    "name": "חדרה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Kefar Glikson",
+    "name": "כפר גליקסון",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Kefar Pines",
+    "name": "כפר פינס",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Lahavot Haviva",
+    "name": "להבות חביבה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Ma'or",
+    "name": "מאור",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Maggal",
+    "name": "מגל",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Ma'anit",
+    "name": "מענית",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Mezer",
+    "name": "מצר",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Mishmarot",
+    "name": "משמרות",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Newe Avot",
+    "name": "נווה אבות",
+    "region": "חדרה"
+  },
+  {
+    "name english": "En Iron",
+    "name": "עין עירון",
+    "region": "חדרה"
+  },
+  {
+    "name english": "En Shemer",
+    "name": "עין שמר",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Pardes Hanna-Karkur",
+    "name": "פרדס חנה-כרכור",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Qesariyya",
+    "name": "קיסריה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Sede Yizhaq",
+    "name": "שדה יצחק",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Sedot Yam",
+    "name": "שדות ים",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Sha'ar Menashe",
+    "name": "שער מנשה",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Talme El'azar",
+    "name": "תלמי אלעזר",
+    "region": "חדרה"
+  },
+  {
+    "name english": "Ibtin",
+    "name": "אבטין",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Oranim",
+    "name": "אורנים",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Usha",
+    "name": "אושה",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Daliyat Al-Karmel",
+    "name": "דאלית אל-כרמל",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Haifa",
+    "name": "חיפה",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Tirat Karmel",
+    "name": "טירת כרמל",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Yagur",
+    "name": "יגור",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Kefar Bialik",
+    "name": "כפר ביאליק",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Kefar Gallim",
+    "name": "כפר גלים",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Kefar HaMakkabi",
+    "name": "כפר המכבי",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Kefar HaNo'ar HaDati",
+    "name": "כפר הנוער הדתי",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Kefar Hasidim Alef",
+    "name": "כפר חסידים א'",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Kefar Hasidim Bet",
+    "name": "כפר חסידים ב'",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Nofit",
+    "name": "נופית",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Nesher",
+    "name": "נשר",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Isifya",
+    "name": "עספיא",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Qiryat Atta",
+    "name": "קרית אתא",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Qiryat Bialik",
+    "name": "קרית ביאליק",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Qiryat Tiv'on",
+    "name": "קרית טבעון",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Qiryat Yam",
+    "name": "קרית ים",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Qiryat Motzkin",
+    "name": "קרית מוצקין",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Ras Ali",
+    "name": "ראס עלי",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Rekhasim",
+    "name": "רכסים",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Ramat Yohanan",
+    "name": "רמת יוחנן",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Sha'ar HaAmaqim",
+    "name": "שער העמקים",
+    "region": "חיפה"
+  },
+  {
+    "name english": "Avne Hefez",
+    "name": "אבני חפץ",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Adora",
+    "name": "אדורה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Oranit",
+    "name": "אורנית",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Itamar",
+    "name": "איתמר",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Elqana",
+    "name": "אלקנה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Elon More",
+    "name": "אלון מורה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Allon Shevut",
+    "name": "אלון שבות",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Almog",
+    "name": "אלמוג",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "El'azar",
+    "name": "אלעזר",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Alfe Menashe",
+    "name": "אלפי מנשה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Asefar",
+    "name": "אספר",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Efrata",
+    "name": "אפרתה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Argaman",
+    "name": "ארגמן",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Ari'el",
+    "name": "אריאל",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Eshkolot",
+    "name": "אשכולות",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Beqa'ot",
+    "name": "בקעות",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Bet El",
+    "name": "בית אל",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Bet El Bet*",
+    "name": "בית אל ב'*",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Bet Arye",
+    "name": "בית אריה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Bet HaArava",
+    "name": "בית הערבה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Bet Horon",
+    "name": "בית חורון",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Betar Illit",
+    "name": "ביתר עילית",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Barqan",
+    "name": "ברקן",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Berakha",
+    "name": "ברכה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Bat Ayin",
+    "name": "בת עין",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Geva Binyamin",
+    "name": "גבע בנימין",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Giv'on HaHadasha",
+    "name": "גבעון החדשה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Giv'at Ze'ev",
+    "name": "גבעת זאב",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Gannim",
+    "name": "גנים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Gittit",
+    "name": "גיתית",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Gilgal",
+    "name": "גלגל",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Dolev",
+    "name": "דולב",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Har Adar",
+    "name": "הר אדר",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Har Gillo",
+    "name": "הר גילה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Wered Yeriho",
+    "name": "ורד יריחו",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Haggai",
+    "name": "חגי",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Homesh",
+    "name": "חומש",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Hinnanit",
+    "name": "חיננית",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Hallamish",
+    "name": "חלמיש",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Hamra",
+    "name": "חמרה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Hermesh",
+    "name": "חרמש",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Hashmona'im",
+    "name": "חשמונאים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Tene",
+    "name": "טנא",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Talmon",
+    "name": "טלמון",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Yaqir",
+    "name": "יקיר",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Yitav",
+    "name": "ייט\"ב",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Yafit",
+    "name": "יפית",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Yizhar",
+    "name": "יצהר",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Kaddim",
+    "name": "כדים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Kokhav HaShahar",
+    "name": "כוכב השחר",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Kokhav Ya'aqov",
+    "name": "כוכב יעקב",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Kefar Adummim",
+    "name": "כפר אדומים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Kefar Ezyon",
+    "name": "כפר עציון",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Kefar Tappuah",
+    "name": "כפר תפוח",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Karme Zur",
+    "name": "כרמי צור",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Karmel",
+    "name": "כרמל",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Mevo Dotan",
+    "name": "מבוא דותן",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Mevo Horon",
+    "name": "מבוא חורון",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Migdal Oz",
+    "name": "מגדל עוז",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Migdalim",
+    "name": "מגדלים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Mehola",
+    "name": "מחולה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Mekhora",
+    "name": "מכורה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Ma'on",
+    "name": "מעון",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Ma'ale Adummim",
+    "name": "מעלה אדומים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Ma'ale Efrayim",
+    "name": "מעלה אפרים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Ma'ale Levona",
+    "name": "מעלה לבונה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Ma'ale Mikhmas",
+    "name": "מעלה מכמש",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Ma'ale Amos",
+    "name": "מעלה עמוס",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Ma'ale Shomeron",
+    "name": "מעלה שומרון",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Mezadot Yehuda",
+    "name": "מצדות יהודה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Mizpe Yeriho",
+    "name": "מצפה יריחו",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Mizpe Shalem",
+    "name": "מצפה שלם",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Mattityahu",
+    "name": "מתתיהו",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Massu'a",
+    "name": "משואה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Noqedim",
+    "name": "נוקדים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Newe Daniyyel",
+    "name": "נווה דניאל",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Nofim",
+    "name": "נופים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Nahal Avenat",
+    "name": "נח\"ל אבנת",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Nahal Elisha",
+    "name": "נח\"ל אלישע",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Nahal Geva'ot",
+    "name": "נח\"ל גבעות",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Nahal Hemdat",
+    "name": "נח\"ל חמדת",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Nahal Maskiyyot",
+    "name": "נח\"ל משכיות",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Nahal Rotem",
+    "name": "נח\"ל רותם",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Nahali'el",
+    "name": "נחליאל",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Nili",
+    "name": "ניל\"י",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Niran",
+    "name": "נירן",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Na'ale",
+    "name": "נעלה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "No'omi",
+    "name": "נעמי",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Netiv HaGedud",
+    "name": "נתיב הגדוד",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Suseya",
+    "name": "סוסיה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Sal'it",
+    "name": "סלעית",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Ofra",
+    "name": "עופרה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Ofarim",
+    "name": "עופרים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Enav",
+    "name": "ענב",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Ateret",
+    "name": "עטרת",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Eli",
+    "name": "עלי",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Ale Zahav",
+    "name": "עלי זהב",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Almon",
+    "name": "עלמון",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Immanu'el",
+    "name": "עמנואל",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Ez Efrayim",
+    "name": "עץ אפרים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Otni'el",
+    "name": "עתניאל",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Pedu'el",
+    "name": "פדואל",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Pene Hever",
+    "name": "פני חבר",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Pesagot",
+    "name": "פסגות",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Peza'el",
+    "name": "פצאל",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Zufin",
+    "name": "צופין",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Qedumim",
+    "name": "קדומים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Qedar",
+    "name": "קדר",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Qalya",
+    "name": "קליה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Qarne Shomeron",
+    "name": "קרני שומרון",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Qiryat Arba",
+    "name": "קרית ארבע",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Qiryat Netafim",
+    "name": "קרית נטפים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Revava",
+    "name": "רבבה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Rosh Zurim",
+    "name": "ראש צורים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Ro'i",
+    "name": "רועי",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Rehan",
+    "name": "ריחן",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Rimmonim",
+    "name": "רימונים",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Shaqed",
+    "name": "שקד",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Shave Shomeron",
+    "name": "שבי שומרון",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Sa-Nur",
+    "name": "שא-נור",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Shadmot Mehola",
+    "name": "שדמות מחולה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Shilo",
+    "name": "שילה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Shim'a",
+    "name": "שמעה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Sha'are Tiqwa",
+    "name": "שערי תקווה",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Teqoa",
+    "name": "תקוע",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Tomer",
+    "name": "תומר",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Telem",
+    "name": "תלם",
+    "region": "יהודה ושומרון"
+  },
+  {
+    "name english": "Abu Ghosh",
+    "name": "אבו גוש",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Even Sappir",
+    "name": "אבן ספיר",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Ora",
+    "name": "אורה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Etanim",
+    "name": "איתנים",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Bet Zayit",
+    "name": "בית זית",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Bet Me'ir",
+    "name": "בית מאיר",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Bet Neqofa",
+    "name": "בית נקופה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Bar Giyyora",
+    "name": "בר גיורא",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Giv'at Ye'arim",
+    "name": "גבעת יערים",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Yad HaShemona",
+    "name": "יד השמונה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Yedida",
+    "name": "ידידה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Jerusalem",
+    "name": "ירושלים",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Kesalon",
+    "name": "כסלון",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Mevo Betar",
+    "name": "מבוא ביתר",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Mevasseret Ziyyon",
+    "name": "מבשרת ציון",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Moza Illit",
+    "name": "מוצא עילית",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Matta",
+    "name": "מטע",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Ma'ale HaHamisha",
+    "name": "מעלה החמישה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Newe Ilan",
+    "name": "נווה אילן",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Nataf",
+    "name": "נטף",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Nes Harim",
+    "name": "נס הרים",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "En Karem-B.S.Haqla'i",
+    "name": "עין כרם-בי\"ס חקלאי",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Ein Naqquba",
+    "name": "עין נקובא",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Ein Rafa",
+    "name": "עין ראפה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Amminadav",
+    "name": "עמינדב",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Zova",
+    "name": "צובה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Zur Hadassa",
+    "name": "צור הדסה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Qiryat Ye'arim",
+    "name": "קרית יערים",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Qiryat Ye'arim(Insti.)",
+    "name": "קרית יערים (מוסד)",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Qiryat Anavim",
+    "name": "קרית ענבים",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Ramat Razi'el",
+    "name": "רמת רזיאל",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Ramat Rahel",
+    "name": "רמת רחל",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Sho'eva",
+    "name": "שואבה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Shoresh",
+    "name": "שורש",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Avi'ezer",
+    "name": "אביעזר",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Adderet",
+    "name": "אדרת",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Eshta'ol",
+    "name": "אשתאול",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Bet Shemesh",
+    "name": "בית שמש",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Beqoa",
+    "name": "בקוע",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Giv'at Yesha'yahu",
+    "name": "גבעת ישעיהו",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Giv'at Shemesh",
+    "name": "גבעת שמש",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Gizo",
+    "name": "גיזו",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Gefen",
+    "name": "גפן",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Deir Rafat",
+    "name": "דייר ראפאת",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Har'el",
+    "name": "הראל",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Zekharya",
+    "name": "זכריה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Zanoah",
+    "name": "זנוח",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Tal Shahar",
+    "name": "טל שחר",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Yish'i",
+    "name": "ישעי",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Kefar Uriyya",
+    "name": "כפר אוריה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Kefar Zoharim",
+    "name": "כפר זוהרים",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Luzit",
+    "name": "לוזית",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Li-On",
+    "name": "לי-און",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Mahseya",
+    "name": "מחסיה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Mesillat Ziyyon",
+    "name": "מסילת ציון",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Newe Mikha'el",
+    "name": "נווה מיכאל",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Newe Shalom",
+    "name": "נווה שלום",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Nehusha",
+    "name": "נחושה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Naham",
+    "name": "נחם",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Nahshon",
+    "name": "נחשון",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Netiv HaLamed-He",
+    "name": "נתיב הל\"ה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Agur",
+    "name": "עגור",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Zelafon",
+    "name": "צלפון",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Zafririm",
+    "name": "צפרירים",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Zor'a",
+    "name": "צרעה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Sedot Mikha",
+    "name": "שדות מיכה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Tirosh",
+    "name": "תירוש",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Ta'oz",
+    "name": "תעוז",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Tarum",
+    "name": "תרום",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Bet Hashmonay",
+    "name": "בית חשמונאי",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Bet Nehemya",
+    "name": "בית נחמיה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Bet Uzzi'el",
+    "name": "בית עוזיאל",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Bet Arif",
+    "name": "בית עריף",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Ben Shemen(K.No'ar)",
+    "name": "בן שמן (כפר נוער)",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Ben Shemen (Moshav)",
+    "name": "בן שמן (מושב)",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Ben Shemen (Shikkun)",
+    "name": "בן שמן (שיכון)",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Gezer",
+    "name": "גזר",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Ginnaton",
+    "name": "גינתון",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Gimzo",
+    "name": "גמזו",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Gannot",
+    "name": "גנות",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Ganne Hadar",
+    "name": "גני הדר",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Zetan",
+    "name": "זיתן",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Hadid",
+    "name": "חדיד",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Hulda",
+    "name": "חולדה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Hemed",
+    "name": "חמד",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Hazrot Hulda",
+    "name": "חצרות חולדה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Yagel",
+    "name": "יגל",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Yad Rambam",
+    "name": "יד רמב\"ם",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Yaziz",
+    "name": "יציץ",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Yashresh",
+    "name": "ישרש",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Kefar Bin Nun",
+    "name": "כפר בן נון",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Kefar Daniyyel",
+    "name": "כפר דניאל",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Kefar Habad",
+    "name": "כפר חב\"ד",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Kefar Truman",
+    "name": "כפר טרומן",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Kefar Rut",
+    "name": "כפר רות",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Kefar Shemu'el",
+    "name": "כפר שמואל",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Karme Yosef",
+    "name": "כרמי יוסף",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Lod",
+    "name": "לוד",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Mevo Modi'im",
+    "name": "מבוא מודיעים",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Makkabim-Re'ut",
+    "name": "מכבים-רעות",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Mazliah",
+    "name": "מצליח",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Mishmar Ayyalon",
+    "name": "משמר איילון",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Mishmar Dawid",
+    "name": "משמר דוד",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Nir Zevi",
+    "name": "ניר צבי",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Na'an",
+    "name": "נען",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Nezer Sereni",
+    "name": "נצר סרני",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Sitriyya",
+    "name": "סתריה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Azarya",
+    "name": "עזריה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Pedaya",
+    "name": "פדיה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Petahya",
+    "name": "פתחיה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Zafriyya",
+    "name": "צפריה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Ramot Me'ir",
+    "name": "רמות מאיר",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Ramla",
+    "name": "רמלה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Shoham",
+    "name": "שוהם",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Shilat",
+    "name": "שילת",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Sha'alvim",
+    "name": "שעלבים",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Amazya",
+    "name": "אמציה",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Bet Guvrin",
+    "name": "בית גוברין",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Bet Nir",
+    "name": "בית ניר",
+    "region": "ירושלים"
+  },
+  {
+    "name english": "Or HaNer",
+    "name": "אור הנר",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Ibbim",
+    "name": "איבים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Erez",
+    "name": "ארז",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Ashqelon",
+    "name": "אשקלון",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Bet Shiqma",
+    "name": "בית שקמה",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Beror Hayil",
+    "name": "ברור חיל",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Berekhya",
+    "name": "ברכיה",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Bat Hadar",
+    "name": "בת הדר",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Gevim",
+    "name": "גבים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Gevar'am",
+    "name": "גברעם",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Ge'a",
+    "name": "גיאה",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Dorot",
+    "name": "דורות",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Hodiyya",
+    "name": "הודיה",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Ziqim",
+    "name": "זיקים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Helez",
+    "name": "חלץ",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Yad Mordekhay",
+    "name": "יד מרדכי",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Yakhini",
+    "name": "יכיני",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Kokhav Mikha'el",
+    "name": "כוכב מיכאל",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Kefar Silver",
+    "name": "כפר סילבר",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Kefar Azza",
+    "name": "כפר עזה",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Karmiyya",
+    "name": "כרמיה",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Mavqi'im",
+    "name": "מבקיעים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Mefallesim",
+    "name": "מפלסים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Mash'en",
+    "name": "משען",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Nahal Oz",
+    "name": "נחל עוז",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Nizzan",
+    "name": "ניצן",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Nizzanim",
+    "name": "ניצנים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Nir Yisra'el",
+    "name": "ניר ישראל",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Nir Am",
+    "name": "ניר עם",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Netiv HaAsara",
+    "name": "נתיב העשרה",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Ruhama",
+    "name": "רוחמה",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Sederot",
+    "name": "שדרות",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Talme Yafe",
+    "name": "תלמי יפה",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Bet HaGaddi",
+    "name": "בית הגדי",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Berosh",
+    "name": "ברוש",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Netivot",
+    "name": "נתיבות",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Sa'ad",
+    "name": "סעד",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Te'ashur",
+    "name": "תאשור",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Tidhar",
+    "name": "תדהר",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Avshalom",
+    "name": "אבשלום",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Ohad",
+    "name": "אוהד",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Ofaqim",
+    "name": "אופקים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Urim",
+    "name": "אורים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Eshel Hanasi",
+    "name": "אשל הנשיא",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Be'eri",
+    "name": "בארי",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Bitha",
+    "name": "בטחה",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Gevulot",
+    "name": "גבולות",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Gilat",
+    "name": "גילת",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Deqel",
+    "name": "דקל",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Holit",
+    "name": "חולית",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Yevul",
+    "name": "יבול",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Yesha",
+    "name": "ישע",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Yated",
+    "name": "יתד",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Kissufim",
+    "name": "כיסופים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Kerem Shalom",
+    "name": "כרם שלום",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Mivtahim",
+    "name": "מבטחים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Magen",
+    "name": "מגן",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Maslul",
+    "name": "מסלול",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Nir Yizhaq",
+    "name": "ניר יצחק",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Nir Oz",
+    "name": "ניר עוז",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Nirim",
+    "name": "נירים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Sufa",
+    "name": "סופה",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "En HaBesor",
+    "name": "עין הבשור",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "En HaShelosha",
+    "name": "עין השלושה",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Alumim",
+    "name": "עלומים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Ammi'oz",
+    "name": "עמיעוז",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Peduyim",
+    "name": "פדויים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Pattish",
+    "name": "פטיש",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Peri Gan",
+    "name": "פרי גן",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Ze'elim",
+    "name": "צאלים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Zohar",
+    "name": "צוחר",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Rannen",
+    "name": "רנן",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Re'im",
+    "name": "רעים",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Sede Nizzan",
+    "name": "שדה ניצן",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Sede Avraham",
+    "name": "שדי אברהם",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Talme Eliyyahu",
+    "name": "תלמי אליהו",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Talme Yosef",
+    "name": "תלמי יוסף",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Tifrah",
+    "name": "תפרח",
+    "region": "עוטף עזה"
+  },
+  {
+    "name english": "Bet Alfa",
+    "name": "בית אלפא",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Bet HaShitta",
+    "name": "בית השיטה",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Geva",
+    "name": "גבע",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Gid'ona",
+    "name": "גדעונה",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Gan Ner",
+    "name": "גן נר",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Hefzi-Bah",
+    "name": "חפצי-בה",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Kefar Yehezqel",
+    "name": "כפר יחזקאל",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Nurit",
+    "name": "נורית",
+    "region": "עפולה"
+  },
+  {
+    "name english": "En Harod (Ihud)",
+    "name": "עין חרוד (איחוד)",
+    "region": "עפולה"
+  },
+  {
+    "name english": "En Harod(Me'Uhad)",
+    "name": "עין חרוד (מאוחד)",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Sandala",
+    "name": "צנדלה",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Tel Yosef",
+    "name": "תל יוסף",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Gazit",
+    "name": "גזית",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Tayibe(BaEmeq)",
+    "name": "טייבה (בעמק)",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Tamra (Yizre'el)",
+    "name": "טמרה (יזרעאל)",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Kafar Misr",
+    "name": "כפר מצר",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Moledet",
+    "name": "מולדת",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Na'ura",
+    "name": "נאעורה",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Nein",
+    "name": "ניין",
+    "region": "עפולה"
+  },
+  {
+    "name english": "En Dor",
+    "name": "עין דור",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Ramat Zevi",
+    "name": "רמת צבי",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Avital",
+    "name": "אביטל",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Addirim",
+    "name": "אדירים",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Omen",
+    "name": "אומן",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Balfuriyya",
+    "name": "בלפוריה",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Baraq",
+    "name": "ברק",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Giv'at Oz",
+    "name": "גבעת עוז",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Gevat",
+    "name": "גבת",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Gadish",
+    "name": "גדיש",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Ginnegar",
+    "name": "גיניגר",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Devora",
+    "name": "דבורה",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Daverat",
+    "name": "דברת",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Dahi",
+    "name": "דחי",
+    "region": "עפולה"
+  },
+  {
+    "name english": "HaYogev",
+    "name": "היוגב",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Hever",
+    "name": "חבר",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Yizre'el",
+    "name": "יזרעאל",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Ya'el",
+    "name": "יעל",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Yif'at",
+    "name": "יפעת",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Kefar Barukh",
+    "name": "כפר ברוך",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Kefar Gid'on",
+    "name": "כפר גדעון",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Megiddo",
+    "name": "מגידו",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Magen Sha'ul",
+    "name": "מגן שאול",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Midrakh Oz",
+    "name": "מדרך עוז",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Muqeible",
+    "name": "מוקייבלה",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Mizra",
+    "name": "מזרע",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Metav",
+    "name": "מיטב",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Mele'a",
+    "name": "מלאה",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Merhavya (Moshav)",
+    "name": "מרחביה (מושב)",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Merhavya (Qibbuz)",
+    "name": "מרחביה (קיבוץ)",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Mishmar HaEmeq",
+    "name": "משמר העמק",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Nahalal",
+    "name": "נהלל",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Nir Yafe",
+    "name": "ניר יפה",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Sulam",
+    "name": "סולם",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Afula",
+    "name": "עפולה",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Perazon",
+    "name": "פרזון",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Ram-On",
+    "name": "רם-און",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Ramat Dawid",
+    "name": "רמת דוד",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Sarid",
+    "name": "שריד",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Tel Adashim",
+    "name": "תל עדשים",
+    "region": "עפולה"
+  },
+  {
+    "name english": "Ne'ot Hakikkar",
+    "name": "נאות הכיכר",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Newe Zohar",
+    "name": "נווה זוהר",
+    "region": "ערבה"
+  },
+  {
+    "name english": "En Gedi",
+    "name": "עין גדי",
+    "region": "ערבה"
+  },
+  {
+    "name english": "En Tamar",
+    "name": "עין תמר",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Elot",
+    "name": "אילות",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Elat",
+    "name": "אילת",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Elifaz",
+    "name": "אליפז",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Be'er Ora",
+    "name": "באר אורה",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Gerofit",
+    "name": "גרופית",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Hazeva",
+    "name": "חצבה",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Yahel",
+    "name": "יהל",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Yotvata",
+    "name": "יטבתה",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Lotan",
+    "name": "לוטן",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Mahane Bildad",
+    "name": "מחנה בלדד",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Samar",
+    "name": "סמר",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Sappir",
+    "name": "ספיר",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Iddan",
+    "name": "עידן",
+    "region": "ערבה"
+  },
+  {
+    "name english": "En Hazeva",
+    "name": "עין חצבה",
+    "region": "ערבה"
+  },
+  {
+    "name english": "En Yahav",
+    "name": "עין יהב",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Ir Ovot",
+    "name": "עיר אובות",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Paran",
+    "name": "פארן",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Zofar",
+    "name": "צופר",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Qetura",
+    "name": "קטורה",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Ya'alon",
+    "name": "יעלון",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Newe Harif",
+    "name": "נווה חריף",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Nahal Shittim",
+    "name": "נח\"ל שיטים",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Shaharut",
+    "name": "שחרות",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Shizzafon",
+    "name": "שיזפון",
+    "region": "ערבה"
+  },
+  {
+    "name english": "Be'erot Yizhaq",
+    "name": "בארות יצחק",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Bene Atarot",
+    "name": "בני עטרות",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Bareqet",
+    "name": "ברקת",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Giv'at HaShelosha",
+    "name": "גבעת השלושה",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Giv'at Koah",
+    "name": "גבעת כ\"ח",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Giv'at Shemu'el",
+    "name": "גבעת שמואל",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Ganne Yehuda",
+    "name": "גני יהודה",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Ganne Tiqwa",
+    "name": "גני תקווה",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Gat Rimmon",
+    "name": "גת רימון",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Hazrot Koah",
+    "name": "חצרות כ\"ח",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Tirat Yehuda",
+    "name": "טירת יהודה",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Yehud",
+    "name": "יהוד",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Kafar Bara",
+    "name": "כפר ברא",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Kefar Sirkin",
+    "name": "כפר סירקין",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Kafar Qasem",
+    "name": "כפר קאסם",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Magshimim",
+    "name": "מגשימים",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Mazor",
+    "name": "מזור",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Ma'as",
+    "name": "מעש",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Newe Efrayim",
+    "name": "נווה אפרים",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Nofekh",
+    "name": "נופך",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Nehalim",
+    "name": "נחלים",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Nahshonim",
+    "name": "נחשונים",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Nirit",
+    "name": "נירית",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Savyon",
+    "name": "סביון",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Enat",
+    "name": "עינת",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Petah Tiqwa",
+    "name": "פתח תקווה",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Rosh HaAyin",
+    "name": "ראש העין",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Rinnatya",
+    "name": "רינתיה",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Or Yehuda",
+    "name": "אור יהודה",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Ef'al-Bet Avot",
+    "name": "אפעל-בית אבות",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Ef'al-Merkaz Seminar.",
+    "name": "אפעל-מרכז סמינריוני",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Kefar Azar",
+    "name": "כפר אז\"ר",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Qiryat Ono",
+    "name": "קרית אונו",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Ramat Ef'al",
+    "name": "רמת אפעל",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Ramat Pinkas",
+    "name": "רמת פנקס",
+    "region": "פתח תקווה"
+  },
+  {
+    "name english": "Ahisamakh",
+    "name": "אחיסמך",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Ahi'ezer",
+    "name": "אחיעזר",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Be'er Ya'aqov",
+    "name": "באר יעקב",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Bet Dagan",
+    "name": "בית דגן",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Mishmar HaShiv'a",
+    "name": "משמר השבעה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Bet El'azari",
+    "name": "בית אלעזרי",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Bet Gamli'el",
+    "name": "בית גמליאל",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Bet Hilqiyya",
+    "name": "בית חלקיה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Bet Rabban",
+    "name": "בית רבן",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Ben Zakkay",
+    "name": "בן זכאי",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Bene Darom",
+    "name": "בני דרום",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Bene Ayish",
+    "name": "בני עי\"ש",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Bene Re'em",
+    "name": "בני ראם",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Benaya",
+    "name": "בניה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Giv'at Brenner",
+    "name": "גבעת ברנר",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Gedera",
+    "name": "גדרה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Gibbeton",
+    "name": "גיבתון",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Gan HaDarom",
+    "name": "גן הדרום",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Gan Yavne",
+    "name": "גן יבנה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Gan Shelomo",
+    "name": "גן שלמה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Ganne Yohanan",
+    "name": "גני יוחנן",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Hafez Hayyim",
+    "name": "חפץ חיים",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Yavne",
+    "name": "יבנה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Yad Binyamin",
+    "name": "יד בנימין",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Yesodot",
+    "name": "יסודות",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Kefar Aviv",
+    "name": "כפר אביב",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Kefar Bilu",
+    "name": "כפר ביל\"ו",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Kefar Mordekhay",
+    "name": "כפר מרדכי",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Kerem Yavne(Yeshiva)",
+    "name": "כרם יבנה (ישיבה)",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Mazkeret Batya",
+    "name": "מזכרת בתיה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Meshar",
+    "name": "מישר",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Misgav Dov",
+    "name": "משגב דב",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Nir Gallim",
+    "name": "ניר גלים",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Aseret",
+    "name": "עשרת",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Zofiyya",
+    "name": "צופיה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Qevuzat Yavne",
+    "name": "קבוצת יבנה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Qidron",
+    "name": "קדרון",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Qiryat Eqron",
+    "name": "קרית עקרון",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Rehovot",
+    "name": "רחובות",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Shedema",
+    "name": "שדמה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Sha'are Avraham",
+    "name": "שערי אברהם",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Bet Hanan",
+    "name": "בית חנן",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Bet Oved",
+    "name": "בית עובד",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Ge'alya",
+    "name": "גאליה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Gan Soreq",
+    "name": "גן שורק",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Kefar HaNagid",
+    "name": "כפר הנגיד",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Neta'im",
+    "name": "נטעים",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Nes Ziyyona",
+    "name": "נס ציונה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Ayanot",
+    "name": "עיינות",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Palmahim",
+    "name": "פלמחים",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Rishon LeZiyyon",
+    "name": "ראשון לציון",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Azor",
+    "name": "אזור",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Avigedor",
+    "name": "אביגדור",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Orot",
+    "name": "אורות",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Ahawa",
+    "name": "אחווה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Alumma",
+    "name": "אלומה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Emunim",
+    "name": "אמונים",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Be'er Tuveya",
+    "name": "באר טוביה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Bizzaron",
+    "name": "ביצרון",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Bet Ezra",
+    "name": "בית עזרא",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Bat Hazor",
+    "name": "בת חצור",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Giv'ati",
+    "name": "גבעתי",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Gal'on",
+    "name": "גלאון",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Gat (Qibbuz)",
+    "name": "גת (קיבוץ)",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Wardon",
+    "name": "ורדון",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Zavdi'el",
+    "name": "זבדיאל",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Zerahya",
+    "name": "זרחיה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Hazav",
+    "name": "חצב",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Hazor-Ashdod",
+    "name": "חצור-אשדוד",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Yinnon",
+    "name": "ינון",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Kannot",
+    "name": "כנות",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Kefar Ahim",
+    "name": "כפר אחים",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Kefar Harif",
+    "name": "כפר הרי\"ף",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Kefar Warburg",
+    "name": "כפר ורבורג",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Kefar Menahem",
+    "name": "כפר מנחם",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Menuha",
+    "name": "מנוחה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Merkaz Shappira",
+    "name": "מרכז שפירא",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Massuot Yizhaq",
+    "name": "משואות יצחק",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Negba",
+    "name": "נגבה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Newe Mivtah",
+    "name": "נווה מבטח",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Nahala",
+    "name": "נחלה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Nir Banim",
+    "name": "ניר בנים",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Segula",
+    "name": "סגולה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Ezer",
+    "name": "עזר",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Azriqam",
+    "name": "עזריקם",
+    "region": "שפלה"
+  },
+  {
+    "name english": "En Zurim",
+    "name": "עין צורים",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Arugot",
+    "name": "ערוגות",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Qedma",
+    "name": "קדמה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Qomemiyyut",
+    "name": "קוממיות",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Qiryat Mal'akhi",
+    "name": "קרית מלאכי",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Revadim",
+    "name": "רבדים",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Sede Yo'av",
+    "name": "שדה יואב",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Sede Uzziyyahu",
+    "name": "שדה עוזיהו",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Shafir",
+    "name": "שפיר",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Shetulim",
+    "name": "שתולים",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Timmorim",
+    "name": "תימורים",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Talme Yehi'el",
+    "name": "תלמי יחיאל",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Even Shemu'el",
+    "name": "אבן שמואל",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Ahuzzam",
+    "name": "אחוזם",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Etan",
+    "name": "איתן",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Zohar",
+    "name": "זוהר",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Yad Natan",
+    "name": "יד נתן",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Lakhish",
+    "name": "לכיש",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Nehora",
+    "name": "נהורה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Nogah",
+    "name": "נוגה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "No'am",
+    "name": "נועם",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Nir Hen",
+    "name": "ניר ח\"ן",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Uza",
+    "name": "עוזה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Ozem",
+    "name": "עוצם",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Qiryat Gat",
+    "name": "קרית גת",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Rewaha",
+    "name": "רווחה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Sede Dawid",
+    "name": "שדה דוד",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Sede Moshe",
+    "name": "שדה משה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Shomeriyya",
+    "name": "שומריה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Shahar",
+    "name": "שחר",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Shalwa",
+    "name": "שלווה",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Sheqef",
+    "name": "שקף",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Telamim",
+    "name": "תלמים",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Ashdod",
+    "name": "אשדוד",
+    "region": "שפלה"
+  },
+  {
+    "name english": "Avihayil",
+    "name": "אביחיל",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Even Yehuda",
+    "name": "אבן יהודה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Udim",
+    "name": "אודים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Elyakhin",
+    "name": "אליכין",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Elyashiv",
+    "name": "אלישיב",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Arsuf*",
+    "name": "ארסוף*",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Burgeta",
+    "name": "בורגתה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Bet HaLevi",
+    "name": "בית הלוי",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Bet Herut",
+    "name": "בית חרות",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Bet Yehoshua",
+    "name": "בית יהושע",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Bet Yannay",
+    "name": "בית ינאי",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Bet Yizhaq-Sh. Hefer",
+    "name": "בית יצחק-שער חפר",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Bitan Aharon",
+    "name": "ביתן אהרן",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Bene Deror",
+    "name": "בני דרור",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Bene Ziyyon",
+    "name": "בני ציון",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Bazra",
+    "name": "בצרה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Ge'ule Teman",
+    "name": "גאולי תימן",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Ge'ulim",
+    "name": "גאולים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Giv'at Hayyim (Ihud)",
+    "name": "גבעת חיים (איחוד)",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Giv'at Hayyim(Me'Uhad)",
+    "name": "גבעת חיים (מאוחד)",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Giv'at Shappira",
+    "name": "גבעת שפירא",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Gannot Hadar",
+    "name": "גנות הדר",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Ga'ash",
+    "name": "געש",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Hadar Am",
+    "name": "הדר עם",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "HaOgen",
+    "name": "העוגן",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Havazzelet HaSharon",
+    "name": "חבצלת השרון",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Hogla",
+    "name": "חגלה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Hofit",
+    "name": "חופית",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Hibbat Ziyyon",
+    "name": "חיבת ציון",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Hanni'el",
+    "name": "חניאל",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Hazrot Hefer",
+    "name": "חצרות חפר",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Herev Le'et",
+    "name": "חרב לאת",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Haruzim",
+    "name": "חרוצים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Herut",
+    "name": "חרות",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Yedidya",
+    "name": "ידידיה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Yanuv",
+    "name": "ינוב",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Ye'af",
+    "name": "יעף",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Yaqum",
+    "name": "יקום",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Kefar Hess",
+    "name": "כפר הס",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Kefar Haro'e",
+    "name": "כפר הרא\"ה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Kefar Vitkin",
+    "name": "כפר ויתקין",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Kefar Hayyim",
+    "name": "כפר חיים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Kefar Yona",
+    "name": "כפר יונה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Kefar Ya'bez",
+    "name": "כפר יעבץ",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Kefar Monash",
+    "name": "כפר מונש",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Kefar Netter",
+    "name": "כפר נטר",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Kefar Avoda",
+    "name": "כפר עבודה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Mevo'ot Yam",
+    "name": "מבואות ים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Midreshet Ruppin",
+    "name": "מדרשת רופין",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Mikhmoret",
+    "name": "מכמורת",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Ma'barot",
+    "name": "מעברות",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Mishmar HaSharon",
+    "name": "משמר השרון",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Mishmeret",
+    "name": "משמרת",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Nordiyya",
+    "name": "נורדיה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Ne'urim",
+    "name": "נעורים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Netanya",
+    "name": "נתניה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Azri'el",
+    "name": "עזריאל",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "En HaHoresh",
+    "name": "עין החורש",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "En Wered",
+    "name": "עין ורד",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "En Sarid",
+    "name": "עין שריד",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Porat",
+    "name": "פורת",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Pardesiyya",
+    "name": "פרדסיה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Zur Moshe",
+    "name": "צור משה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Zoran",
+    "name": "צורן",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Qadima",
+    "name": "קדימה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Qiryat Shelomo",
+    "name": "קרית שלמה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Rishpon",
+    "name": "רשפון",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Shoshannat HaAmaqim",
+    "name": "שושנת העמקים (עמידר)",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Shoshannat HaAmaqim",
+    "name": "שושנת העמקים (רסקו)",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Shefayim",
+    "name": "שפיים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Tel Yizhaq",
+    "name": "תל יצחק",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Tel Mond",
+    "name": "תל מונד",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Tenuvot",
+    "name": "תנובות",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Omez",
+    "name": "אומץ",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Ahituv",
+    "name": "אחיטוב",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Be'erotayim",
+    "name": "בארותיים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Bahan",
+    "name": "בחן",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Gan Yoshiyya",
+    "name": "גן יאשיה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Hama'pil",
+    "name": "המעפיל",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Zemer",
+    "name": "זמר",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Hazer Be'erotaim",
+    "name": "חצר בארותיים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Tayibe",
+    "name": "טייבה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Tire",
+    "name": "טירה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Yad Hanna",
+    "name": "יד חנה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Nizzane Oz",
+    "name": "ניצני עוז",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Olesh",
+    "name": "עולש",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Qalansawe",
+    "name": "קלנסווה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Sha'ar Efrayim",
+    "name": "שער אפרים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Eyal",
+    "name": "אייל",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Elishama",
+    "name": "אלישמע",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Bet Berl",
+    "name": "בית ברל",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Giv'at Hen",
+    "name": "גבעת ח\"ן",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Jaljulye",
+    "name": "ג'לג'וליה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Gan Hayyim",
+    "name": "גן חיים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Ganne Am",
+    "name": "גני עם",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Hod HaSharon",
+    "name": "הוד השרון",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Hagor",
+    "name": "חגור",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Horeshim",
+    "name": "חורשים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Yarhiv",
+    "name": "ירחיב",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Yarqona",
+    "name": "ירקונה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Kokhav Ya'ir",
+    "name": "כוכב יאיר",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Kefar Malal",
+    "name": "כפר מל\"ל",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Kefar Sava",
+    "name": "כפר סבא",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Newe Yamin",
+    "name": "נווה ימין",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Newe Yaraq",
+    "name": "נווה ירק",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Nir Eliyyahu",
+    "name": "ניר אליהו",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Adanim",
+    "name": "עדנים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Zofit",
+    "name": "צופית",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Zur Yig'al",
+    "name": "צור יגאל",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Zur Natan",
+    "name": "צור נתן",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Ramot HaShavim",
+    "name": "רמות השבים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Ramat HaKovesh",
+    "name": "רמת הכובש",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Ra'anana",
+    "name": "רעננה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Sede Warburg",
+    "name": "שדה ורבורג",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Sede Hemed",
+    "name": "שדי חמד",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Gelil Yam",
+    "name": "גליל ים",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Herzeliyya",
+    "name": "הרצליה",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Kefar Shemaryahu",
+    "name": "כפר שמריהו",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Ramat HaSharon",
+    "name": "רמת השרון",
+    "region": "שרון - עמק חפר"
+  },
+  {
+    "name english": "Tel Aviv -Yafo",
+    "name": "תל אביב - יפו",
+    "region": "תל אביב"
+  },
+  {
+    "name english": "Bene Beraq",
+    "name": "בני ברק",
+    "region": "תל אביב"
+  },
+  {
+    "name english": "Giv'atayim",
+    "name": "גבעתיים",
+    "region": "תל אביב"
+  },
+  {
+    "name english": "Ramat Gan",
+    "name": "רמת גן",
+    "region": "תל אביב"
+  },
+  {
+    "name english": "Bat Yam",
+    "name": "בת ים",
+    "region": "תל אביב"
+  },
+  {
+    "name english": "Holon",
+    "name": "חולון",
+    "region": "תל אביב"
+  },
+  {
+    "name english": "Miqwe Yisra'el",
+    "name": "מקווה ישראל",
+    "region": "תל אביב"
+  }
+]

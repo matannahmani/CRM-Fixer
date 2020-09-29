@@ -1,8 +1,8 @@
 class Call < ApplicationRecord
   before_validation :checkphone, :checkemail, :sethealth
-  belongs_to :city
-  has_many :call_option, :dependent => :destroy
-  has_many :help_option, :through => :call_option
+  belongs_to :city, optional: true
+  has_many :call_option, dependent: :destroy
+  has_many :help_option, through: :call_option
   belongs_to :user, optional: true
   validates :name, presence: true
   validates :lastname, presence: true

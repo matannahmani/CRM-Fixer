@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   get '/newcall', to: 'calls#new', as: 'newcall'
   post '/newcall', to: 'calls#create', as: 'postcall'
   get 'call/:id', to: 'calls#show', as: 'showcall'
-  devise_for :users, controllers: { registrations: "registrations" }
-  # devise_for :users
+  # devise_for :users, controllers: { registrations: "registrations" }
+  devise_for :users
   root to: 'pages#home'
   get '/calls/takecall/:id', to: 'calls#takecall', as: 'takecall'
   get '/mycard', to: 'pages#show', as: 'mypdf'

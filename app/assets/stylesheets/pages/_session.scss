@@ -63,6 +63,7 @@
               margin: 0;
               padding-left: 3rem;
               margin-top: 8px;
+              flex-wrap: inherit;
               label{
                 font-size: 16px;
               }
@@ -123,4 +124,8 @@
       width: 240px;
     }
   }
+}
+.fixer{
+  flex-wrap: wrap;
+  width: 300px !important;
 }
