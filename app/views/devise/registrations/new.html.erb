@@ -27,7 +27,7 @@
                 input_html: { autocomplete: "lastname" }%>
     <%= f.input :gender,
                 autofocus: true, as: :select, collection: ['אישה','גבר'],include_blank: false,
-                input_html: { autocomplete: "gender" }%>
+                input_html: { class: 'js-select', autocomplete: "gender" }%>
     <%= f.input :birthday,
                 required: true,
                 autofocus: true,
@@ -52,7 +52,7 @@
     <%= f.association :city,
                 include_blank: false,
                 autofocus: true,
-                input_html: { autocomplete: "city" }%>
+                input_html: { class: 'js-selectable', autocomplete: "city" }%>
     <%= f.input :langauges, autofocus: true, required: false, collection: ["אנגלית","רוסית","גרמנית","פורטוגזית"], include_blank: false, include_hidden: false ,as: :check_boxes, multiple: true %>
     <%= f.association :help_option, label: "אופציה עזרה", as: :check_boxes, label_method: :descriptionvol, value_method: :id %>
 

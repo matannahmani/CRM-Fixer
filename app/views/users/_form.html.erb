@@ -16,12 +16,12 @@
         <%= f.input :email %>
         <%= f.input :lastname %>
         <%= f.input :name %>
-        <%#= f.input :gender, label: "מגדר" %>
+        <%= f.input :gender, label: "מגדר" %>
         <%= f.input :phone %>
         <%= f.input :address %>
         <%= f.input :student %>
-        <%= f.association :city, label: "ישוב", include_blank: false %>
-        <%= f.input :adminlevel, label: "רמת ניהול", collection: [['מתנדב',0],['טלפן',1],['מנהל',2],['מנהל ארצי',3]], include_blank: false %>
+        <%= f.association :city, label: "ישוב", include_blank: false, :input_html => { :class => 'js-selectable' }  %>
+        <%= f.input :adminlevel, label: "רמת ניהול", collection: [['מתנדב',0],['טלפן',1],['מנהל',2],['מנהל ארצי',3]], include_blank: false, :input_html => { :class => 'js-select' } %>
         <%= f.input :israelid %>
         <%= f.input :healthcheck, label: "הצהרת בריאות" %>
         <%= f.association :help_option, label: "אופציה עזרה", as: :check_boxes, label_method: :descriptionvol, value_method: :id %>

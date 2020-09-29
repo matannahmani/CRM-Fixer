@@ -14,7 +14,7 @@
       </p>
       <p>
         <strong>איזור:</strong>
-        <%= @city.region.name %>
+        <%= @city.region.name unless @city.region.nil? %>
       </p>
       <div class="action">
         <%= link_to 'עריכה', edit_city_path(@city), class: "btn btn-sm btn-flatgreen" %>

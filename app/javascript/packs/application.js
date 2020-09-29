@@ -28,7 +28,6 @@ const TableExport = require('tableexport');
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 // import "select2";
-let exportxl = document.getElementById('exportexl');
 const exportfunc = (exportexl) =>{
     exportexl.addEventListener('click', (btn) => {
     const table = new TableExport(document.getElementsByTagName("table"), {exportButtons: false});
@@ -37,13 +36,21 @@ const exportfunc = (exportexl) =>{
     table.export2file(xlsxData.data, xlsxData.mimeType, xlsxData.filename, xlsxData.fileExtension, xlsxData.merges, xlsxData.RTL, xlsxData.sheetname)
   });
 }
-if (exportexl !== 'null' || exportexl !== 'undefined'){
-  exportfunc(exportexl);
-}
-else{
-  location.reload();
-}
+const option1 = {
+  "width": "200px",
+  "language": {
+      "noResults": () => { return "לא נמצאו תוצאות"; }
+  },
+   escapeMarkup: (markup) =>{ return markup; }
+};
+const option2 = {...option1}
+option2["minimumResultsForSearch"] = -1;
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
+  $(document).ready(function(){
+    // Turn on js-selectable class so that it becomes SELCT 2 tag
+    $('.js-selectable').select2(option1);
+    $('.js-select').select2(option2);
+    let exportbtn = document.getElementById('exportexl');
+    if (exportbtn !== null) exportfunc(exportbtn);
+  });
 });

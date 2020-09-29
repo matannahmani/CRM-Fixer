@@ -229,3 +229,10 @@
   .table thead{ font-size: 20px;}
   .table tbody{ font-size: 14px;}
 }
+.select2-selection__rendered, .select2-results__option, .select2-search__field {
+  font-size: 14px !important;
+  font-family: Heebo, sans-serif !important;
+}
+// .select2-container, .select2-container--default{
+//   width: 80% !important;
+// }

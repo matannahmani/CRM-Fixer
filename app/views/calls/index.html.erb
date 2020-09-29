@@ -34,7 +34,7 @@
             <td><%= call.lastname %></td>
             <td><%= call.phone %></td>
             <td><%= call.address %></td>
-            <td><%= call.city.name %></td>
+            <td><%= call.city.name unless call.city.nil? %></td>
             <td><%= call.email %></td>
             <td><%= call.description[0..60] %></td>
             <td><%= call.healthcheck ? "אושר" : "מחכה לאישור" %></td>

@@ -15,7 +15,7 @@
           <% @cities.each do |city| %>
             <tr>
               <td><%= city.name %></td>
-              <td><%= city.region.name %></td>
+              <td><%= city.region.name unless city.region.nil?%></td>
               <td><%= link_to 'צפייה', city %></td>
               <td><%= link_to 'עריכה', edit_city_path(city) %></td>
               <td><%= link_to 'מחיקה', city, method: :delete, data: { confirm: 'אתה בטוח?' } %></td>

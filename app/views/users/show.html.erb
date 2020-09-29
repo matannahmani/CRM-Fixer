@@ -45,7 +45,7 @@
 
       <p>
         <strong>עיר:</strong>
-        <%= @user.city.name %>
+        <%= @user.city.name unless @user.city.nil? %>
       </p>
 
       <p>

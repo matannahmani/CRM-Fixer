@@ -31,7 +31,7 @@
 
   <p>
     <strong>ישוב:</strong>
-    <%= @call.city.name %>
+    <%= @call.city.name unless @call.city.nil? %>
   </p>
 
   <p>
