@@ -56,6 +56,10 @@
     <strong>בדיקת בריאות:</strong>
     <%= @call.healthcheck ? "כן" : "לא" %>
   </p>
+  <p>
+    <strong>סטטוס קריאה:</strong>
+    <%= @call.done ? "סגור" : "פתוח" %>
+  </p>
 <% else %>
   <p>
     <strong>שם:</strong>

@@ -8,7 +8,8 @@
         <h2 class="headline">עריכת קריאה</h2>
         <% end %>
 </div>
-<%= simple_form_for @call, url: postcall_path do |f| %>
+  <% action_name == "new" || action_name == "create" ? @path = newcall_path : @path = call_path %>
+  <%= simple_form_for @call, url: @path do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
@@ -19,6 +20,7 @@
     <%= f.input :address, label: "כתובת מלאה" %>
     <%= f.association :city, label: "ישוב", include_blank: false, :input_html => { :class => 'js-selectable' } %>
     <%= f.association :user, label_method: :fullname, label: "מתנדב", :input_html => { :class => 'js-selectable' } if params["action"] == "edit" %>
+    <%= f.input :done, label: "סטטוס", as: :select, collection: [["פתוח",false],["סגור",true]], include_blank: false, :input_html => { :class => 'js-select' } if params["action"] == "edit" %>
     <%= f.input :email, label: "איימל", error: true %>
     <%= f.input :description, label: "תכתבו במילים שלכם מה צריך" %>
     <%= f.input :availability, label: "באיזה שעות נוח שהמתנדב/ת יגיע?", as: :check_boxes, include_hidden: false, collection: Call.availabilitylist, include_blank: false%>

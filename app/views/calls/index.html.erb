@@ -2,11 +2,12 @@
   <%= link_to image_tag("logo.png"), root_path%>
   <div class="index-page">
     <h2 class="headline-text">לוח קריאות</h2>
-    <%= simple_form_for Call.new, url: calls_path, method: "GET", html: { class: 'form-inline' } do |f| %>
-      <%= f.association :city, label: "עיר", :include_blank => "הצג הכל" %>
-      <%= simple_form_for Region.new do |t| %>
-        <%= t.input :name,label: "איזור", :collection => Region.all, :include_blank => "הצג הכל" %>
-        <%= f.input :user, label: "בטיפול" , as: :select, :include_blank => "הצג הכל" , input_html: {checked: false} %>
+    <%= simple_form_for @call, url: calls_path, method: "GET", html: { class: 'form-inline', multipart: true } do |f| %>
+      <%= f.association :city, label: "עיר", :include_blank => "הצג הכל", input_html: { class: 'js-selectable' } %>
+      <%= f.simple_fields_for :region, @region do |t| %>
+        <%= t.input :name, label: "איזור", selected: @region.id, :collection => Region.all, :include_blank => "הצג הכל", input_html:{ class: 'js-selectable' } %>
+        <%= f.input :user, label: "בטיפול" , as: :select, selected: @user_show , collection: [["לא",false],["כן",true]], :include_blank => "הצג הכל" , input_html: { class: 'js-select' } %>
+        <%= f.input :done, label: "סטטוס" , as: :select, selected: @call_done , collection: [["פתוח",false],["סגור",true]], :include_blank => "הצג הכל" , input_html: { class: 'js-select' } %>
         <%= f.submit "חפש", class: "btn btn-main btn-sm" %>
       <% end %>
     <% end%>
@@ -23,6 +24,7 @@
           <th scope="col">הצהרת בריאות</th>
           <th scope="col">מתנדב</th>
           <th scope="col">זמינות</th>
+          <th scope="col">סטטוס</th>
           <th colspan="3">פעולות</th>
         </tr>
       </thead>
@@ -40,6 +42,7 @@
             <td><%= call.healthcheck ? "אושר" : "מחכה לאישור" %></td>
             <td><%= call.user.nil? ? "לא נלקח" : call.user.name %></td>
             <td><%= call.availability.join(' ') unless call.availability.nil? %></td>
+            <td><%= call.done ? "סגור" : "פתוח" %></td>
             <td><%= link_to 'צפייה', call %></td>
             <td><%= link_to 'עריכה', edit_call_path(call) %></td>
             <td><%= link_to 'מחיקה', call, method: :delete, data: { confirm: 'האם אתה בטוח?' } %></td>

@@ -45,12 +45,15 @@ const option1 = {
 };
 const option2 = {...option1}
 option2["minimumResultsForSearch"] = -1;
+
+
 document.addEventListener('turbolinks:load', () => {
   $(document).ready(function(){
     // Turn on js-selectable class so that it becomes SELCT 2 tag
     $('.js-selectable').select2(option1);
     $('.js-select').select2(option2);
     let exportbtn = document.getElementById('exportexl');
+    // let cityfilter = document.getElementById('call_city_id');
     if (exportbtn !== null) exportfunc(exportbtn);
   });
 });

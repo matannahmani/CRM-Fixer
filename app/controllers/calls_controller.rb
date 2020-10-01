@@ -1,16 +1,19 @@
 class CallsController < ApplicationController
   before_action :set_call, only: [:show, :edit, :update, :destroy, :takecall]
   before_action :checkadmin, except: [:new, :create, :show, :takecall]
+  # before_action :set_path, expect: [:show, :index]
   skip_before_action :authenticate_user!, only: [:new, :create]
 
   # GET /calls
   # GET /calls.json
   def index
     @calls = Call.all
-    unless params["call"].nil?
-      city_id = params["call"]["city_id"]
-      @calls = Call.where(city_id: city_id.to_i) unless city_id.empty?
-    end
+    @call = Call.new
+    @region = Region.new
+    @user_show = ""
+    return if params["call"].nil? # breaks if no filter input
+
+    filter_search
   end
 
   # GET /calls/1
@@ -88,6 +91,36 @@ class CallsController < ApplicationController
 
   private
 
+  def filter_search
+    # SET FORM
+    city_id = params["call"]["city_id"]
+    user = params["call"]["user"]
+    region_id = params["call"]["region"]["name"]
+    call_done = params["call"]["done"]
+    @call.city_id = city_id
+    @user_show = user == "true" if user != ""
+    @call_done = call_done == "true" if call_done != ""
+    @region.id = region_id.to_i
+    # SEARCH
+    if @user_show == false # filter on (SEARCH RESULT = NO USERS)
+      @calls = Call.where(user: nil)
+    elsif @user_show == true # filter on (SEARCH RESULT = USERS)
+      @calls = Call.where.not(user: nil)
+    end
+    if @region.id.zero? # region not selected
+      @calls = @calls.where(city: @call.city) unless @call.city_id.nil? # default no filter
+    else
+      if @user_show == false # filter on (SEARCH RESULT = NO USERS)
+        @calls = Region.find(@region.id).call.where(user: nil)
+      elsif @user_show == true # filter on (SEARCH RESULT = USERS)
+        @calls = Region.find(@region.id).call.where.not(user: nil)
+      else
+        @calls = Region.find(@region.id).call
+      end
+    end
+    @calls = @calls.where(done: call_done) unless call_done.nil? || call_done.empty?
+  end
+
   # Use callbacks to share common setup or constraints between actions.
   def set_call
     @call = Call.find(params[:id])
@@ -95,6 +128,6 @@ class CallsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def call_params
-    params.require(:call).permit(:user_id, :name, :lastname, :phone, :address, :city_id, :email, :description, :healthcheck, :availability => [], :help_option_ids =>[])
+    params.require(:call).permit(:user_id, :name, :lastname, :phone, :address, :city_id, :email, :description, :healthcheck, :done, :availability => [], :help_option_ids =>[])
   end
 end
