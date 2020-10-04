@@ -61,6 +61,8 @@ en:
     attributes:
       user:
         email: "איימל"
+        created_at: "נוצר בתאריך"
+        adminlevel: "רמת ניהול"
         password: "סיסמה"
         password_confirmation: "אישור סיסמה"
         name: "שם"
@@ -77,6 +79,24 @@ en:
         getupdates: "קבל עידכונים"
         availability: "זמינות"
         langauges: "שפות"
+        joinlocal: "הצטרף לקהילה מקומית"
+        lastcontact: "תאריך יצירת קשר אחרון"
+        contactname: "שם טלפן/רכז שיוצר קשר"
+        keepvolunteer: "מעוניין בהמשך התנדבות?"
+        pastvolunteervolume: "היקף התנדבות עבר בתנועה?"
+        pastvolunteer: "ניסיון התנדבות"
+        volunteerusefull: "האם ההתנדבות הייתה משמעותית?"
+        workfield: "מקצוע"
+        specality: "כישורים מיוחדים"
+        helpcalls: "מעוניין/ת בטלפנות מהבית"
+        helplocal: "סולידריות בשכונה?"
+        solidaritycampus: "סולידריות בקמפוס"
+        campus: "מוסד לימודים?"
+        campusactivity: "חוג לימודים"
+        studentactivist: "פעיל/ה באגודת הסטודנטים?"
+        intrestedinsolidarity: "מעוניין לתרום להמשך פעילות התנועה?"
+        localwhatsapp: "נמצא בקבוצת וואטסאפ שכונתית"
+        othermentions: "הערות חופשיות"
       city:
         name: "שם"
     errors:

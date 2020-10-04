@@ -16,3 +16,4 @@
 //= require_tree .
 //= require jquery
 //= require select2
+//= require bootstrap-datepicker

@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home]
-  before_action :checkadmin, only: [:adminpanel]
+  before_action :checkadminuser, only: [:adminpanel]
 
   def home
   end

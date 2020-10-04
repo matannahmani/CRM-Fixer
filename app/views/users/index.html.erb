@@ -44,7 +44,7 @@
             <td><%= user.healthcheck ? "אושר" : "נדחה" %></td>
             <td><%= link_to 'הצגה', user %></td>
             <td><%= link_to 'עריכה', edit_user_path(user) %></td>
-            <td><%= link_to 'מחיקה', user, method: :delete, data: { confirm: 'אתה בטוח?' } %></td>
+            <td><%= link_to 'מחיקה', user, method: :delete, data: { confirm: 'אתה בטוח?' } if current_user.issuper? %></td>
           </tr>
         <% end %>
       </tbody>

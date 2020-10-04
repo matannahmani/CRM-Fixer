@@ -8,7 +8,7 @@
       </h2>
     </div>
     <div class="callshow">
-      <p>
+<!--       <p>
         <strong>איימל:</strong>
         <%= @user.email %>
       </p>
@@ -61,7 +61,22 @@
       <p>
         <strong>אישור בריאות:</strong>
         <%= @user.healthcheck ? 'כן' : 'לא'  %>
-      </p>
+      </p> -->
+      <% @user.attributes.each do |i,j| %>
+        <% unless i == "encrypted_password" || i == "id" || i == "reset_password_token" || i == "reset_password_sent_at" || i == "remember_created_at" || i == "updated_at" %>
+          <% if i == 'city_id' %>
+            <p>
+              <strong>עיר:</strong>
+              <%= @user.city.name unless @user.city.nil? %>
+            </p>
+          <% else %>
+          <div class="form-group">
+            <label><%= I18n.t "activerecord.attributes.user.#{i}" %></label>
+              <input class="form-control string disabled" disabled="disabled" type="text" value='<%= j %>'/>
+          </div>
+          <% end %>
+        <% end %>
+      <% end %>
       <div class="action">
         <%= link_to 'עריכה', edit_user_path(@user), class: "btn btn-sm btn-flatgreen" %>
         <%= link_to 'חזרה', users_path, class: "btn btn-sm btn-flatgreen" %>

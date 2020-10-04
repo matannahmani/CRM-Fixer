@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  before_action :checkadmin
+  before_action :checkadminuser
   # GET /users
   # GET /users.json
   def index
@@ -46,6 +46,8 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+    return if verify_user(user_params)
+
     respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to @user, notice: "משתמש #{UPDATE_MSG}" }
@@ -95,6 +97,28 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:email, :lastname, :name, :gender, :phone, :address, :student, :city_id, :adminlevel, :israelid, :healthcheck, :help_option_ids=> [])
+      params.require(:user).permit(:joinlocal, :langauges, :lastcontact, :contactname, :keepvolunteer, :pastvolunteervolume, :pastvolunteer, :volunteerusefull, :availability, :workfield, :specality, :helplocal, :solidaritycampus, :campus, :campusactivity, :studentactivist, :intrestedinsolidarity, :localwhatsapp, :othermentions, :email, :lastname, :name, :gender, :phone, :address, :student, :city_id, :adminlevel, :israelid, :healthcheck, :help_option_ids=> [])
+      # if current_user.iscaller? # cool way to check if caller may revert in the future
+        # [:adminlevel, :name, :lastname, :email].each { |i| render_error if params[:user].include?(i) } # may revert to this in the future
+      # end
+    end
+
+    def verify_user(user_params)
+      # binding.pry
+      return if @current_user.isadmin? # ALL ALLOWED
+
+      if @current_user.issuper? # ALL ALLOWED EXECPT changing admin level above caller
+        render_error if user_params["adminlevel"].to_i > 1
+      elsif @current_user.iscaller?
+       # render_error unless user_params["adminlevel"].to_i == @user.adminlevel && user_params["email"] == @user.email && user_params["name"] == @user.name && @user.lastname == user_params["name"]
+        # render_error unless user_params["adminlevel"].to_i == @user.adminlevel && user_params["email"] == @user.email && user_params["name"] == @user.name && @user.lastname == user_params["name"]
+      end
+    end
+
+    def render_error
+      respond_to do |format|
+        format.html { render :edit }
+        format.json { render json: @user.errors, status: :unprocessable_entity, notice: CALL_INSUFFICIENT }
+      end
     end
 end

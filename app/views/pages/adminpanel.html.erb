@@ -1,8 +1,12 @@
 <div class="homecon">
   <%= link_to image_tag("logo.png"), root_path%>
-  <%= link_to 'לצפייה בקריאות', calls_path, class: "btn btn-main" %>
-  <%= link_to 'מסך איזורים', regions_path, class: "btn btn-main" %>
-  <%= link_to 'מסך ערים', cities_path, class: "btn btn-main" %>
-  <%= link_to 'מסך אופציות עזרה', help_options_path, class: "btn btn-main" %>
-  <%= link_to 'מסך ניהול משתמשים', users_path, class: "btn btn-main" %>
+  <% if @current_user.issuper? %>
+    <%= link_to 'לצפייה בקריאות', calls_path, class: "btn btn-main" %>
+    <%= link_to 'מסך איזורים', regions_path, class: "btn btn-main" %>
+    <%= link_to 'מסך ערים', cities_path, class: "btn btn-main" %>
+    <%= link_to 'מסך אופציות עזרה', help_options_path, class: "btn btn-main" %>
+    <%= link_to 'מסך ניהול משתמשים', users_path, class: "btn btn-main" %>
+  <% elsif @current_user.iscaller? %>
+    <%= link_to 'מסך ניהול משתמשים', users_path, class: "btn btn-main" %>
+  <% end %>
 </div>

@@ -19,6 +19,10 @@ class ApplicationController < ActionController::Base
     redirect_to :root, notice: CALL_INSUFFICIENT unless current_user.issuper?
   end
 
+  def checkadminuser
+    redirect_to :root, notice: CALL_INSUFFICIENT unless current_user.adminlevel.positive?
+  end
+
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :student, :lastname, :phone, :address, :israelid, :gender, :birthday, :healthcheck, :getupdates, :city_id, :help_option_ids => [], :langauges => []])
     devise_parameter_sanitizer.permit(:account_update, keys: [:name, :student, :lastname, :phone, :address, :israelid, :gender, :birthday, :healthcheck, :getupdates, :city_id, :help_option_ids => [], :langauges => []])

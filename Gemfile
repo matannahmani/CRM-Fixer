@@ -87,3 +87,5 @@ gem "jquery-rails", "~> 4.4"
 gem "bootstrap-sass", "~> 3.4"
 
 gem "select2-rails", "~> 4.0"
+
+gem "bootstrap-datepicker-rails", "~> 1.9"
