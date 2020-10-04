@@ -38,7 +38,7 @@ puts "Creating Cities"
 puts zoneobject.each { |i| City.create(region: Region.find_by(name: i[0]), name: i[1])}
 puts "Finished Creating Cities"
 puts "Creating Admin Account"
-user = User.new(name: "מתן", lastname: "נחמני", email: "matanleague@gmail.com", password: "123456", phone: "0542124011", address: "כליל החורש 26", israelid: 211890652, adminlevel: 4, city_id: City.first.id, student: true, gender: true, healthcheck: true)
-UserOption.create(user: user, helpoption: HelpOption.last)
-user.save!
+# user = User.new(name: "מתן", lastname: "נחמני", email: "matanleague@gmail.com", password: "123456", phone: "0542124011", address: "כליל החורש 26", israelid: 211890652, adminlevel: 4, city_id: City.first.id, student: true, gender: true, healthcheck: true)
+# UserOption.create(user: user, helpoption: HelpOption.last)
+# user.save!
 puts "Seeding Ended"

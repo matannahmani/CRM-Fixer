@@ -11,6 +11,7 @@ class ApplicationController < ActionController::Base
   CALL_DESTROYED = "הקריאה נמחקה בהצלחה!"
   CALL_ERROR = "שגיאה"
   CALL_INSUFFICIENT = "אינך רשאי לבצע פעולה זאת!"
+  CALL_CREATE = "הקריאה נלקחה נפתחה!"
   UPDATE_MSG = "עודכנה בהצלחה!"
   DESTORY_MSG = "נמחקה בהצלחה!"
   CREATE_MSG = "נוצרה בהצלחה!"

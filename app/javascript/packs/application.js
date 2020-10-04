@@ -30,9 +30,11 @@ const TableExport = require('tableexport');
 // import "select2";
 const exportfunc = (exportexl) =>{
     exportexl.addEventListener('click', (btn) => {
-    const table = new TableExport(document.getElementsByTagName("table"), {exportButtons: false});
+    let table = new TableExport(document.getElementsByTagName("table"), {exportButtons: false});
     var exportData = table.getExportData();
-    var xlsxData = exportData['tableexport-1'].xlsx
+    console.log(exportData)
+    let xlsxData
+    xlsxData = exportData[Object.keys(exportData)[0]].xlsx
     table.export2file(xlsxData.data, xlsxData.mimeType, xlsxData.filename, xlsxData.fileExtension, xlsxData.merges, xlsxData.RTL, xlsxData.sheetname)
   });
 }
@@ -46,14 +48,14 @@ const option1 = {
 const option2 = {...option1}
 option2["minimumResultsForSearch"] = -1;
 
-
-document.addEventListener('turbolinks:load', () => {
-  $(document).ready(function(){
+$(document).ready(function(){
     // Turn on js-selectable class so that it becomes SELCT 2 tag
     $('.js-selectable').select2(option1);
     $('.js-select').select2(option2);
-    let exportbtn = document.getElementById('exportexl');
-    // let cityfilter = document.getElementById('call_city_id');
-    if (exportbtn !== null) exportfunc(exportbtn);
-  });
+});
+
+document.addEventListener('turbolinks:load', () => {
+  let exportbtn = null
+  exportbtn = document.getElementById('exportexl');
+  if (exportbtn !== null) exportfunc(exportbtn);
 });
