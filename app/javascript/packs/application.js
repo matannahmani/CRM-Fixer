@@ -47,9 +47,10 @@ const option1 = {
 };
 const option2 = {...option1}
 const option3 = {...option1}
+const option4 = {...option1}
+option4["width"] = "80%";
 option3["width"] = "280px";
 option2["minimumResultsForSearch"] = -1;
-
 
 document.addEventListener('turbolinks:load', () => {
   $(document).ready(function(){
@@ -57,7 +58,31 @@ document.addEventListener('turbolinks:load', () => {
       $('.js-selectable').select2(option1);
       $('.js-select').select2(option2);
       $('.js-selectable-xl').select2(option3);
+      $('.js-selectable-w80').select2(option4);
   });
+  let solidlocal = document.getElementById("user_helplocal");
+  let solidcampus = document.getElementById("user_solidaritycampus");
+  let localdiv = document.getElementsByClassName("user_solidaritylocaladdress")
+  let localcampus = document.querySelectorAll(".user_campus, .user_campusactivity, .user_studentactivist")
+  const updateShow = () => {
+    if (solidlocal.checked){
+      localdiv[0].classList.remove("hide")
+      }
+    else{
+      localdiv[0].classList.add("hide")
+      }
+    if (solidcampus.checked){
+      localcampus.forEach((item) => item.classList.remove('hide'))
+      }
+    else{
+      localcampus.forEach((item) => item.classList.add('hide'))
+      }
+  }
+  if (solidlocal !== null && solidlocal !== "undefined" ){
+    updateShow();
+    solidlocal.addEventListener('click', (btn) => updateShow());
+    solidcampus.addEventListener('click', (btn) => updateShow());
+  }
   let exportbtn = null
   exportbtn = document.getElementById('exportexl');
   if (exportbtn !== null) exportfunc(exportbtn);

@@ -128,6 +128,6 @@ class CallsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def call_params
-    params.require(:call).permit(:user_id, :name, :lastname, :phone, :address, :city_id, :email, :description, :healthcheck, :done, :availability => [], :help_option_ids =>[])
+    params.require(:call).permit(:user_id, :name, :lastname, :phone, :address, :city_id, :email, :description, :healthcheck, :done, availability: [], help_option_ids: [])
   end
 end

@@ -1,6 +1,6 @@
 <div class="homecon">
     <%= image_tag("logo.png")%>
-    <%= link_to 'מסך ניהול', adminpanel_path, class: "btn btn-main" if ( current_user.issuper? || current_user.iscaller?) %>
+    <%= link_to 'מסך ניהול', adminpanel_path, class: "btn btn-main" if !current_user.nil? && !current_user.isvol? %>
     <%= link_to 'פתיחת קריאה', newcall_path, class: "btn btn-main" %>
     <%= link_to 'תעודת מתנדב', mypdf_path(:format => :pdf),target: :_blank, :class => "btn btn-main" unless current_user.nil? %>
     <% if (current_user.nil?) %>

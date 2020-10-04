@@ -25,36 +25,38 @@
         <%= f.input :adminlevel, label: "רמת ניהול", collection: [['מתנדב',0],['טלפן',1],['מנהל',2],['מנהל ארצי',3]], include_blank: false, :input_html => { :class => 'js-select' } %>
         <% end %>
         <%= f.input :gender, as: :select, collection: ['אישה','גבר'],include_blank: false, input_html: { class: 'js-select', autocomplete: "gender" }%>
-        <%= f.input :phone %>
-        <%= f.input :address %>
-        <%= f.input :student %>
         <%= f.association :city, label: "ישוב", include_blank: false, :input_html => { :class => 'js-selectable' }  %>
+        <%= f.input :address %>
+        <%= f.input :phone %>
         <%= f.input :israelid %>
+        <%= f.input :langauges, selected: @user.langauges, collection: ["אנגלית","רוסית","גרמנית","פורטוגזית"], input_html: {multiple: true, class: 'js-selectable-w80'} %>
+        <%= f.input :pastvolunteervolume, as: :string %>
+        <%= f.input :pastvolunteer %>
+        <%= f.input :keepvolunteer %>
+        <%= f.input :volunteerusefull %>
+        <%= f.input :availability %>
+        <%= f.input :workfield %>
+        <%= f.input :specality %>
+        <%= f.input :helpcalls %>
+        <%= f.input :solidaritycampus %>
+        <%= f.input :campus %>
+        <%= f.input :campusactivity %>
+        <%= f.input :helplocal %>
+        <%= f.input :solidaritylocaladdress %>
+        <%= f.input :studentactivist %>
+        <%= f.input :intrestedinsolidarity %>
+        <%= f.input :localwhatsapp %>
+        <%= f.input :helpoperations %>
+        <%= f.input :student %>
         <%= f.input :healthcheck, label: "הצהרת בריאות" %>
         <%= f.input :joinlocal %>
-        <%= f.input :langauges %>
+        <%= f.association :help_option, label: "אופציה עזרה", as: :check_boxes, label_method: :descriptionvol, value_method: :id %>
         <div class="form-group">
         <%= f.label :lastcontact%>
           <%= f.text_field :lastcontact, data:{ provide:'datepicker' }, class: "w-80" %>
         </div>
         <%= f.input :contactname %>
-        <%= f.input :keepvolunteer %>
-        <%= f.input :pastvolunteervolume %>
-        <%= f.input :pastvolunteer %>
-        <%= f.input :volunteerusefull %>
-        <%= f.input :availability %>
-        <%= f.input :workfield %>
-        <%= f.input :specality %>
-        <%= f.input :helplocal %>
-        <%= f.input :helpcalls %>
-        <%= f.input :solidaritycampus %>
-        <%= f.input :campus %>
-        <%= f.input :campusactivity %>
-        <%= f.input :studentactivist %>
-        <%= f.input :intrestedinsolidarity %>
-        <%= f.input :localwhatsapp %>
         <%= f.input :othermentions %>
-        <%= f.association :help_option, label: "אופציה עזרה", as: :check_boxes, label_method: :descriptionvol, value_method: :id %>
       </div>
 
       <div class="form-actions">

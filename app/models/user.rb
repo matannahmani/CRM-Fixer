@@ -52,11 +52,14 @@ class User < ApplicationRecord
     adminlevel == 1
   end
 
+  def isvol?
+    adminlevel == 0
+  end
+
   def admin_to_s
-    return "מתנדב" if adminlevel == 0
+    return "מתנדב" if adminlevel.zero?
     return "טלפן" if adminlevel == 1
     return "מנהל מחוז" if adminlevel == 2
     return "מנהל ארצי" if adminlevel == 3 || adminlevel == 4
   end
-
 end

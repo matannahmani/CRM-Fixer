@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_01_132518) do
+ActiveRecord::Schema.define(version: 2020_10_04_125519) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -113,7 +113,7 @@ ActiveRecord::Schema.define(version: 2020_10_01_132518) do
     t.date "lastcontact"
     t.string "contactname"
     t.boolean "keepvolunteer"
-    t.integer "pastvolunteervolume"
+    t.string "pastvolunteervolume"
     t.boolean "volunteerusefull"
     t.string "availability", array: true
     t.string "workfield"
@@ -129,6 +129,8 @@ ActiveRecord::Schema.define(version: 2020_10_01_132518) do
     t.boolean "localwhatsapp"
     t.string "othermentions"
     t.integer "birthday"
+    t.boolean "helpoperations"
+    t.string "solidaritylocaladdress"
     t.index ["city_id"], name: "index_users_on_city_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true

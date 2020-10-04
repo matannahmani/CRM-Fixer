@@ -97,7 +97,7 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:joinlocal, :langauges, :lastcontact, :contactname, :keepvolunteer, :pastvolunteervolume, :pastvolunteer, :volunteerusefull, :availability, :workfield, :specality, :helplocal, :solidaritycampus, :campus, :campusactivity, :studentactivist, :intrestedinsolidarity, :localwhatsapp, :othermentions, :email, :lastname, :name, :gender, :phone, :address, :student, :city_id, :adminlevel, :israelid, :healthcheck, :help_option_ids=> [])
+      params.require(:user).permit(:helpcalls, :helpoperations, :solidaritylocaladdress, :joinlocal, :lastcontact, :contactname, :keepvolunteer, :pastvolunteervolume, :pastvolunteer, :volunteerusefull, :availability, :workfield, :specality, :helplocal, :solidaritycampus, :campus, :campusactivity, :studentactivist, :intrestedinsolidarity, :localwhatsapp, :othermentions, :email, :lastname, :name, :gender, :phone, :address, :student, :city_id, :adminlevel, :israelid, :healthcheck, langauges: [], help_option_ids: [])
       # if current_user.iscaller? # cool way to check if caller may revert in the future
         # [:adminlevel, :name, :lastname, :email].each { |i| render_error if params[:user].include?(i) } # may revert to this in the future
       # end
