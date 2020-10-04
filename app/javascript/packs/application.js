@@ -46,15 +46,18 @@ const option1 = {
    escapeMarkup: (markup) =>{ return markup; }
 };
 const option2 = {...option1}
+const option3 = {...option1}
+option3["width"] = "280px";
 option2["minimumResultsForSearch"] = -1;
 
-$(document).ready(function(){
-    // Turn on js-selectable class so that it becomes SELCT 2 tag
-    $('.js-selectable').select2(option1);
-    $('.js-select').select2(option2);
-});
 
 document.addEventListener('turbolinks:load', () => {
+  $(document).ready(function(){
+      // Turn on js-selectable class so that it becomes SELCT 2 tag
+      $('.js-selectable').select2(option1);
+      $('.js-select').select2(option2);
+      $('.js-selectable-xl').select2(option3);
+  });
   let exportbtn = null
   exportbtn = document.getElementById('exportexl');
   if (exportbtn !== null) exportfunc(exportbtn);

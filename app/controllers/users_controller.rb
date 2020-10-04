@@ -5,6 +5,12 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    @user = User.new
+    @region = Region.new
+    @help_choice = ""
+    return if params["user"].nil? # breaks if no filter input
+
+    filter_search
   end
 
   # GET /users/1
@@ -63,6 +69,26 @@ class UsersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+    def filter_search
+      # SET FORM
+      city_id = params["user"]["city_id"]
+      region_id = params["user"]["region"]["name"]
+      help_opts = params["user"]["help_option_ids"]
+      help_opts = help_opts.reject(&:empty?).map(&:to_i)
+      @help_choice = help_opts
+      @user_cities = city_id.reject(&:empty?).map(&:to_i)
+      # @user = help_opts == "true" if user != ""
+      @region_ids = region_id.reject(&:empty?).map(&:to_i)
+      # binding.pry
+      # SEARCH
+      if @region_ids.empty? && !@user_cities.empty? # region not selected
+        @users = User.where(city_id: city_id)
+      elsif !@region_ids.empty?
+        @users = User.joins(:city).where(cities: { region_id: region_id })
+      end
+      @users = @users.joins(:user_option).where(user_options: { help_option_id: help_opts }) unless help_opts.empty?
+    end
+
     def set_user
       @user = User.find(params[:id])
     end
