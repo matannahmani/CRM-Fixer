@@ -60,6 +60,22 @@ class User < ApplicationRecord
     ["כל השבוע", "ראשון", "שני", "שלישי", "רביעי", "חמישי", "שישי", "שבת"]
   end
 
+  def lang_s
+    result = ""
+    langauges.each { |i| result << "#{i}, " unless i.empty?}
+    result[0..-3]
+  end
+
+  def aval_s
+    result = ""
+    availability.each { |i| result << "#{i}, " unless i.empty?}
+    result[0..-3]
+  end
+
+  def gender? # true = MALE | false = FEMALE
+    gender ? "גבר" : "אישה"
+  end
+
   def admin_to_s
     return "מתנדב" if adminlevel.zero?
     return "טלפן" if adminlevel == 1

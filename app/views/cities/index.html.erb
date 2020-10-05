@@ -2,6 +2,11 @@
   <%= link_to image_tag("logo.png"), root_path%>
   <div class="index-page">
     <h2 class="headline-text">כל הישובים הקיימות במערכת</h2>
+    <%= simple_form_for @city, url: cities_path, method: "GET", html: { class: 'form-inline' } do |f| %>
+      <%= f.input :name, as: :select, selected: @cities_name, collection: City.all, label_method: :name, :include_blank => "הצג הכל" , input_html: { class: 'js-selectable-w80', multiple: true } %>
+      <%= f.input :region, as: :select, selected: @regions_id, collection: Region.all, label_method: :name, :include_blank => "הצג הכל" , input_html: { class: 'js-selectable-w80', multiple: true } %>
+    <%= f.submit "חפש", class: "btn btn-main btn-sm" %>
+    <% end%>
       <table class="table table-responsive-xl">
         <thead>
           <tr>

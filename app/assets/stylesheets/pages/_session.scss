@@ -8,69 +8,68 @@
     margin-bottom: 10vh;
     max-width: 90vw;
   }
-  .sessionform{
-    background: #f4f4f4;
-    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
-    width: 90vw;
-    max-width: 800px;
-    h2 {
-      font-size: 1.5rem;
-      text-align: right;
-      margin-right: 16px;
-      margin-top: 24px;
-      font-family: Heebo, sans-serif;
-      font-weight: 400;
-      letter-spacing: 0.75px;
-      line-height: 18px;
-      opacity: 0.92;
-      color: #222222;
+}
+.sessionform{
+  background: #f4f4f4;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+  width: 90vw;
+  max-width: 800px;
+  h2 {
+    font-size: 1.5rem;
+    text-align: right;
+    margin-right: 16px;
+    margin-top: 24px;
+    font-family: Heebo, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    line-height: 18px;
+    opacity: 0.92;
+    color: #222222;
+  }
+}
+.form-inputs {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+// .form-actions{
+//   padding-left: 24px;
+// }
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    width: 100%;
+    justify-content: unset;
+      label{
+        color: #888888;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 1.8px;
+        line-height: 18px;
     }
-    form{
-      .form-inputs {
-        margin-top: 24px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        margin-right: 24px;
-        .form-actions{
-          padding-left: 24px;
-        }
-        .form-group{
-            display: flex;
-            flex-direction: column;
-            align-items: unset;
-            width: 100%;
-            justify-content: unset;
-              label{
-                color: #888888;
-                font-size: 16px;
-                font-weight: 700;
-                letter-spacing: 1.8px;
-                line-height: 18px;
-            }
-            input{
-                color: #aaaaaa;
-                background: transparent;
-                border: unset;
-                border-bottom: 2px solid #cccccc;
-            }
-            input[type="checkbox"]{
-              transform: unset;
-              margin-top: 1px !important;
-            }
-            .form-check {
-              margin: 0;
-              padding-left: 3rem;
-              margin-top: 8px;
-              flex-wrap: inherit;
-              label{
-                font-size: 16px;
-              }
-            }
-        }
-      }
+    input{
+        color: #aaaaaa;
+        background: transparent;
+        border: unset;
+        border-bottom: 2px solid #cccccc;
     }
+    input[type="checkbox"]{
+      transform: unset;
+      margin-top: 1px !important;
+    }
+}
+.form-check {
+  margin: 0;
+  // padding-left: 3rem;
+  margin-top: 8px;
+  flex-wrap: inherit;
+  label{
+    font-size: 16px;
   }
 }
 .sessionheadline {

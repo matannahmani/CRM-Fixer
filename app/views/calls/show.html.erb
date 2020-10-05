@@ -7,111 +7,78 @@
         <%= @call.id %>
       </h2>
     </div>
-<div class="callshow">
-<% if @call.user == current_user || current_user.issuper? %>
-  <p>
-    <strong>שם:</strong>
-    <%= @call.name %>
-  </p>
-
-  <p>
-    <strong>שם משפחה:</strong>
-    <%= @call.lastname %>
-  </p>
-
-  <p>
-    <strong>טלפון:</strong>
-    <%= @call.phone %>
-  </p>
-
-  <p>
-    <strong>כתובת:</strong>
-    <%= @call.address %>
-  </p>
-
-  <p>
-    <strong>ישוב:</strong>
-    <%= @call.city.name unless @call.city.nil? %>
-  </p>
-
-  <p>
-    <strong>איימל:</strong>
-    <%= @call.email %>
-  </p>
-  <p>
-    <strong>זמינות:</strong>
-    <% @call.availability.nil? ? 'זמינות לא דווחה' : if @call.availability.include?("כל היום") %>
-      כל היום
-    <% else %>
-      <%= @call.availability.count > 1 ? @call.availability.join(' ') : @call.availability[0] %>
-    <% end %>
-  </p>
-
-  <p>
-    <strong>תיאור:</strong>
-    <%= @call.description %>
-  </p>
-
-  <p>
-    <strong>בדיקת בריאות:</strong>
-    <%= @call.healthcheck ? "כן" : "לא" %>
-  </p>
-  <p>
-    <strong>סטטוס קריאה:</strong>
-    <%= @call.done ? "סגור" : "פתוח" %>
-  </p>
-<% else %>
-  <p>
-    <strong>שם:</strong>
-    <%= @call.name %>
-  </p>
-  <p>
-    <strong>ישוב:</strong>
-    <%= @call.city.name %>
-  </p>
-  <p>
-    <strong>תיאור:</strong>
-    <%= @call.description %>
-  </p>
-<% end %>
-
-  <p>
-    <% if !@call.user.nil? && current_user.issuper? %>
-    <strong>שם מתנדב:</strong>
-    <%= @call.user.name%>
-    <% else %>
-    <strong>שם מתנדב:</strong>
-    <strong>כרגע לא נמצא מתנדב</strong>
-    <% end %>
-  </p>
-    <p>
-    <strong>תאריך פתיחה:</strong>
-    <%= @call.created_at.strftime('%F') %>
-  </p>
-  <% unless @call.call_option.nil?%>
-    <% @call.call_option.each do |callopt|%>
-      <%= callopt.help_option.descriptionvol %>
-      <br><br>
-    <% end %>
+<div class="form-inputs">
+  <div class="form-group mt-2">
+    <label><%= I18n.t "activerecord.attributes.call.name" %>:</label>
+    <input type="text" disabled="true" value="<%= @call.name.nil? || @call.name.empty? ? "לא הוזן" : @call.name %>">
+  </div>
+  <div class="form-group mt-2">
+    <label><%= I18n.t "activerecord.attributes.call.lastname" %>:</label>
+    <input type="text" disabled="true" value="<%= @call.lastname.nil? || @call.lastname.empty? ? "לא הוזן" : @call.lastname %>">
+  </div>
+  <div class="form-group mt-2">
+    <label><%= I18n.t "activerecord.attributes.call.phone" %>:</label>
+    <input type="text" disabled="true" value="<%= @call.phone.nil? || @call.phone.empty? ? "לא הוזן" : @call.phone %>">
+  </div>
+<% if @call.user == current_user || !current_user.isvol? %>
+  <div class="form-group mt-2">
+    <label><%= I18n.t "activerecord.attributes.call.city" %>:</label>
+    <input type="text" disabled="true" value="<%= @call.city.nil? ? "לא הוזן" : @call.city.name %>">
+  </div>
+  <div class="form-group mt-2">
+    <label><%= I18n.t "activerecord.attributes.call.email" %>:</label>
+    <input type="text" disabled="true" value="<%= @call.email.nil? || @call.email.empty? ? "לא הוזן" : @call.email %>">
+  </div>
+  <div class="form-group mt-2">
+    <label><%= I18n.t "activerecord.attributes.call.description" %>:</label>
+    <input type="text" disabled="true" value="<%= @call.description.nil? || @call.description.empty? ? "לא הוזן" : @call.description %>">
+  </div>
+  <div class="form-group mt-2">
+    <label><%= I18n.t "activerecord.attributes.call.healthcheck" %>:</label>
+    <input type="text" disabled="true" value="<%= @call.healthcheck.nil? ? "לא הוזן" : @call.healthcheck ? "כן" : "לא" %>">
+  </div>
+  <div class="form-group mt-2">
+    <label><%= I18n.t "activerecord.attributes.call.done" %>:</label>
+    <input type="text" disabled="true" value="<%= @call.done.nil? ? "לא הוזן" : @call.done ? "פתוח" : "סגור" %>">
+  </div>
+  <div class="form-group mt-2">
+    <label><%= I18n.t "activerecord.attributes.call.user" %>:</label>
+    <input type="text" disabled="true" value="<%= @call.user.nil? ? "חסר מתנדב" : @call.user.fullname %>">
+  </div>
   <% end %>
+  <div class="form-group mt-2">
+    <label><%= I18n.t "activerecord.attributes.call.created_at" %>:</label>
+    <input type="text" disabled="true" value="<%= @call.created_at.nil? ? "לא הוזן" : @call.created_at.strftime("בשעה: %H:%M בתאריך: %F") %>">
+  </div>
+  <div class="form-group check_boxes">
+    <legend class="col-form-label pt-0"><%= I18n.t "activerecord.attributes.user.help_option" %></legend>
+    <% unless @call.call_options.nil?%>
+    <% @call.help_options.each do |opt| %>
+      <div class="form-check">
+        <input type="checkbox" disabled class="form-check-input check_boxes optional" checked="true">
+        <label class="form-check-label collection_check_boxes"><%=opt.descriptioncall %></label>
+      </div>
+      <% end %>
+    <% end %>
+  </div>
 
     <% if !@taken%>
     <div class="healthcheck">
         <h3 class="healthcheck-text">לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>
         <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
     </div>
-    <% end %>
-  <div class="action">
-    <% if @taken %>
-      <%= link_to 'שיחרור קריאה', takecall_path(id: @call.id, take: "true"), class: "btn btn-sm btn-flatgreen" %>
-    <% else %>
+    <div class="action">
       <%= link_to 'לקיחת קריאה', takecall_path(id: @call.id, take: "false"), class: "btn btn-sm btn-flatgreen" %>
+    <% else %>
+    <div class="action">
+      <%= link_to 'שיחרור קריאה', takecall_path(id: @call.id, take: "true"), class: "btn btn-sm btn-flatgreen" %>
     <% end %>
-    <% if !current_user.nil? && current_user.issuper? %>
-    <%= link_to 'ערוך', edit_call_path(@call), class: "btn btn-sm btn-flatgreen" %>
-    <%= link_to 'חזרה', calls_path, class: "btn btn-sm btn-flatgreen" %>
-    <% end %>
-  </div>
-</div>
+    <div class="break"></div>
+        <% if !current_user.nil? && current_user.issuper? %>
+        <%= link_to 'ערוך', edit_call_path(@call), class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to 'חזרה', calls_path, class: "btn btn-sm btn-flatgreen" %>
+        <% end %>
+    </div>
+    </div>
 </div>
 </div>

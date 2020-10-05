@@ -17,15 +17,15 @@
         <%= f.input :email, disabled: true %>
         <%= f.input :lastname, disabled: true %>
         <%= f.input :name, disabled: true %>
-        <%= f.input :adminlevel, label: "רמת ניהול", collection: [['מתנדב',0],['טלפן',1],['מנהל',2],['מנהל ארצי',3]], include_blank: false, :input_html => { :class => 'js-select' }, disabled: true %>
+        <%= f.input :adminlevel, selected: @user.adminlevel.to_s, label: "רמת ניהול", collection: [['מתנדב',0],['טלפן',1],['מנהל',2],['מנהל ארצי',3]], include_blank: false, :input_html => { :class => 'js-select' }, disabled: true %>
         <% else %>
         <%= f.input :email %>
         <%= f.input :lastname %>
         <%= f.input :name %>
-        <%= f.input :adminlevel, label: "רמת ניהול", collection: [['מתנדב',0],['טלפן',1],['מנהל',2],['מנהל ארצי',3]], include_blank: false, :input_html => { :class => 'js-select' } %>
+        <%= f.input :adminlevel, selected: @user.adminlevel.to_s, label: "רמת ניהול", collection: [['מתנדב',0],['טלפן',1],['מנהל',2],['מנהל ארצי',3]], include_blank: false, :input_html => { :class => 'js-select' } %>
         <% end %>
-        <%= f.input :gender, as: :select, collection: ['אישה','גבר'],include_blank: false, input_html: { class: 'js-select', autocomplete: "gender" }%>
-        <%= f.association :city, label: "ישוב", include_blank: false, :input_html => { :class => 'js-selectable' }  %>
+        <%= f.input :gender, as: :select, collection: [['גבר',true],['אישה',false]], include_blank: false, input_html: { class: 'js-select' } %>
+        <%= f.association :city, include_blank: false, :input_html => { :class => 'js-selectable' }  %>
         <%= f.input :address %>
         <%= f.input :phone %>
         <%= f.input :israelid %>
@@ -48,12 +48,12 @@
         <%= f.input :localwhatsapp %>
         <%= f.input :helpoperations %>
         <%= f.input :student %>
-        <%= f.input :healthcheck, label: "הצהרת בריאות" %>
+        <%= f.input :healthcheck %>
         <%= f.input :joinlocal %>
-        <%= f.association :help_options, label: "אופציה עזרה", as: :check_boxes, label_method: :descriptionvol, value_method: :id %>
+        <%= f.association :help_options, as: :check_boxes, label_method: :descriptionvol, value_method: :id %>
         <div class="form-group mt-4">
         <%= f.label :lastcontact%>
-          <%= f.text_field :lastcontact, data:{ provide:'datepicker' }, class: "w-80" %>
+          <%= f.text_field :lastcontact, data:{ provide:'datepicker' } %>
         </div>
         <%= f.input :contactname %>
         <%= f.input :othermentions %>

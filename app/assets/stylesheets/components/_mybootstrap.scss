@@ -27,8 +27,12 @@
   margin: 16px;
 
 }
+.break{
+  flex-basis: 100%;
+  height: 0px;
+}
 .btn-sm {
-  font-size: 16px;
+  font-size: 16px !important;
   width: 200px !important;
   margin: 16px;
 }
@@ -78,7 +82,7 @@
 }
 
 .form-control{
-  width: 80%;
+  // width: 80%;
 }
 
 .form-group{
@@ -114,7 +118,11 @@
     margin-right: 3rem;
   }
 }
-
+.scrolldown{
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+}
 .form-inputs {
   margin-top: 24px;
   display: flex;
@@ -135,9 +143,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  a{ font-size: 32px; }
+  text-align: center;
+  h3 { font-size: 20px;font-family: "Heebo", sans-serif;font-weight: bold;}
+  a{ font-size: 32px; margin-bottom: 24px;}
   margin: 40px 0px;
-  padding-right: 24px;
 }
 .healthcheck-text {
   margin: 24px 0px;
@@ -205,7 +214,6 @@
     width: 100%;
     align-content: center;
     justify-content: center;
-    padding-left: 24px;
     flex-wrap: wrap;
 }
 .table {
@@ -214,12 +222,11 @@
   width: 100%;
 }
 @media only screen and (max-width: 768px) {
+  .margin-mobile{
+    padding-right: 10%;
+  }
   .form-group {
     width: 80%;
-  }
-  .healthcheck{
-    font-family: Heebo;
-    padding-left: 24px;
   }
   .healthcheck-text{
     // text-align: center;

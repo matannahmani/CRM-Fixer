@@ -17,6 +17,11 @@
     <%= render 'shared/flashes' %>
     <%= yield %>
       </div>
+      <% if action_name == "index"%>
+        <div class="scrolldown">
+          <button class="btn btn-sm btn-main" id="scrolldown">גלול למטה</button>
+        </div>
+      <% end %>
     <%= render 'shared/footer' %>
     </div>
   </body>

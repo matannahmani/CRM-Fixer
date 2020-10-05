@@ -79,6 +79,8 @@ en:
         getupdates: "קבל עידכונים"
         availability: "זמינות"
         langauges: "שפות"
+        help_options: "אופציות עזרה"
+        help_option: "צריך עזרה בה"
         joinlocal: "הצטרף לקהילה מקומית"
         lastcontact: "תאריך יצירת קשר אחרון"
         contactname: "שם טלפן/רכז שיוצר קשר"
@@ -101,6 +103,23 @@ en:
         solidaritylocaladdress: "שם שכונה?"
       city:
         name: "שם"
+        region: "איזור"
+      region:
+        name: "שם"
+      call:
+        name: "שם"
+        lastname: "שם משפחה"
+        phone: "טלפון"
+        email: "איימל"
+        city: "עיר"
+        description: "תיאור"
+        healthcheck: "אישור בריאות"
+        done: "סטטוס"
+        user: "מתנדב"
+        created_at: "תאריך פתיחה"
+      help_option:
+        descriptionvol: "תצוגת מתנדב"
+        descriptioncall: "תצוגת קריאה"
     errors:
       messages:
         record_invalid: "האימות נכשל: %{errors}"

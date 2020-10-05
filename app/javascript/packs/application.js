@@ -48,7 +48,7 @@ const option1 = {
 const option2 = {...option1}
 const option3 = {...option1}
 const option4 = {...option1}
-option4["width"] = "80%";
+option4["width"] = "100%";
 option3["width"] = "280px";
 option2["minimumResultsForSearch"] = -1;
 
@@ -61,6 +61,7 @@ document.addEventListener('turbolinks:load', () => {
       $('.js-selectable-w80').select2(option4);
   });
   let solidlocal = document.getElementById("user_helplocal");
+  let scrolldown = document.getElementById("scrolldown");
   let solidcampus = document.getElementById("user_solidaritycampus");
   let localdiv = document.getElementsByClassName("user_solidaritylocaladdress")
   let localcampus = document.querySelectorAll(".user_campus, .user_campusactivity, .user_studentactivist")
@@ -78,6 +79,13 @@ document.addEventListener('turbolinks:load', () => {
       localcampus.forEach((item) => item.classList.add('hide'))
       }
   }
+  if (scrolldown !== null && scrolldown !== "undefined" ){
+    scrolldown.addEventListener("click", (e) => {
+      e.preventDefault();
+      $("html, body").animate({ scrollTop: $("footer").offset().top - 100 }, 800);
+    });
+  }
+
   if (solidlocal !== null && solidlocal !== "undefined" ){
     updateShow();
     solidlocal.addEventListener('click', (btn) => updateShow());

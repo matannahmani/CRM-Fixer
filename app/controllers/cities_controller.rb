@@ -5,6 +5,10 @@ class CitiesController < ApplicationController
   # GET /cities.json
   def index
     @cities = City.all
+    @city = City.new
+    return if params["city"].nil? # breaks if no filter input
+
+    filter_search
   end
 
   # GET /cities/1
@@ -63,6 +67,22 @@ class CitiesController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+
+    def filter_search
+      @cities_name = params["city"]["name"].reject(&:empty?).map(&:to_i)
+      @regions_id = params["city"]["region"].reject(&:empty?).map(&:to_i)
+      # binding.pry
+      if !@cities_name.empty?
+        if !@regions_id.empty?
+          @cities = @cities.where(id: @cities_name).or(@cities.where(region_id: @regions_id))
+        else
+          @cities = @cities.where(id: @cities_name)
+        end
+      elsif !@regions_id.empty?
+        @cities = @cities.where(region_id: @regions_id)
+      end
+    end
+
     def set_city
       @city = City.find(params[:id])
     end

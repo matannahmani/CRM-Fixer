@@ -7,11 +7,12 @@
         <%= @region.id %>
       </h2>
     </div>
-      <div class="callshow">
-        <p>
-          <strong>שם:</strong>
-          <%= @region.name %>
-        </p>
+    <div class="form-inputs">
+      <div class="form-group mt-2">
+        <label><%= I18n.t "activerecord.attributes.region.name" %>:</label>
+        <input type="text" disabled="true" value="<%= @region.name.nil? || @region.name.empty? ? "לא הוזן" : @region.name %>">
+      </div>
+    </div>
       <div class="action">
         <%= link_to 'עריכה', edit_region_path(@region),class: "btn btn-sm btn-flatgreen" %>
         <%= link_to 'חזרה', regions_path,class: "btn btn-sm btn-flatgreen" %>
