@@ -88,7 +88,7 @@ class UsersController < ApplicationController
       elsif !@region_ids.empty?
         @users = User.joins(:city).where(cities: { region_id: region_id })
       end
-      @users = @users.joins(:user_option).where(user_options: { help_option_id: help_opts }) unless help_opts.empty?
+      @users = @users.joins(:user_options).where(user_options: { help_option_id: help_opts }) unless help_opts.empty?
     end
 
     def set_user

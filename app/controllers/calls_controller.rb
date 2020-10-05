@@ -57,7 +57,7 @@ class CallsController < ApplicationController
     @call = Call.new(call_params)
     respond_to do |format|
       if @call.save
-        format.html { redirect_to "https://solidarity.org.il/%d7%a4%d7%a0%d7%99%d7%99%d7%aa%d7%9a-%d7%94%d7%aa%d7%a7%d7%91%d7%9c%d7%94/", notice: CALL_CREATE }
+        format.html { redirect_to "https://solidarity.org.il/%d7%a4%d7%a0%d7%99%d7%99%d7%aa%d7%9a-%d7%94%d7%aa%d7%a7%d7%91%d7%9c%d7%94/" }
       else
         format.html { render :new }
         format.json { render json: @call.errors, status: :unprocessable_entity }

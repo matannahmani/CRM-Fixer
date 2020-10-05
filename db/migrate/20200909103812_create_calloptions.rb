@@ -1,10 +1,8 @@
 class CreateCalloptions < ActiveRecord::Migration[5.2]
   def change
-    create_table :calloptions do |t|
-      t.references :user, foreign_key: true
-      t.references :help_option, foreign_key: true
-      t.boolean :active
-
+    create_table :call_options do |t|
+      t.belongs_to :call
+      t.belongs_to :help_option
       t.timestamps
     end
   end

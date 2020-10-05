@@ -6,7 +6,7 @@
       <%= f.association :city, selected: @user_cities, label: "עיר", :include_blank => "הצג הכל", input_html: { multiple: true, class: 'js-selectable' } %>
       <%= f.simple_fields_for :region, @region do |t| %>
         <%= t.input :name, label: "איזור", selected: @region_ids, :collection => Region.all, :include_blank => "הצג הכל", input_html:{ multiple: true, class: 'js-selectable' } %>
-        <%= f.association :help_option, selected: @help_choice, label_method: :descriptionvol, value_method: :id, label: "סוגי התנדבות" , as: :select, input_html: { class: 'js-selectable-xl' }, wrapper_html: { class: 'input-xl'} %>
+        <%= f.association :help_options, selected: @help_choice, label_method: :descriptionvol, value_method: :id, label: "סוגי התנדבות" , as: :select, input_html: { class: 'js-selectable-xl' }, wrapper_html: { class: 'input-xl'} %>
         <%= f.submit "חפש", class: "btn btn-main btn-sm" %>
       <% end %>
     <% end%>

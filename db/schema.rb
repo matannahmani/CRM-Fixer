@@ -57,13 +57,6 @@ ActiveRecord::Schema.define(version: 2020_10_04_125519) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "help_options_users", id: false, force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "help_option_id", null: false
-    t.index ["help_option_id", "user_id"], name: "index_help_options_users_on_help_option_id_and_user_id"
-    t.index ["user_id", "help_option_id"], name: "index_help_options_users_on_user_id_and_help_option_id"
-  end
-
   create_table "regions", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -77,16 +70,6 @@ ActiveRecord::Schema.define(version: 2020_10_04_125519) do
     t.datetime "updated_at", null: false
     t.index ["help_option_id"], name: "index_user_options_on_help_option_id"
     t.index ["user_id"], name: "index_user_options_on_user_id"
-  end
-
-  create_table "useroptions", force: :cascade do |t|
-    t.bigint "user_id"
-    t.bigint "help_option_id"
-    t.boolean "active"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["help_option_id"], name: "index_useroptions_on_help_option_id"
-    t.index ["user_id"], name: "index_useroptions_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -136,14 +119,8 @@ ActiveRecord::Schema.define(version: 2020_10_04_125519) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "call_options", "help_options"
-  add_foreign_key "call_options", "users", column: "call_id"
   add_foreign_key "calls", "cities"
   add_foreign_key "calls", "users"
   add_foreign_key "cities", "regions"
-  add_foreign_key "user_options", "help_options"
-  add_foreign_key "user_options", "users"
-  add_foreign_key "useroptions", "help_options"
-  add_foreign_key "useroptions", "users"
   add_foreign_key "users", "cities"
 end

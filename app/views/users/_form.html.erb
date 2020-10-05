@@ -29,14 +29,14 @@
         <%= f.input :address %>
         <%= f.input :phone %>
         <%= f.input :israelid %>
+        <%= f.input :workfield %>
+        <%= f.input :specality %>
         <%= f.input :langauges, selected: @user.langauges, collection: ["אנגלית","רוסית","גרמנית","פורטוגזית"], input_html: {multiple: true, class: 'js-selectable-w80'} %>
+        <%= f.input :availability, include_hidden: false, collection: User.availabilitylist, input_html: {multiple: true, class: 'js-selectable-w80'} %>
         <%= f.input :pastvolunteervolume, as: :string %>
         <%= f.input :pastvolunteer %>
         <%= f.input :keepvolunteer %>
         <%= f.input :volunteerusefull %>
-        <%= f.input :availability %>
-        <%= f.input :workfield %>
-        <%= f.input :specality %>
         <%= f.input :helpcalls %>
         <%= f.input :solidaritycampus %>
         <%= f.input :campus %>
@@ -50,8 +50,8 @@
         <%= f.input :student %>
         <%= f.input :healthcheck, label: "הצהרת בריאות" %>
         <%= f.input :joinlocal %>
-        <%= f.association :help_option, label: "אופציה עזרה", as: :check_boxes, label_method: :descriptionvol, value_method: :id %>
-        <div class="form-group">
+        <%= f.association :help_options, label: "אופציה עזרה", as: :check_boxes, label_method: :descriptionvol, value_method: :id %>
+        <div class="form-group mt-4">
         <%= f.label :lastcontact%>
           <%= f.text_field :lastcontact, data:{ provide:'datepicker' }, class: "w-80" %>
         </div>

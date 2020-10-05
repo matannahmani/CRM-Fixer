@@ -17,8 +17,8 @@ class User < ApplicationRecord
   validates :getupdates, presence: true
   validates :israelid, presence: true, uniqueness: true, numericality: true
   has_many :call, dependent: :nullify
-  has_many :user_option, dependent: :destroy
-  has_many :help_option, through: :user_option
+  has_many :user_options, dependent: :destroy
+  has_many :help_options, through: :user_options
   validate :opts?
   belongs_to :city, optional: true # needs to be reassinged if city has been destroyed
   ADMIN = 3 # OWNER
@@ -27,7 +27,7 @@ class User < ApplicationRecord
   VOLUENNTER = 0 # VOL
 
   def opts?
-    errors.add(:help_option, :blank, message: 'לא יכול להיות ריק') if user_option.empty?
+    errors.add(:help_options, :blank, message: 'לא יכול להיות ריק') if user_options.empty?
   end
   def checkage?
     errors.add(:birthday, :blank, message: 'הצטרפות פתוחה רק לגילי 14-75') unless birthday.in?(Date.today.year - 75..Date.today.year - 14)
@@ -54,6 +54,10 @@ class User < ApplicationRecord
 
   def isvol?
     adminlevel == 0
+  end
+
+  def self.availabilitylist
+    ["כל השבוע", "ראשון", "שני", "שלישי", "רביעי", "חמישי", "שישי", "שבת"]
   end
 
   def admin_to_s

@@ -1,8 +1,8 @@
 class Call < ApplicationRecord
   before_validation :checkphone, :checkemail, :setdefault
   belongs_to :city, optional: true
-  has_many :call_option, dependent: :destroy
-  has_many :help_option, through: :call_option
+  has_many :call_options, dependent: :destroy
+  has_many :help_options, through: :call_options
   belongs_to :user, optional: true
   validates :name, presence: true
   validates :lastname, presence: true
@@ -15,7 +15,7 @@ class Call < ApplicationRecord
   validate :opts?
 
   def opts?
-    errors.add(:help_option, :blank, message: 'לא יכול להיות ריק') if call_option.empty?
+    errors.add(:help_options, :blank, message: 'לא יכול להיות ריק') if call_options.empty?
   end
 
   def setdefault

@@ -4,7 +4,8 @@
     <div class="sessionheadline">
       <%= render "devise/shared/links" %>
     </div>
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%#= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= simple_form_for(resource, as: resource_name, url: account_create_path) do |f| %>
   <%= f.error_notification %>
   <div class="form-inputs">
     <%= f.input :email,
@@ -29,7 +30,8 @@
                 autofocus: true, as: :select, collection: ['אישה','גבר'],include_blank: false,
                 input_html: { class: 'js-select', autocomplete: "gender" }%>
     <%= f.input :birthday,
-                required: true,label: "שנת יום הולדת"
+                required: true,
+                label: "שנת יום הולדת",
                 autofocus: true,
                 input_html: {min: Date.today.year-75, max: Date.today.year-14, autocomplete: "birthday" }%>
     <%= f.input :student,
@@ -54,7 +56,7 @@
                 autofocus: true,
                 input_html: { class: 'js-selectable', autocomplete: "city" }%>
     <%= f.input :langauges, autofoucs: true, require: false, selected: @user.langauges, collection: ["אנגלית","רוסית","גרמנית","פורטוגזית"], input_html: {multiple: true, class: 'js-selectable-w80'} %>
-    <%= f.association :help_option, label: "אופציה עזרה", as: :check_boxes, label_method: :descriptionvol, value_method: :id %>
+    <%= f.association :help_options, label: "אופציה עזרה", as: :check_boxes, label_method: :descriptionvol, value_method: :id %>
 
   <div class="form-actions">
     <div class="healthcheck p-0">
