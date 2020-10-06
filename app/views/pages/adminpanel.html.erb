@@ -6,7 +6,7 @@
     <%= link_to "#{I18n.t "city_panel_btn"}", cities_path, class: "btn btn-main" %>
     <%= link_to "#{I18n.t "helpoptions_panel_btn"}", help_options_path, class: "btn btn-main" %>
     <%= link_to "#{I18n.t "volunteer_panel_btn"}", users_path, class: "btn btn-main" %>
-  <% elsif current_user.iscaller? %>
+  <% elsif current_user.iscaller? || current_user.issuper? %>
     <%= link_to "#{I18n.t "call_panel_btn"}", calls_path, class: "btn btn-main" %>
     <%= link_to "#{I18n.t "volunteer_panel_btn"}", users_path, class: "btn btn-main" %>
   <% end %>
