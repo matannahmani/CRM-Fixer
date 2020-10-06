@@ -21,16 +21,28 @@
  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800&display=swap');
  body {
   background: #ff2287;
-  direction: rtl;
+  min-height: 100% !important;
+ }
+ .hebrew{
+  direction: rtl !important;
   text-align: right;
   font-family: 'Heebo', sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1.3px;
   line-height: 18px;
-  min-height: 100% !important;
+ }
+ .english{
+  direction: ltr !important;
+  text-align: left !important;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  line-height: 18px;
  }
  .volbg{
   background-image:url(/images/vol.png);

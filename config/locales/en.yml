@@ -60,263 +60,80 @@ en:
   activerecord:
     attributes:
       user:
-        email: "איימל"
-        created_at: "נוצר בתאריך"
-        adminlevel: "רמת ניהול"
-        password: "סיסמה"
-        password_confirmation: "אישור סיסמה"
-        name: "שם"
-        lastname: "שם משפחה"
-        phone: "טלפון"
-        address: "כתובת"
-        city: "ישוב"
-        remember_me: "זכור אותי"
-        israelid: "תעודת זהות"
-        student: "סטודנט"
-        gender: "מגדר"
-        birthday: "יום הולדת"
-        healthcheck: "הצהרת בריאות"
-        getupdates: "קבל עידכונים"
-        availability: "זמינות"
-        langauges: "שפות"
-        help_options: "אופציות עזרה"
-        help_option: "צריך עזרה בה"
-        joinlocal: "הצטרף לקהילה מקומית"
-        lastcontact: "תאריך יצירת קשר אחרון"
-        contactname: "שם טלפן/רכז שיוצר קשר"
-        keepvolunteer: "מעוניין בהמשך התנדבות?"
-        pastvolunteervolume: "היקף התנדבות עבר בתנועה?"
-        pastvolunteer: "ניסיון התנדבות"
-        volunteerusefull: "האם ההתנדבות הייתה משמעותית?"
-        workfield: "מקצוע"
-        specality: "כישורים מיוחדים"
-        helpcalls: "מעוניין/ת בטלפנות מהבית"
-        helplocal: "סולידריות בשכונה?"
-        solidaritycampus: "סולידריות בקמפוס"
-        campus: "מוסד לימודים?"
-        campusactivity: "חוג לימודים"
-        studentactivist: "פעיל/ה באגודת הסטודנטים?"
-        intrestedinsolidarity: "מעוניין לתרום להמשך פעילות התנועה?"
-        localwhatsapp: "נמצא בקבוצת וואטסאפ שכונתית"
-        othermentions: "הערות חופשיות"
-        helpoperations: "עזרה בהפעלת חמל אזורי?"
-        solidaritylocaladdress: "שם שכונה?"
+        email: "Email"
+        created_at: "Created at"
+        adminlevel: "Authority"
+        password: "Password"
+        password_confirmation: "Confirm password"
+        name: "First name"
+        lastname: "Last name"
+        phone: "Phone"
+        address: "Address"
+        city: "City"
+        remember_me: "Remember me"
+        israelid: "Israeli id"
+        student: "Student?"
+        gender: "Gender"
+        birthday: "Birthday"
+        healthcheck: "Health Policy"
+        getupdates: "Allow updates"
+        availability: "Availability"
+        langauges: "Langauges"
+        help_options: "Help Options"
+        help_option: "I neeed help at"
+        joinlocal: "Join local community"
+        lastcontact: "Last contact date"
+        contactname: "Name of contact"
+        keepvolunteer: "Continue volunteering"
+        pastvolunteervolume: "Past volunteering volume"
+        pastvolunteer: "Past volunteering locations"
+        volunteerusefull: "Do you think volunteering was useful"
+        workfield: "Work field"
+        specality: "Specality"
+        helpcalls: "Intrested in helping calling center"
+        helplocal: "Solidarity near home?"
+        solidaritycampus: "Solidarity in campus"
+        campus: "Campus?"
+        campusactivity: "Campus Activities"
+        studentactivist: "Taking part in student consult?"
+        intrestedinsolidarity: "Intrested in staying at Solidarity?"
+        localwhatsapp: "Part of local whatsapp group?"
+        othermentions: "Other mentions"
+        helpoperations: "Help region operations center?"
+        solidaritylocaladdress: "Address"
       city:
-        name: "שם"
-        region: "איזור"
+        name: "Name"
+        region: "Region"
       region:
-        name: "שם"
+        name: "Name"
       call:
-        name: "שם"
-        lastname: "שם משפחה"
-        phone: "טלפון"
-        email: "איימל"
-        city: "עיר"
-        description: "תיאור"
-        healthcheck: "אישור בריאות"
-        done: "סטטוס"
-        user: "מתנדב"
-        created_at: "תאריך פתיחה"
+        name: "Name"
+        lastname: "Last name"
+        phone: "Phone"
+        email: "Email"
+        city: "City"
+        description: "Description"
+        healthcheck: "Health Policy"
+        done: "Status"
+        user: "Volunteer"
+        created_at: "Created at"
       help_option:
-        descriptionvol: "תצוגת מתנדב"
-        descriptioncall: "תצוגת קריאה"
+        descriptionvol: "Volunteer View"
+        descriptioncall: "Call View"
     errors:
       messages:
-        record_invalid: "האימות נכשל: %{errors}"
+        record_invalid: "Validations Failed: %{errors}"
     models:
       name:
         attributes:
-          email: "שם"
-  date:
-    abbr_day_names:
-      - א
-      - ב
-      - ג
-      - ד
-      - ה
-      - ו
-      - ש
-    abbr_month_names:
-      - ~
-      - ינו
-      - פבר
-      - מרץ
-      - אפר
-      - מאי
-      - יונ
-      - יול
-      - אוג
-      - ספט
-      - אוק
-      - נוב
-      - דצמ
-    day_names:
-      - ראשון
-      - שני
-      - שלישי
-      - רביעי
-      - חמישי
-      - שישי
-      - שבת
-    formats:
-      default: "%d-%m-%Y"
-      long: "%e ב%B, %Y"
-      short: "%e %b"
-    month_names:
-      - ~
-      - ינואר
-      - פברואר
-      - מרץ
-      - אפריל
-      - מאי
-      - יוני
-      - יולי
-      - אוגוסט
-      - ספטמבר
-      - אוקטובר
-      - נובמבר
-      - דצמבר
-    order:
-      - !ruby/symbol day
-      - !ruby/symbol month
-      - !ruby/symbol year
-  datetime:
-    distance_in_words:
-      about_x_hours:
-        one: "בערך שעה אחת"
-        other: "בערך %{count} שעות"
-      about_x_months:
-        one: "בערך חודש אחד"
-        other: "בערך %{count} חודשים"
-      about_x_years:
-        one: "בערך שנה אחת"
-        other: "בערך %{count} שנים"
-      almost_x_years:
-        one: "כמעט שנה"
-        other: "כמעט %{count} שנים"
-      half_a_minute: "חצי דקה"
-      less_than_x_minutes:
-        one: "פחות מדקה אחת"
-        other: "פחות מ- %{count} דקות"
-        zero: "פחות מדקה אחת"
-      less_than_x_seconds:
-        one: "פחות משניה אחת"
-        other: "פחות מ- %{count} שניות"
-        zero: "פחות משניה אחת"
-      over_x_years:
-        one: "מעל שנה אחת"
-        other: "מעל %{count} שנים"
-      x_days:
-        one: "יום אחד"
-        other: "%{count} ימים"
-      x_minutes:
-        one: "דקה אחת"
-        other: "%{count} דקות"
-      x_months:
-        one: "חודש אחד"
-        other: "%{count} חודשים"
-      x_seconds:
-        one: "שניה אחת"
-        other: "%{count} שניות"
-    prompts:
-      day: יום
-      hour: שעה
-      minute: דקה
-      month: חודש
-      second: שניות
-      year: שנה
-  errors:
-    format: "%{message}"
-    messages:
-      accepted: "חייב באישור"
-      required: "לא יכול להיות ריק"
-      blank: "לא יכול להיות ריק"
-      confirmation: "לא תואם לאישורו"
-      empty: "לא יכול להיות ריק"
-      equal_to: "חייב להיות שווה ל- %{count}"
-      even: "חייב להיות זוגי"
-      exclusion: "לא זמין"
-      greater_than: "חייב להיות גדול מ- %{count}"
-      greater_than_or_equal_to: "חייב להיות גדול או שווה ל- %{count}"
-      inclusion: "לא נכלל ברשימה"
-      invalid: "לא תקין"
-      less_than: "חייב להיות קטן מ- %{count}"
-      less_than_or_equal_to: "חייב להיות קטן או שווה ל- %{count}"
-      not_a_number: "חייב להיות מספר"
-      not_an_integer: "חייב להיות מספר שלם"
-      odd: "חייב להיות אי זוגי"
-      taken: "כבר בשימוש"
-      too_long: "ארוך מדי (יותר מ- %{count} תווים)"
-      too_short: "קצר מדי (פחות מ- %{count} תווים)"
-      wrong_length: "לא באורך הנכון (חייב להיות %{count} תווים)"
-    template:
-      body: "אנא בדוק את השדות הבאים:"
-      header:
-        one: "לא ניתן לשמור את ה%{model}: שגיאה אחת"
-        other: "לא ניתן לשמור את ה%{model}: %{count} שגיאות."
-  helpers:
-    select:
-      prompt: "נא לבחור"
-    submit:
-      create: "יצירת %{model}"
-      submit: "שמור %{model}"
-      update: "עדכון %{model}"
-  number:
-    currency:
-      format:
-        delimiter: ","
-        format: "%n %u"
-        precision: 2
-        separator: "."
-        significant: false
-        strip_insignificant_zeros: false
-        unit: ₪
-    format:
-      delimiter: ","
-      precision: 3
-      separator: "."
-      significant: false
-      strip_insignificant_zeros: false
-    human:
-      decimal_units:
-        format: "%n %u"
-        units:
-          billion: מיליארד
-          million: מיליון
-          quadrillion: קודריליון
-          thousand: אלף
-          trillion: טריליון
-          unit: ""
-      format:
-        delimiter: ""
-        precision: 3
-        significant: true
-        strip_insignificant_zeros: true
-      storage_units:
-        format: "%n %u"
-        units:
-          byte:
-            one: בייט
-            other: בתים
-          gb: ג'יגה-בייט
-          kb: קילו-בייט
-          mb: מגה-בייט
-          tb: טרה-בייט
-    percentage:
-      format:
-        delimiter: ""
-    precision:
-      format:
-        delimiter: ""
-  support:
-    array:
-      last_word_connector: " ו"
-      two_words_connector: " ו"
-      words_connector: ", "
-  time:
-    am: am
-    formats:
-      default: "%a %d %b %H:%M:%S %Z %Y"
-      long: "%d ב%B, %Y %H:%M"
-      short: "%d %b %H:%M"
-    pm: pm
+          email: "name"
+  login: "Login to your account" # HEAD TEXT
+  signup_btn: "Signup"
+  login_btn: "Login"
+  forgot_password: "forgot your password?"
+  forgot_password_btn: "Reset password"
+  forgot_password_short: "Reset password"
+  return_btn: "back"
+  female: "female"
+  male: "male"
+  footer: "Developed by Matan Nahmani at Eren Fixer for Solidarity"

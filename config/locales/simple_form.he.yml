@@ -1,15 +1,15 @@
-en:
+he:
   simple_form:
-    "yes": 'yes'
-    "no": 'no'
+    "yes": 'כן'
+    "no": 'לא'
     required:
-      text: 'required'
+      text: 'נדרש'
       mark: ''
       # You can uncomment the line below if you need to overwrite the whole required html.
       # When using html, text and mark won't be used.
       # html: '<abbr title="required">*</abbr>'
     error_notification:
-      default_message: "please fix errors"
+      default_message: "אנא תקן את הבעיות"
     # Examples
     labels:
     #   defaults:

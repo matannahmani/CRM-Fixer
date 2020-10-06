@@ -10,18 +10,27 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-
-  <body>
+  <% if I18n.locale == :he %>
+    <body class="hebrew">
+  <% else %>
+    <body class="english">
+  <% end %>
     <div id="page-container">
       <div id="content-wrap">
     <%= render 'shared/flashes' %>
     <%= yield %>
       </div>
+      <div class="scrolldown">
       <% if action_name == "index"%>
-        <div class="scrolldown">
-          <button class="btn btn-sm btn-main" id="scrolldown">גלול למטה</button>
-        </div>
+        <button class="btn btn-sm btn-main kill-hover" id="scrolldown">גלול למטה</button>
       <% end %>
+      <% if I18n.locale == :he %>
+       <%= link_to 'English', url_for( :locale => 'en' ),class: "btn btn-sm btn-main kill-hover" %>
+      <% else %>
+       <%= link_to 'עברית', url_for( :locale => 'he' ),class: "btn btn-sm btn-main kill-hover" %>
+      <% end %>
+      <button class="btn btn-sm btn-main kill-hover ft-big" id="X">-</button>
+      </div>
     <%= render 'shared/footer' %>
     </div>
   </body>

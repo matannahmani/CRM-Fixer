@@ -4,7 +4,6 @@
     <div class="sessionheadline">
       <%= render "devise/shared/links" %>
     </div>
-<%#= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 <%= simple_form_for(resource, as: resource_name, url: account_create_path) do |f| %>
   <%= f.error_notification %>
   <div class="form-inputs">
@@ -26,10 +25,9 @@
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "lastname" }%>
-    <%= f.input :gender, as: :select, autofocus: true, collection: [['גבר',true],['אישה',false]], include_blank: false, input_html: { class: 'js-select' } %>
+    <%= f.input :gender, as: :select, autofocus: true, collection: [["#{I18n.t "male"}",true],["#{I18n.t "female"}",false]], include_blank: false, input_html: { class: 'js-select' } %>
     <%= f.input :birthday,
                 required: true,
-                label: "שנת יום הולדת",
                 autofocus: true,
                 input_html: {min: Date.today.year-75, max: Date.today.year-14, autocomplete: "birthday" }%>
     <%= f.input :student,
@@ -54,17 +52,15 @@
                 autofocus: true,
                 input_html: { class: 'js-selectable', autocomplete: "city" }%>
     <%= f.input :langauges, autofoucs: true, require: false, selected: @user.langauges, collection: ["אנגלית","רוסית","גרמנית","פורטוגזית"], input_html: {multiple: true, class: 'js-selectable-w80'} %>
-    <%= f.association :help_options, label: "אופציה עזרה", as: :check_boxes, label_method: :descriptionvol, value_method: :id %>
+    <%= f.association :help_options, as: :check_boxes, label_method: :descriptionvol, value_method: :id %>
 
     <div class="form-group healthcheck p-0">
       <h3 class="healthcheck-text">הצטרפות מותנת באישור הצהרת בריאות אנא עיין בהצרה</h3>
       <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
-<!--     <div class="dflex align-items-center mt-3"> -->
-      <%= f.input :healthcheck, label: "מאשר הצהרת בריאות", autofocus: true, required: true, wrapper_html: { class: 'fixer' } %>
-      <%= f.input :getupdates, label: "מאשר דיוור", autofocus: true, required: true, wrapper_html: { class: 'fixer' } %>
-    <!-- </div> -->
+      <%= f.input :healthcheck, autofocus: true, required: true, wrapper_html: { class: 'fixer' } %>
+      <%= f.input :getupdates, autofocus: true, required: true, wrapper_html: { class: 'fixer' } %>
     </div>
-    <%= f.button :submit, "הצטרף", class: "btn btn-flatgreen btn-sm" %>
+    <%= f.button :submit,"#{I18n.t "signup_btn"}", class: "btn btn-flatgreen btn-sm" %>
 <% end %>
   </div>
 </div>
