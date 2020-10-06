@@ -57,7 +57,11 @@
   background-color: #f4f4f4;
   color: #ff2287;
 }
-
+.kill-hover:hover{
+  background: transparent !important;
+  color: black !important;
+  opacity: 1 !important;
+}
 .btn-main:hover{
   width: 400px;
   height: 50px;
@@ -115,11 +119,15 @@
   align-items: center;
   padding-left: 0;
   .form-check-label{
-    margin-right: 3rem;
+    margin: 0px 2rem;
   }
+}
+.ft-big{
+  font-size: 48px !important;
 }
 .scrolldown{
   position: fixed;
+  flex-direction: column;
   right: 24px;
   bottom: 24px;
 }
@@ -200,7 +208,7 @@
 .table{
   margin: 40px 0px;
   thead{
-    font-size: 24px;
+    font-size: 18px;
   }
  tbody {
 	font-size: 20px;

@@ -3,9 +3,9 @@
   <div class="sessionform">
     <div class="sessionheadline p-4">
       <% if controller.action_name == "create" || controller.action_name == "new"  %>
-        <h2 class="headline">פתיחת עיר חדשה</h2>
+        <h2 class="headline"><%= "#{I18n.t "create_city"}" %></h2>
         <% elsif controller.action_name == "edit" %>
-        <h2 class="headline">עריכת עיר</h2>
+        <h2 class="headline"><%= "#{I18n.t "update_city"}" %></h2>
         <% end %>
     </div>
       <%= simple_form_for(@city) do |f| %>
@@ -18,8 +18,8 @@
         </div>
 
         <div class="form-actions">
-          <%= f.button :submit, "אישור", class: "btn btn-sm btn-flatgreen" %>
-          <%= link_to 'חזרה', cities_path,class: "btn btn-sm btn-flatgreen" %>
+          <%= f.button :submit, "#{I18n.t :accept}", class: "btn btn-sm btn-flatgreen" %>
+          <%= link_to "#{I18n.t :return_btn}", cities_path, class: "btn btn-sm btn-flatgreen" %>
         </div>
       <% end %>
     </div>

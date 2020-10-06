@@ -89,3 +89,5 @@ gem "bootstrap-sass", "~> 3.4"
 gem "select2-rails", "~> 4.0"
 
 gem "bootstrap-datepicker-rails", "~> 1.9"
+
+gem "rails-i18n", "~> 5.1"

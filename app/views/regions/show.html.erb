@@ -3,7 +3,7 @@
   <div class="sessionform">
     <div class="sessionheadline p-4">
       <h2 class="headline">
-        <strong>מספר איזור:</strong>
+        <strong><%= "#{I18n.t "region_id"} : " %></strong>
         <%= @region.id %>
       </h2>
     </div>
@@ -14,8 +14,8 @@
       </div>
     </div>
       <div class="action">
-        <%= link_to 'עריכה', edit_region_path(@region),class: "btn btn-sm btn-flatgreen" %>
-        <%= link_to 'חזרה', regions_path,class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to "#{I18n.t "update_btn"}", edit_region_path(@region),class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to "#{I18n.t "return_btn"}", regions_path,class: "btn btn-sm btn-flatgreen" %>
       </div>
     </div>
   </div>

@@ -1,13 +1,23 @@
-<%- if controller_name == 'sessions' %>
-  <%= link_to "התחבר", new_session_path(resource_name), class: "btn btn-nav btn-nav-active border-left" %><br />
-<% end %>
-<%- if controller_name == 'registrations' %>
-  <%= link_to "התחבר", new_session_path(resource_name), class: "btn btn-nav border-left" %><br />
-  <%= link_to "הצטרף", new_registration_path(resource_name), class: "btn btn-nav btn-nav-active" %><br />
+<% if I18n.locale == :he %>
+  <%- if controller_name == 'sessions' %>
+    <%= link_to "#{I18n.t "login_btn"}", new_session_path(resource_name), class: "btn btn-nav btn-nav-active border-leftt" %><br />
+  <% end %>
+  <%- if controller_name == 'registrations' %>
+    <%= link_to "#{I18n.t "login_btn"}", new_session_path(resource_name), class: "btn btn-nav border-leftt" %><br />
+    <%= link_to "#{I18n.t "signup_btn"}", new_registration_path(resource_name), class: "btn btn-nav btn-nav-active" %><br />
+  <% end %>
+<% else %>
+  <%- if controller_name == 'sessions' %>
+    <%= link_to "#{I18n.t "login_btn"}", new_session_path(resource_name), class: "btn btn-nav btn-nav-active border-rightt" %><br />
+  <% end %>
+  <%- if controller_name == 'registrations' %>
+    <%= link_to "#{I18n.t "login_btn"}", new_session_path(resource_name), class: "btn btn-nav border-rightt" %><br />
+    <%= link_to "#{I18n.t "signup_btn"}", new_registration_path(resource_name), class: "btn btn-nav btn-nav-active" %><br />
+  <% end %>
 <% end %>
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
   <%#= link_to "התחבר", new_session_path(resource_name), class: "btn btn-nav" %><br />
-  <%= link_to "הצטרף", new_registration_path(resource_name), class: "btn btn-nav" %><br />
+  <%= link_to "#{I18n.t "signup_btn"}", new_registration_path(resource_name), class: "btn btn-nav" %><br />
 <% end %>
 
 <% if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>

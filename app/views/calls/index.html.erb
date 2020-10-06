@@ -1,31 +1,31 @@
 <div class="homecon">
   <%= link_to image_tag("logo.png"), root_path%>
   <div class="index-page">
-    <h2 class="headline-text">לוח קריאות</h2>
+    <h2 class="headline-text"><%= t :call_panel_btn%></h2>
     <%= simple_form_for @call, url: calls_path, method: "GET", html: { class: 'form-inline', multipart: true } do |f| %>
-      <%= f.association :city, label: "עיר", :include_blank => "הצג הכל", input_html: { class: 'js-selectable' } %>
+      <%= f.association :city, :include_blank => "#{I18n.t "show_all"}", input_html: { class: 'js-selectable' } %>
       <%= f.simple_fields_for :region, @region do |t| %>
-        <%= t.input :name, label: "איזור", selected: @region.id, :collection => Region.all, :include_blank => "הצג הכל", input_html:{ class: 'js-selectable' } %>
-        <%= f.input :user, label: "בטיפול" , as: :select, selected: @user_show , collection: [["לא",false],["כן",true]], :include_blank => "הצג הכל" , input_html: { class: 'js-select' } %>
-        <%= f.input :done, label: "סטטוס" , as: :select, selected: @call_done , collection: [["פתוח",false],["סגור",true]], :include_blank => "הצג הכל" , input_html: { class: 'js-select' } %>
-        <%= f.submit "חפש", class: "btn btn-main btn-sm" %>
+        <%= t.input :name, selected: @region.id, :collection => Region.all, :include_blank => "#{I18n.t "show_all"}", input_html:{ class: 'js-selectable' } %>
+        <%= f.input :user, label: "#{I18n.t "status_work_label"}", as: :select, selected: @user_show , collection: [["#{I18n.t "false"}",false],["#{I18n.t "true"}",true]], :include_blank => "#{I18n.t "show_all"}" , input_html: { class: 'js-select' } %>
+        <%= f.input :done, as: :select, selected: @call_done , collection: [["#{I18n.t "status_open"}",false],["#{I18n.t "status_close"}",true]], :include_blank => "#{I18n.t "show_all"}" , input_html: { class: 'js-select' } %>
+        <%= f.submit "#{I18n.t "search"}", class: "btn btn-main btn-sm" %>
       <% end %>
     <% end%>
     <table class="table table-responsive-xl">
       <thead>
         <tr>
-          <th scope="col">שם</th>
-          <th scope="col">שם משפחה</th>
-          <th scope="col">טלפון</th>
-          <th scope="col">כתובת</th>
-          <th scope="col">עיר</th>
-          <th scope="col">איימל</th>
-          <th scope="col">תיאור</th>
-          <th scope="col">הצהרת בריאות</th>
-          <th scope="col">מתנדב</th>
-          <th scope="col">זמינות</th>
-          <th scope="col">סטטוס</th>
-          <th colspan="3">פעולות</th>
+          <th scope="col"><%= t 'activerecord.attributes.call.name' %></th>
+          <th scope="col"><%= t 'activerecord.attributes.call.lastname' %></th>
+          <th scope="col"><%= t 'activerecord.attributes.call.done' %></th>
+          <th scope="col"><%= t 'activerecord.attributes.call.address' %></th>
+          <th scope="col"><%= t 'activerecord.attributes.call.city' %></th>
+          <th scope="col"><%= t 'activerecord.attributes.call.email' %></th>
+          <th scope="col"><%= t 'activerecord.attributes.call.description' %></th>
+          <th scope="col"><%= t 'activerecord.attributes.call.healthcheck' %></th>
+          <th scope="col"><%= t 'activerecord.attributes.call.user' %></th>
+          <th scope="col"><%= t 'activerecord.attributes.call.availability' %></th>
+          <th scope="col"><%= t 'activerecord.attributes.call.done' %></th>
+          <th colspan="3"><%= t :action%></th>
         </tr>
       </thead>
 
@@ -39,21 +39,21 @@
             <td><%= call.city.name unless call.city.nil? %></td>
             <td><%= call.email %></td>
             <td><%= call.description[0..60] %></td>
-            <td><%= call.healthcheck ? "אושר" : "מחכה לאישור" %></td>
-            <td><%= call.user.nil? ? "לא נלקח" : call.user.name %></td>
+            <td><%= call.healthcheck ? "#{I18n.t "accepted"}" : "#{I18n.t "not_accepted"}" %></td>
+            <td><%= call.user.nil? ? "#{I18n.t "not_taken"}" : call.user.name %></td>
             <td><%= call.availability.join(' ') unless call.availability.nil? %></td>
-            <td><%= call.done ? "סגור" : "פתוח" %></td>
-            <td><%= link_to 'צפייה', call %></td>
-            <td><%= link_to 'עריכה', edit_call_path(call) %></td>
-            <td><%= link_to 'מחיקה', call, method: :delete, data: { confirm: 'האם אתה בטוח?' } %></td>
+            <td><%= call.done ? "#{I18n.t "status_close"}" : "#{I18n.t "status_open"}" %></td>
+            <td><%= link_to "#{I18n.t "show"}", call %></td>
+            <td><%= link_to "#{I18n.t "update"}", edit_call_path(call) %></td>
+            <td><%= link_to "#{I18n.t "delete"}", call, method: :delete, data: { confirm: "#{I18n.t :confirm}" } %></td>
           </tr>
         <% end %>
       </tbody>
     </table>
     <br>
-    <div class="d-flex justify-content-center flex-wrap"">
-      <%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-main" %>
-      <button class="btn btn-sm btn-main" id="exportexl">EXPORT</button>
+    <div class="d-flex justify-content-center flex-wrap">
+      <%= link_to "#{I18n.t "adminpanel_btn"}", adminpanel_path, class: "btn btn-sm btn-main" %>
+      <button class="btn btn-sm btn-main" id="exportexl"><%= t :export %></button>
     </div>
   </div>
 </div>

@@ -65,6 +65,18 @@ document.addEventListener('turbolinks:load', () => {
   let solidcampus = document.getElementById("user_solidaritycampus");
   let localdiv = document.getElementsByClassName("user_solidaritylocaladdress")
   let localcampus = document.querySelectorAll(".user_campus, .user_campusactivity, .user_studentactivist")
+  $("#X").click(() => {
+    if ($(".scrolldown").children()[0].classList.contains("hide")){
+      $(".scrolldown").children()[0].classList.remove("hide")
+      $(".scrolldown").children()[1].classList.remove("hide")
+      $(".scrolldown").children()[2].textContent = "-"
+    }
+    else{
+     $(".scrolldown").children()[0].classList.add("hide")
+     $(".scrolldown").children()[1].classList.add("hide")
+     $(".scrolldown").children()[2].textContent = "+"
+    }
+  });
   const updateShow = () => {
     if (solidlocal.checked){
       localdiv[0].classList.remove("hide")

@@ -3,126 +3,126 @@
   <div class="sessionform">
     <div class="sessionheadline p-4">
       <h2 class="headline">
-        <strong>מספר משתמש:</strong>
+        <strong><%= "#{I18n.t :user_id} : "%></strong>
         <%= @user.id %>
       </h2>
     </div>
       <div class="form-inputs">
       <div class="form-group mt-2">
-        <label>איימל:</label>
+        <label><%= I18n.t "activerecord.attributes.user.name" %>:</label>
         <input type="text" disabled="true" value="<%= @user.email %>">
       </div>
       <div class="form-group mt-2">
-        <label>שם משפחה:</label>
+        <label><%= I18n.t "activerecord.attributes.user.lastname" %>:</label>
         <input type="text" disabled="true" value="<%= @user.lastname %>">
       </div>
       <div class="form-group mt-2">
-        <label>שם פרטי:</label>
+        <label><%= I18n.t "activerecord.attributes.user.user" %>:</label>
         <input type="text" disabled="true" value="<%= @user.name %>">
       </div>
       <div class="form-group mt-2">
-        <label>מגדר:</label>
+        <label><%= I18n.t "activerecord.attributes.user.gender" %>:</label>
         <input type="text" disabled="true" value="<%= @user.gender? %>">
       </div>
       <div class="form-group mt-2">
-        <label>טלפון:</label>
+        <label><%= I18n.t "activerecord.attributes.user.phone" %>:</label>
         <input type="text" disabled="true" value="<%= @user.phone %>">
       </div>
       <div class="form-group mt-2">
-        <label>כתובת:</label>
+        <label><%= I18n.t "activerecord.attributes.user.address" %>:</label>
         <input type="text" disabled="true" value="<%= @user.address %>">
       </div>
       <div class="form-group mt-2">
-        <label>סטודנט:</label>
-        <input type="text" disabled="true" value="<%= @user.student ? "כן" : "לא" %>">
+        <label><%= I18n.t "activerecord.attributes.user.student" %>:</label>
+        <input type="text" disabled="true" value="<%= @user.student ? "#{I18n.t :true}" : "#{I18n.t :false}" %>">
       </div>
       <div class="form-group mt-2">
-        <label>עיר:</label>
+        <label><%= I18n.t "activerecord.attributes.user.city" %>:</label>
         <input type="text" disabled="true" value="<%= @user.city.name unless @user.city.nil? %>">
       </div>
       <div class="form-group mt-2">
-        <label>רמת ניהול:</label>
+        <label><%= I18n.t "activerecord.attributes.user.adminlevel" %>:</label>
         <input type="text" disabled="true" value="<%= @user.admin_to_s %>">
       </div>
       <div class="form-group mt-2">
-        <label>תעודת זהות:</label>
+        <label><%= I18n.t "activerecord.attributes.user.israelid" %>:</label>
         <input type="text" disabled="true" value="<%= @user.israelid %>">
       </div>
       <div class="form-group mt-2">
-        <label>אישור בריאות:</label>
-        <input type="text" disabled="true" value="<%= @user.healthcheck ? "כן" : "לא" %>">
+        <label><%= I18n.t "activerecord.attributes.user.healthcheck" %>:</label>
+        <input type="text" disabled="true" value="<%= @user.healthcheck ? "#{I18n.t :true}" : "#{I18n.t :false}" %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.workfield" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.workfield.nil? || @user.workfield.empty? ? "לא הוזן" : @user.workfield %>">
+        <input type="text" disabled="true" value="<%= @user.workfield.nil? || @user.workfield.empty? ? "#{I18n.t :noinput}" : @user.workfield %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.specality" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.specality.nil? || @user.specality.empty? ? "לא הוזן" : @user.specality %>">
+        <input type="text" disabled="true" value="<%= @user.specality.nil? || @user.specality.empty? ? "#{I18n.t :noinput}" : @user.specality %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.langauges" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.langauges.nil? || @user.langauges.empty? ? "לא הוזן" : @user.lang_s %>">
+        <input type="text" disabled="true" value="<%= @user.langauges.nil? || @user.langauges.empty? ? "#{I18n.t :noinput}" : @user.lang_s %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.availability" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.availability.nil? || @user.availability.empty? ? "לא הוזן" : @user.aval_s %>">
+        <input type="text" disabled="true" value="<%= @user.availability.nil? || @user.availability.empty? ? "#{I18n.t :noinput}" : @user.aval_s %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.pastvolunteervolume" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.pastvolunteervolume.nil? || @user.pastvolunteervolume.empty? ? "לא הוזן" : @user.pastvolunteervolume %>">
+        <input type="text" disabled="true" value="<%= @user.pastvolunteervolume.nil? || @user.pastvolunteervolume.empty? ? "#{I18n.t :noinput}" : @user.pastvolunteervolume %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.pastvolunteer" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.pastvolunteer.nil? || @user.pastvolunteer.empty? ? "לא הוזן" : @user.pastvolunteer %>">
+        <input type="text" disabled="true" value="<%= @user.pastvolunteer.nil? || @user.pastvolunteer.empty? ? "#{I18n.t :noinput}" : @user.pastvolunteer %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.keepvolunteer" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.keepvolunteer.nil? ? "לא הוזן" : @user.keepvolunteer ? "ממשיך" : "מפסיק" %>">
+        <input type="text" disabled="true" value="<%= @user.keepvolunteer.nil? ? "#{I18n.t :noinput}" : @user.keepvolunteer ? "#{I18n.t :continute}" : "#{I18n.t :stop}" %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.keepvolunteer" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.keepvolunteer.nil? ? "לא הוזן" : @user.keepvolunteer ? "ממשיך" : "מפסיק" %>">
+        <input type="text" disabled="true" value="<%= @user.keepvolunteer.nil? ? "#{I18n.t :noinput}" : @user.keepvolunteer ? "#{I18n.t :continute}" : "#{I18n.t :stop}" %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.volunteerusefull" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.volunteerusefull.nil? ? "לא הוזן" : @user.volunteerusefull ? "כן" : "לא" %>">
+        <input type="text" disabled="true" value="<%= @user.volunteerusefull.nil? ? "#{I18n.t :noinput}" : @user.volunteerusefull ? "#{I18n.t :true}" : "#{I18n.t :false}" %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.helpcalls" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.helpcalls.nil? ? "לא הוזן" : @user.helpcalls ? "כן" : "לא" %>">
+        <input type="text" disabled="true" value="<%= @user.helpcalls.nil? ? "#{I18n.t :noinput}" : @user.helpcalls ? "#{I18n.t :true}" : "#{I18n.t :false}" %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.solidaritycampus" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.solidaritycampus.nil? ? "לא הוזן" : @user.solidaritycampus ? "כן" : "לא" %>">
+        <input type="text" disabled="true" value="<%= @user.solidaritycampus.nil? ? "#{I18n.t :noinput}" : @user.solidaritycampus ? "#{I18n.t :true}" : "#{I18n.t :false}" %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.campus" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.campus.nil? || @user.campus.empty? ? "לא הוזן" : @user.campus %>">
+        <input type="text" disabled="true" value="<%= @user.campus.nil? || @user.campus.empty? ? "#{I18n.t :noinput}" : @user.campus %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.campusactivity" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.campusactivity.nil? || @user.campusactivity.empty? ? "לא הוזן" : @user.campusactivity %>">
+        <input type="text" disabled="true" value="<%= @user.campusactivity.nil? || @user.campusactivity.empty? ? "#{I18n.t :noinput}" : @user.campusactivity %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.intrestedinsolidarity" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.intrestedinsolidarity.nil? ? "לא הוזן" : @user.intrestedinsolidarity ? "כן" : "לא" %>">
+        <input type="text" disabled="true" value="<%= @user.intrestedinsolidarity.nil? ? "#{I18n.t :noinput}" : @user.intrestedinsolidarity ? "#{I18n.t :true}" : "#{I18n.t :false}" %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.localwhatsapp" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.localwhatsapp.nil? ? "לא הוזן" : @user.localwhatsapp ? "כן" : "לא" %>">
+        <input type="text" disabled="true" value="<%= @user.localwhatsapp.nil? ? "#{I18n.t :noinput}" : @user.localwhatsapp ? "#{I18n.t :true}" : "#{I18n.t :false}" %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.helpoperations" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.helpoperations.nil? ? "לא הוזן" : @user.helpoperations ? "כן" : "לא" %>">
+        <input type="text" disabled="true" value="<%= @user.helpoperations.nil? ? "#{I18n.t :noinput}" : @user.helpoperations ? "#{I18n.t :true}" : "#{I18n.t :false}" %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.student" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.student.nil? ? "לא הוזן" : @user.student ? "כן" : "לא" %>">
+        <input type="text" disabled="true" value="<%= @user.student.nil? ? "#{I18n.t :noinput}" : @user.student ? "#{I18n.t :true}" : "#{I18n.t :false}" %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.joinlocal" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.joinlocal.nil? ? "לא הוזן" : @user.joinlocal ? "כן" : "לא" %>">
+        <input type="text" disabled="true" value="<%= @user.joinlocal.nil? ? "#{I18n.t :noinput}" : @user.joinlocal ? "#{I18n.t :true}" : "#{I18n.t :false}" %>">
       </div>
       <div class="form-group check_boxes">
         <legend class="col-form-label pt-0"><%= I18n.t "activerecord.attributes.user.help_options" %></legend>
@@ -135,19 +135,19 @@
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.lastcontact" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.lastcontact.nil? || @user.lastcontact.empty? ? "לא הוזן" : @user.lastcontact %>">
+        <input type="text" disabled="true" value="<%= @user.lastcontact.nil? || @user.lastcontact.empty? ? "#{I18n.t :noinput}" : @user.lastcontact %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.contactname" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.contactname.nil? || @user.contactname.empty? ? "לא הוזן" : @user.contactname %>">
+        <input type="text" disabled="true" value="<%= @user.contactname.nil? || @user.contactname.empty? ? "#{I18n.t :noinput}" : @user.contactname %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.user.othermentions" %>:</label>
-        <input type="text" disabled="true" value="<%= @user.othermentions.nil? || @user.othermentions.empty? ? "לא הוזן" : @user.othermentions %>">
+        <input type="text" disabled="true" value="<%= @user.othermentions.nil? || @user.othermentions.empty? ? "#{I18n.t :noinput}" : @user.othermentions %>">
       </div>
       <div class="action">
-        <%= link_to 'עריכה', edit_user_path(@user), class: "btn btn-sm btn-flatgreen" %>
-        <%= link_to 'חזרה', users_path, class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to "#{I18n.t :update_btn}", edit_user_path(@user), class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to "#{I18n.t :return_btn}", users_path, class: "btn btn-sm btn-flatgreen" %>
       </div>
     </div>
   </div>
