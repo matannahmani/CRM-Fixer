@@ -3,7 +3,7 @@
   <div class="sessionform">
     <div class="sessionheadline p-4">
       <h2 class="headline">
-        <strong>מספר עיר:</strong>
+        <strong><%= "#{I18n.t :city_id} : " %></strong>
         <%= @city.id %>
       </h2>
     </div>
@@ -18,8 +18,8 @@
       </div>
     </div>
       <div class="action">
-        <%= link_to 'עריכה', edit_city_path(@city), class: "btn btn-sm btn-flatgreen" %>
-        <%= link_to 'לכל הישובים', cities_path, class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to "#{I18n.t :update_btn}", edit_city_path(@city), class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to "#{I18n.t :all_cites_btn}", cities_path, class: "btn btn-sm btn-flatgreen" %>
       </div>
     </div>
   </div>

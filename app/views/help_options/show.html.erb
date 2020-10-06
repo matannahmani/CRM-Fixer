@@ -3,22 +3,22 @@
   <div class="sessionform">
     <div class="sessionheadline p-4">
       <h2 class="headline">
-        <strong>מספר עזרה:</strong>
+        <strong><%= "#{I18n.t "helpoption_id"} : " %></strong>
         <%= @help_option.id %>
       </h2>
     </div>
     <div class="form-inputs">
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.help_option.descriptionvol" %>:</label>
-        <input type="text" disabled="true" value="<%= @help_option.descriptionvol.nil? || @help_option.descriptionvol.empty? ? "לא הוזן" : @help_option.descriptionvol %>">
+        <input type="text" disabled="true" value="<%= @help_option.descriptionvol.nil? || @help_option.descriptionvol.empty? ? "#{I18n.t "noinput"}" : @help_option.descriptionvol %>">
       </div>
       <div class="form-group mt-2">
         <label><%= I18n.t "activerecord.attributes.help_option.descriptioncall" %>:</label>
-        <input type="text" disabled="true" value="<%= @help_option.descriptioncall.nil? || @help_option.descriptioncall.empty? ? "לא הוזן" : @help_option.descriptioncall %>">
+        <input type="text" disabled="true" value="<%= @help_option.descriptioncall.nil? || @help_option.descriptioncall.empty? ? "#{I18n.t "noinput"}" : @help_option.descriptioncall %>">
       </div>
       <div class="action">
-        <%= link_to 'עריכה', edit_help_option_path(@help_option), class: "btn btn-sm btn-flatgreen" %>
-        <%= link_to 'חזרה', help_options_path, class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to "#{I18n.t "update_btn"}", edit_help_option_path(@help_option), class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to "#{I18n.t "return_btn"}", help_options_path, class: "btn btn-sm btn-flatgreen" %>
       </div>
     </div>
   </div>

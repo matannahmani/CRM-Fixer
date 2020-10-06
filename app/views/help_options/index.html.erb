@@ -1,12 +1,12 @@
 <div class="homecon">
   <%= link_to image_tag("logo.png"), root_path%>
   <div class="index-page">
-    <h2 class="headline-text">מסך ניהול אופציות עזרה</h2>
+    <h2 class="headline-text"><%= t :helpoptions_panel_btn %></h2>
     <table class="table table-responsive-xl">
       <thead>
         <tr>
-          <th scope="col">תצוגת מתנדב</th>
-          <th scope="col">תצוגת קריאה</th>
+          <th scope="col"><%= t 'activerecord.attributes.help_option.descriptionvol' %></th>
+          <th scope="col"><%= t 'activerecord.attributes.help_option.descriptioncall' %></th>
           <th colspan="3"></th>
         </tr>
       </thead>
@@ -16,9 +16,9 @@
           <tr>
             <td><%= help_option.descriptionvol %></td>
             <td><%= help_option.descriptioncall %></td>
-            <td><%= link_to 'הצגה', help_option %></td>
-            <td><%= link_to 'עריכה', edit_help_option_path(help_option) %></td>
-            <td><%= link_to 'מחיקה', help_option, method: :delete, data: { confirm: 'האם אתה בטוח?' } %></td>
+            <td><%= link_to "#{I18n.t "show"}", help_option %></td>
+            <td><%= link_to "#{I18n.t "update"}", edit_help_option_path(help_option) %></td>
+            <td><%= link_to "#{I18n.t "delete"}", help_option, method: :delete, data: { confirm: "#{I18n.t :confirm}" } %></td>
           </tr>
         <% end %>
       </tbody>
@@ -26,9 +26,9 @@
 
     <br>
       <div class="d-flex justify-content-center flex-wrap"">
-        <%= link_to 'אופציה חדשה', new_help_option_path, class: "btn btn-sm btn-main" %>
-        <%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-main" %>
-        <button class="btn btn-sm btn-main" id="exportexl">EXPORT</button>
+        <%= link_to "#{I18n.t "create_helpoption"}", new_help_option_path, class: "btn btn-sm btn-main" %>
+        <%= link_to "#{I18n.t "adminpanel_btn"}", adminpanel_path, class: "btn btn-sm btn-main" %>
+        <button class="btn btn-sm btn-main" id="exportexl"><%= "#{I18n.t "export"}" %></button>
     </div>
   </div>
 </div>

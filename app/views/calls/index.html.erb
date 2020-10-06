@@ -45,7 +45,7 @@
             <td><%= call.done ? "#{I18n.t "status_close"}" : "#{I18n.t "status_open"}" %></td>
             <td><%= link_to "#{I18n.t "show"}", call %></td>
             <td><%= link_to "#{I18n.t "update"}", edit_call_path(call) %></td>
-            <td><%= link_to "#{I18n.t "delete"}", call, method: :delete, data: { confirm: 'האם אתה בטוח?' } %></td>
+            <td><%= link_to "#{I18n.t "delete"}", call, method: :delete, data: { confirm: "#{I18n.t :confirm}" } %></td>
           </tr>
         <% end %>
       </tbody>

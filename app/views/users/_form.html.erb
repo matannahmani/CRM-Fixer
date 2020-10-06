@@ -3,9 +3,9 @@
   <div class="sessionform">
     <div class="sessionheadline p-4">
       <% if controller.action_name == "create" || controller.action_name == "new"  %>
-        <h2 class="headline">פתיחת משתמש חדש</h2>
+        <h2 class="headline"><%= "#{I18n.t "create_user"}" %></h2>
         <% elsif controller.action_name == "edit" %>
-        <h2 class="headline">עריכת משתמש</h2>
+        <h2 class="headline"><%= "#{I18n.t "update_user"}" %></h2>
         <% end %>
   </div>
     <%= simple_form_for(@user) do |f| %>
@@ -17,14 +17,14 @@
         <%= f.input :email, disabled: true %>
         <%= f.input :lastname, disabled: true %>
         <%= f.input :name, disabled: true %>
-        <%= f.input :adminlevel, selected: @user.adminlevel.to_s, label: "רמת ניהול", collection: [['מתנדב',0],['טלפן',1],['מנהל',2],['מנהל ארצי',3]], include_blank: false, :input_html => { :class => 'js-select' }, disabled: true %>
+        <%= f.input :adminlevel, selected: @user.adminlevel.to_s, collection: [["#{I18n.t :vol}",0],["#{I18n.t :caller}",1],["#{I18n.t :super}",2],["#{I18n.t :admin}",3]], include_blank: false, :input_html => { :class => 'js-select' }, disabled: true %>
         <% else %>
         <%= f.input :email %>
         <%= f.input :lastname %>
         <%= f.input :name %>
-        <%= f.input :adminlevel, selected: @user.adminlevel.to_s, label: "רמת ניהול", collection: [['מתנדב',0],['טלפן',1],['מנהל',2],['מנהל ארצי',3]], include_blank: false, :input_html => { :class => 'js-select' } %>
+        <%= f.input :adminlevel, selected: @user.adminlevel.to_s, collection: [["#{I18n.t :vol}",0],["#{I18n.t :caller}",1],["#{I18n.t :super}",2],["#{I18n.t :admin}",3]], include_blank: false, :input_html => { :class => 'js-select' } %>
         <% end %>
-        <%= f.input :gender, as: :select, collection: [['גבר',true],['אישה',false]], include_blank: false, input_html: { class: 'js-select' } %>
+        <%= f.input :gender, as: :select, collection: [["#{I18n.t :male}",true],["#{I18n.t :female}",false]], include_blank: false, input_html: { class: 'js-select' } %>
         <%= f.association :city, include_blank: false, :input_html => { :class => 'js-selectable' }  %>
         <%= f.input :address %>
         <%= f.input :phone %>
@@ -60,8 +60,8 @@
       </div>
 
       <div class="form-actions">
-        <%= f.button :submit, "שמירה", class: "btn btn-sm btn-flatgreen" %>
-        <%= link_to 'חזרה', users_path, class: "btn btn-sm btn-flatgreen" %>
+        <%= f.button :submit, "#{I18n.t :accept}", class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to "#{I18n.t :return_btn}", users_path, class: "btn btn-sm btn-flatgreen" %>
       <% end %>
     </div>
   </div>

@@ -3,9 +3,9 @@
   <div class="sessionform">
     <div class="sessionheadline p-4">
       <% if controller.action_name == "create" || controller.action_name == "new"  %>
-        <h2 class="headline">פתיחת קריאה חדשה</h2>
+        <h2 class="headline"><%= "#{I18n.t "create_call"}" %></h2>
         <% elsif controller.action_name == "edit" %>
-        <h2 class="headline">עריכת קריאה</h2>
+        <h2 class="headline"><%= "#{I18n.t "update_call"}"%></h2>
         <% end %>
 </div>
   <% action_name == "new" || action_name == "create" ? @path = newcall_path : @path = call_path %>
@@ -14,28 +14,28 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.input :name, label: "שם פרטי" %>
-    <%= f.input :lastname, label: "שם משפחה" %>
-    <%= f.input :phone, label: "טלפון" %>
-    <%= f.input :address, label: "כתובת מלאה" %>
-    <%= f.association :city, label: "ישוב", include_blank: false, :input_html => { :class => 'js-selectable' } %>
-    <%= f.association :user, label_method: :fullname, label: "מתנדב", :input_html => { :class => 'js-selectable' } if params["action"] == "edit" %>
-    <%= f.input :done, label: "סטטוס", as: :select, collection: [["פתוח",false],["סגור",true]], include_blank: false, :input_html => { :class => 'js-select' } if params["action"] == "edit" %>
-    <%= f.input :email, label: "איימל", error: true %>
-    <%= f.input :description, label: "תכתבו במילים שלכם מה צריך" %>
-    <%= f.input :availability, label: "באיזה שעות נוח שהמתנדב/ת יגיע?", as: :check_boxes, include_hidden: false, collection: Call.availabilitylist, include_blank: false%>
-    <%= f.association :help_options, as: :check_boxes, label: "אופציה עזרה", include_hidden: false, collection: HelpOption.all.collect {|i| [i.descriptioncall,i.id] if !i.descriptioncall.empty?}.compact %>
+    <%= f.input :name %>
+    <%= f.input :lastname %>
+    <%= f.input :phone %>
+    <%= f.input :address %>
+    <%= f.association :city, include_blank: false, :input_html => { :class => 'js-selectable' } %>
+    <%= f.association :user, label_method: :fullname, :input_html => { :class => 'js-selectable' } if params["action"] == "edit" %>
+    <%= f.input :done, as: :select, collection: [["פתוח",false],["סגור",true]], include_blank: false, :input_html => { :class => 'js-select' } if params["action"] == "edit" %>
+    <%= f.input :email, error: true %>
+    <%= f.input :description, label: "#{I18n.t "activerecord.attributes.call.descriptionlabel"}" %>
+    <%= f.input :availability, label: "#{I18n.t "activerecord.attributes.call.availabilitylabel"}", as: :check_boxes, include_hidden: false, collection: Call.availabilitylist, include_blank: false%>
+    <%= f.association :help_options, as: :check_boxes, include_hidden: false, collection: HelpOption.all.collect {|i| [i.descriptioncall,i.id] if !i.descriptioncall.empty?}.compact %>
     <% if params["action"] == "edit" %>
       <div class="healthcheck padding-left pd-right-unset">
-        <h3 class="healthcheck-text">לקיחת קריאה מותנת באישור הצהרת בריאות אנא עיין בהצרה לפני אישור</h3>
-        <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank">הצהרת בריאות</a>
+        <h3 class="healthcheck-text"><%= t 'healthcheck-text'%></h3>
+        <a href="https://docs.google.com/document/d/1PrIatn7BX4g-bIdg-VWE32uamt7lESICIXgYk7I0lew/edit?usp=sharing" target="_blank"><%= t "activerecord.attributes.call.healthcheck" %></a>
       </div>
     <% end %>
   </div>
 
   <div class="form-actions">
-      <%= f.button :submit, "אישור", class: "btn btn-sm btn-flatgreen" %>
-      <%= link_to 'חזרה', root_path, class: "btn btn-sm btn-flatgreen" %>
+      <%= f.button :submit, "#{I18n.t "accept"}", class: "btn btn-sm btn-flatgreen" %>
+      <%= link_to "#{I18n.t "return_btn"}", calls_path, class: "btn btn-sm btn-flatgreen" %>
   </div>
 <% end %>
   </div>

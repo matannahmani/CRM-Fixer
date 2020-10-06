@@ -3,9 +3,9 @@
   <div class="sessionform">
     <div class="sessionheadline p-4">
       <% if controller.action_name == "create" || controller.action_name == "new"  %>
-        <h2 class="headline">פתיחת אופציה חדשה</h2>
+        <h2 class="headline"><%= "#{I18n.t "create_helpoption"}" %></h2>
         <% elsif controller.action_name == "edit" %>
-        <h2 class="headline">עריכת אופציה</h2>
+        <h2 class="headline"><%= "#{I18n.t "update_helpoption"}" %></h2>
         <% end %>
     </div>
     <%= simple_form_for(@help_option) do |f| %>
@@ -18,8 +18,8 @@
       </div>
 
       <div class="form-actions">
-        <%= f.button :submit, "שמירה", class: "btn btn-sm btn-flatgreen" %>
-        <%= link_to 'חזרה', help_options_path, class: "btn btn-sm btn-flatgreen" %>
+        <%= f.button :submit, "#{I18n.t "accept"}", class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to "#{I18n.t "return_btn"}", help_options_path, class: "btn btn-sm btn-flatgreen" %>
       </div>
     <% end %>
   </div>
