@@ -1,12 +1,12 @@
 <div class="homecon">
     <%= image_tag("logo.png")%>
-    <%= link_to 'מסך ניהול', adminpanel_path, class: "btn btn-main" if !current_user.nil? && !current_user.isvol? %>
-    <%= link_to 'פתיחת קריאה', newcall_path, class: "btn btn-main" %>
-    <%= link_to 'תעודת מתנדב', mypdf_path(:format => :pdf),target: :_blank, :class => "btn btn-main" unless current_user.nil? %>
+    <%= link_to "#{I18n.t "adminpanel_btn"}", adminpanel_path, class: "btn btn-main" if !current_user.nil? && !current_user.isvol? %>
+    <%= link_to "#{I18n.t "newcall_btn"}", newcall_path, class: "btn btn-main" %>
+    <%= link_to "#{I18n.t "volcard_btn"}", mypdf_path(:format => :pdf),target: :_blank, :class => "btn btn-main" unless current_user.nil? %>
     <% if (current_user.nil?) %>
-      <%= link_to 'כניסה', new_user_session_path, class: "btn btn-main" %>
-      <%= link_to 'הצטרפות', new_user_registration_path, class: "btn btn-main" %>
+      <%= link_to "#{I18n.t "login_btn"}", new_user_session_path, class: "btn btn-main" %>
+      <%= link_to "#{I18n.t "signup_btn"}", new_user_registration_path, class: "btn btn-main" %>
     <% else %>
-      <%= link_to 'התנתק', destroy_user_session_path, class: "btn btn-main", :method => :delete %>
+      <%= link_to "#{I18n.t "logout_btn"}", destroy_user_session_path, class: "btn btn-main", :method => :delete %>
     <% end %>
 </div>
