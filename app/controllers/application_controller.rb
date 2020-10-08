@@ -24,6 +24,8 @@ class ApplicationController < ActionController::Base
   UPDATE_MSG = "עודכנה בהצלחה!"
   DESTORY_MSG = "נמחקה בהצלחה!"
   CREATE_MSG = "נוצרה בהצלחה!"
+  CALL_MARKED = "הקריאה נסגרה בהצלחה!"
+  ERROR_500 = "משהו השתבש, אנא נסה שנית"
   def checkadmin
     redirect_to :root, notice: CALL_INSUFFICIENT unless current_user.issuper?
   end

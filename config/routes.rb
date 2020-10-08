@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   get '/calls/takecall/:id', to: 'calls#takecall', as: 'takecall'
+  get '/calls/markdone/:id', to: 'calls#markdone', as: 'callmarkdone'
+  post '/calls/adminmark', to: 'calls#adminmarkdone', as: 'adminmarkdone'
+  get 'admin/callsnews', to: 'calls#overview', as: 'overviewcall'
   get '/mycard', to: 'pages#show', as: 'mypdf'
   # get '/testcard', to: 'pages#volcard' # PDF PREVIEW
   get '/admin', to: 'pages#adminpanel', as: 'adminpanel'

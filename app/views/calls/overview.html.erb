@@ -1,0 +1,40 @@
+<div class="sessioncon">
+  <%= link_to image_tag("logo.png"), root_path%>
+  <div class="sessionform">
+    <div class="sessionheadline p-4">
+      <h2 class="headline">
+        <strong><%= "#{I18n.t "call_updates_title"}" %></strong>
+      </h2>
+    </div>
+<% if @calls.nil? %>
+  <h2><%= t :no_new_calls%></h2>
+<% else %>
+  <%= simple_form_for :call, url: adminmarkdone_path, method: :post do |f| %>
+  <div class="form-inputs align-items-start">
+    <% @calls.each do |call|%>
+      <div class="callcard">
+        <span class="title"><%= "#{t :call_number} : #{call.id}" %></span>
+        <span><%= "#{t :call_opener} : #{call.name}" %></span>
+        <span><%= call.user.nil? ? "#{I18.t :not_taken}" : "#{t :call_taker} : #{call.user.fullname}" %></span>
+        <span><%= "#{t "activerecord.attributes.call.city"} : #{call.city.name}" %></span>
+        <% if locale == :he %>
+          <div class="callactions">
+            <%= link_to "#{I18n.t "show"}", call, class: "btn btn-sm btn-flatgreen" %>
+            <%= link_to "#{I18n.t :markdone_call}", adminmarkdone_path(call: {call.id => "1"}), method: :post, class: "btn btn-sm btn-flatgreen" %>
+            <%= f.input call.id.to_s,label: "#{I18n.t :markdone_call}", as: :boolean, wrapper_html: {class: "cardclose"} %>
+          </div>
+          <% else %>
+            <div class="callactions right-dir">
+              <%= link_to "#{I18n.t "show"}", call, class: "btn btn-sm btn-flatgreen" %>
+              <%= link_to "#{I18n.t :markdone_call}", adminmarkdone_path(call: {call.id => "1"}), method: :post, class: "btn btn-sm btn-flatgreen" %>
+              <%= f.input call.id.to_s,label: "#{I18n.t :markdone_call}", as: :boolean, wrapper_html: {class: "cardclose right_dir"} %>
+            </div>
+          <% end %>
+      </div>
+    <% end %>
+    <div class="action">
+    <%= f.button :submit, "#{I18n.t "accept"}", class: "btn btn-sm btn-flatgreen" %>
+    </div>
+  <% end %>
+<% end %>
+</div>

@@ -25,7 +25,11 @@
           <th scope="col"><%= t 'activerecord.attributes.call.user' %></th>
           <th scope="col"><%= t 'activerecord.attributes.call.availability' %></th>
           <th scope="col"><%= t 'activerecord.attributes.call.done' %></th>
-          <th colspan="3"><%= t :action%></th>
+          <% if current_user.issuper? %>
+            <th colspan="3"><%= t :action%></th>
+          <% else %>
+          <th colspan="1"><%= t :action%></th>
+          <% end %>
         </tr>
       </thead>
 
@@ -43,9 +47,13 @@
             <td><%= call.user.nil? ? "#{I18n.t "not_taken"}" : call.user.name %></td>
             <td><%= call.availability.join(' ') unless call.availability.nil? %></td>
             <td><%= call.done ? "#{I18n.t "status_close"}" : "#{I18n.t "status_open"}" %></td>
-            <td><%= link_to "#{I18n.t "show"}", call %></td>
-            <td><%= link_to "#{I18n.t "update"}", edit_call_path(call) %></td>
-            <td><%= link_to "#{I18n.t "delete"}", call, method: :delete, data: { confirm: "#{I18n.t :confirm}" } %></td>
+            <% if current_user.issuper? %>
+              <td><%= link_to "#{I18n.t "show"}", call %></td>
+              <td><%= link_to "#{I18n.t "update"}", edit_call_path(call) %></td>
+              <td><%= link_to "#{I18n.t "delete"}", call, method: :delete, data: { confirm: "#{I18n.t :confirm}" } %></td>
+            <% else %>
+              <td><%= link_to "#{I18n.t "show"}", call %></td>
+            <% end %>
           </tr>
         <% end %>
       </tbody>
@@ -53,7 +61,7 @@
     <br>
     <div class="d-flex justify-content-center flex-wrap">
       <%= link_to "#{I18n.t "adminpanel_btn"}", adminpanel_path, class: "btn btn-sm btn-main" %>
-      <button class="btn btn-sm btn-main" id="exportexl"><%= t :export %></button>
+      <% unless current_user.iscaller? %> <button class="btn btn-sm btn-main" id="exportexl"><%= t :export %></button><% end %>
     </div>
   </div>
 </div>

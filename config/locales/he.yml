@@ -65,6 +65,7 @@ he:
         availability: "זמינות"
         availabilitylabel: "באיזה שעות נוח שהמתנדב/ת יגיע?"
         created_at: "תאריך פתיחה"
+        donetime: "תאריך סגירה"
       help_option:
         descriptionvol: "תצוגת מתנדב"
         descriptioncall: "תצוגת קריאה"
@@ -334,3 +335,9 @@ he:
   user_id: "משתמש מספר"
   continute: "ממשיך"
   stop: "מפסיק"
+  markdone_call: "סגור קריאה"
+  call_done_panel_btn: "מסך עידכוני קריאה"
+  call_updates_title: "לוח עידיכונים"
+  no_new_calls: "אין עידכונים חדשים"
+  call_opener: "פותח הקיראה"
+  call_taker: "שם המתנדב"

@@ -1,0 +1,5 @@
+class AddSuperdoneToCall < ActiveRecord::Migration[5.2]
+  def change
+    add_column :calls, :admindone, :boolean
+  end
+end

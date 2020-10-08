@@ -22,14 +22,14 @@
       </div>
       <div class="scrolldown">
       <% if action_name == "index"%>
-        <button class="btn btn-sm btn-main kill-hover" id="scrolldown">גלול למטה</button>
+        <button class="btn btn-md btn-main kill-hover hide" id="scrolldown">גלול למטה</button>
       <% end %>
       <% if I18n.locale == :he %>
-       <%= link_to 'English', url_for( :locale => 'en' ),class: "btn btn-sm btn-main kill-hover" %>
+       <%= link_to 'English', url_for( :locale => 'en' ),class: "btn btn-md btn-main kill-hover hide" %>
       <% else %>
-       <%= link_to 'עברית', url_for( :locale => 'he' ),class: "btn btn-sm btn-main kill-hover" %>
+       <%= link_to 'עברית', url_for( :locale => 'he' ),class: "btn btn-md btn-main kill-hover hide" %>
       <% end %>
-      <button class="btn btn-sm btn-main kill-hover ft-big" id="X">-</button>
+      <button class="btn btn-md btn-main kill-hover ft-big" id="X">+</button>
       </div>
     <%= render 'shared/footer' %>
     </div>

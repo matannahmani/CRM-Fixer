@@ -25,7 +25,6 @@
   justify-content: center;
   padding: 0 !important;
   margin: 16px;
-
 }
 .break{
   flex-basis: 100%;
@@ -34,7 +33,10 @@
 .btn-sm {
   font-size: 16px !important;
   width: 200px !important;
-  margin: 16px;
+}
+.btn-md {
+  font-size: 16px !important;
+  width: 100px !important;
 }
 .btn-flatgreen {
   color: white !important;
@@ -131,13 +133,7 @@
   right: 24px;
   bottom: 24px;
 }
-.form-inputs {
-  margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .input-xl{
   width: 280px !important;
 }

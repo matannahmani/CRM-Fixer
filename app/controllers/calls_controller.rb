@@ -1,7 +1,7 @@
 class CallsController < ApplicationController
-  before_action :set_call, only: [:show, :edit, :update, :destroy, :takecall]
-  before_action :checkadmin, except: [:new, :create, :show, :takecall]
-  # before_action :set_path, expect: [:show, :index]
+  before_action :set_call, only: [:show, :edit, :update, :destroy, :takecall, :markdone]
+  before_action :checkadmin, except: [:new, :create, :show, :index, :takecall, :overview]
+  before_action :checkadminuser, only: [:index, :overview]
   skip_before_action :authenticate_user!, only: [:new, :create]
 
   # GET /calls
@@ -25,6 +25,31 @@ class CallsController < ApplicationController
       @taken = true
     else
       redirect_to :root, notice: CALL_ERROR
+    end
+  end
+
+  def overview
+    @calls = Call.where(admindone: false, done: true)
+  end
+
+  def markdone
+    if @call.user == current_user || !current_user.isvol?
+      @call.update(done: true)
+      redirect_to :root, notice: CALL_MARKED
+    else
+      redirect_to :root, notice: CALL_UNAUTH
+    end
+  end
+
+  def adminmarkdone # POST REQUEST
+    calls = params["call"]
+    safecalls = []
+    if calls.empty?
+      redirect_to :root, notice: ERROR_500
+    else
+      calls.each { |call| safecalls << call[0].to_i if /\A\d+\z/.match(call[0]) && call[1] == "1" }
+      Call.where(id: safecalls).update(admindone: true)
+      redirect_to :root, notice: CALL_MARKED
     end
   end
 

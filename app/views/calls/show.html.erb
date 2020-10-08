@@ -42,6 +42,10 @@
     <input type="text" disabled="true" value="<%= @call.done.nil? ? "#{I18n.t :noinput}" : @call.done ? "#{I18n.t :status_close}" : "#{I18n.t :status_open}" %>">
   </div>
   <div class="form-group mt-2">
+    <label><%= I18n.t "activerecord.attributes.call.donetime" %>:</label>
+    <input type="text" disabled="true" value="<%= @call.donetime.nil? ? "#{I18n.t :noinput}" : @call.donetime.strftime("%H:%M %F") %>">
+  </div>
+  <div class="form-group mt-2">
     <label><%= I18n.t "activerecord.attributes.call.user" %>:</label>
     <input type="text" disabled="true" value="<%= @call.user.nil? ? "#{I18n.t :not_taken}" : @call.user.fullname %>">
   </div>
@@ -70,12 +74,18 @@
       <%= link_to "#{I18n.t :take_call}", takecall_path(id: @call.id, take: "false"), class: "btn btn-sm btn-flatgreen" %>
     <% else %>
     <div class="action">
-      <%= link_to "#{I18n.t :untake_call}", takecall_path(id: @call.id, take: "true"), class: "btn btn-sm btn-flatgreen" %>
+      <% unless @call.done %>
+        <%= link_to "#{I18n.t :untake_call}", takecall_path(id: @call.id, take: "true"), class: "btn btn-sm btn-flatgreen" %>
+        <%= link_to "#{I18n.t :markdone_call}", callmarkdone_path(id: @call.id), class: "btn btn-sm btn-flatgreen" %>
+      <% end %>
     <% end %>
     <div class="break"></div>
-        <% if !current_user.nil? && current_user.issuper? %>
-        <%= link_to "#{I18n.t :update_btn}", edit_call_path(@call), class: "btn btn-sm btn-flatgreen" %>
-        <%= link_to "#{I18n.t :return_btn}", calls_path, class: "btn btn-sm btn-flatgreen" %>
+          <% if !current_user.nil? && current_user.issuper? %>
+          <%= link_to "#{I18n.t :update_btn}", edit_call_path(@call), class: "btn btn-sm btn-flatgreen" %>
+          <%= link_to "#{I18n.t :return_btn}", calls_path, class: "btn btn-sm btn-flatgreen" %>
+        <% end %>
+        <% if !current_user.nil? && current_user.iscaller? %>
+          <%= link_to "#{I18n.t :return_btn}", calls_path, class: "btn btn-sm btn-flatgreen" %>
         <% end %>
     </div>
     </div>

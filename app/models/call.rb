@@ -1,5 +1,6 @@
 class Call < ApplicationRecord
   before_validation :checkphone, :checkemail, :setdefault
+  before_update :updatedonetime
   belongs_to :city, optional: true
   has_many :call_options, dependent: :destroy
   has_many :help_options, through: :call_options
@@ -21,6 +22,15 @@ class Call < ApplicationRecord
   def setdefault
     self.healthcheck ||= false
     self.done ||= false
+    self.admindone ||= false
+  end
+
+  def updatedonetime
+    if done && donetime.nil?
+      self.donetime = Time.now
+    elsif !done && !donetime.nil?
+      self.donetime = nil
+    end
   end
 
   def self.availabilitylist

@@ -123,6 +123,7 @@ en:
         availability: "Availability"
         availabilitylabel: "When are you available for help.."
         created_at: "Created at"
+        donetime: "Done at"
       help_option:
         descriptionvol: "Volunteer View"
         descriptioncall: "Call View"
@@ -200,3 +201,9 @@ en:
   user_id: "User ID"
   continute: "Continue"
   stop: "Stop"
+  markdone_call: "Mark as Done"
+  call_done_panel_btn: "Calls Updates Panel"
+  call_updates_title: "Calls News Panel"
+  no_new_calls: "There isn't any new updates"
+  call_opener: "Call opened by"
+  call_taker: "Volunteer name"

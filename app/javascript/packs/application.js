@@ -63,19 +63,40 @@ document.addEventListener('turbolinks:load', () => {
   let solidlocal = document.getElementById("user_helplocal");
   let scrolldown = document.getElementById("scrolldown");
   let solidcampus = document.getElementById("user_solidaritycampus");
-  let localdiv = document.getElementsByClassName("user_solidaritylocaladdress")
-  let localcampus = document.querySelectorAll(".user_campus, .user_campusactivity, .user_studentactivist")
-  $("#X").click(() => {
-    if ($(".scrolldown").children()[0].classList.contains("hide")){
-      $(".scrolldown").children()[0].classList.remove("hide")
-      $(".scrolldown").children()[1].classList.remove("hide")
-      $(".scrolldown").children()[2].textContent = "-"
-    }
+  let localdiv = document.getElementsByClassName("user_solidaritylocaladdress");
+  let localcampus = document.querySelectorAll(".user_campus, .user_campusactivity, .user_studentactivist");
+  const scrolldown_div = document.querySelector(".scrolldown").children;
+  const scrolldown_btn = document.getElementById("X");
+  const allday = document.getElementById("call_availability_כל_היום");
+  const alldaydiv = document.querySelector(".call_availability");
+  const updateAvaliablity = () =>{
+    if (allday.checked)
+      alldaydiv.childNodes.forEach ( (opt) => {
+        if (opt.children[0].type == "checkbox" && opt.children[0].id !== allday.id){
+          opt.children[0].checked = false
+          opt.children[0].disabled = true
+        }
+      });
+    else
+      alldaydiv.childNodes.forEach ( (opt) => {
+        if (opt.children[0].type == "checkbox" && opt.children[0].id !== allday.id){
+          opt.children[0].disabled = false
+        }
+      });
+  }
+  if (allday !== null){
+    updateAvaliablity();
+    allday.addEventListener("click", () => updateAvaliablity());
+  }
+  scrolldown_btn.addEventListener("click", (btn) => {
+    if (btn.target.textContent === "+"){
+      for (let item of scrolldown_div){
+        (item.id !== "X") ? item.classList.remove('hide') : item.textContent = "-";
+      }}
     else{
-     $(".scrolldown").children()[0].classList.add("hide")
-     $(".scrolldown").children()[1].classList.add("hide")
-     $(".scrolldown").children()[2].textContent = "+"
-    }
+      for (let item of scrolldown_div){
+        (item.id !== "X") ? item.classList.add('hide') : item.textContent = "+";
+      }}
   });
   const updateShow = () => {
     if (solidlocal.checked){
