@@ -30,6 +30,7 @@ class Call < ApplicationRecord
       self.donetime = Time.now
     elsif !done && !donetime.nil?
       self.donetime = nil
+      self.admindone = false
     end
   end
 

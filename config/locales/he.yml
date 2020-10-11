@@ -17,7 +17,7 @@ he:
         israelid: "תעודת זהות"
         student: "סטודנט"
         gender: "מגדר"
-        birthday: "שנת יום הולדת"
+        birthday: "שנת לידה"
         healthcheck: "הצהרת בריאות"
         getupdates: "קבל עידכונים"
         availability: "זמינות"
@@ -341,3 +341,4 @@ he:
   no_new_calls: "אין עידכונים חדשים"
   call_opener: "פותח הקיראה"
   call_taker: "שם המתנדב"
+  closed_date: "נסגר בתאריך"

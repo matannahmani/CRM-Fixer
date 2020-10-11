@@ -7,7 +7,16 @@
   opacity: 0.6;
   transition: opacity 0.3s ease;
 }
-
+.kheight{
+  height: unset !important;
+}
+.filter-show{
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  justify-content: center;
+  width: 100%;
+}
 .btn-ghost:hover {
   opacity: 1;
 }
@@ -225,12 +234,20 @@
   box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
+@media only screen and (min-width: 768px) {
+.hidedesktop{
+  display: none;
+}
+}
 @media only screen and (max-width: 768px) {
   .margin-mobile{
     padding-right: 10%;
   }
   .form-group {
     width: 80%;
+  }
+  .hidemobile{
+    display: none !important;
   }
   .healthcheck-text{
     // text-align: center;

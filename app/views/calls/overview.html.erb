@@ -1,13 +1,32 @@
 <div class="sessioncon">
   <%= link_to image_tag("logo.png"), root_path%>
   <div class="sessionform">
-    <div class="sessionheadline p-4">
+    <div class="sessionheadline pt-4 pb-4 kheight">
       <h2 class="headline">
         <strong><%= "#{I18n.t "call_updates_title"}" %></strong>
       </h2>
+        <div class="filter-show">
+          <%= simple_form_for @caller, url: overviewcall_path, method: "GET", html: { class: 'form-inline', multipart: true } do |f| %>
+            <%= f.association :city, :include_blank => "#{I18n.t "show_all"}", input_html: { class: 'js-selectable' } %>
+            <div class="form-group select optional call_city">
+              <%= f.label :create_at, "#{I18n.t "closed_date"}"%>
+              <%= f.text_field :donetime, data:{ provide:'datepicker' } %>
+            </div>
+            <span class="hidemobile">|</span>
+            <span class="hidedesktop">--------------------</span>
+            <div class="form-group select optional call_city">
+              <%= f.label :create_at, "#{I18n.t "closed_date"}"%>
+              <%= f.text_field :created_at, data:{ provide:'datepicker' } %>
+            </div>
+              <%= f.submit "#{I18n.t "search"}", class: "btn btn-main btn-sm" %>
+          <% end%>
+        </div>
     </div>
-<% if @calls.nil? %>
+<% if @calls.empty? %>
   <h2><%= t :no_new_calls%></h2>
+  <div class="action">
+    <%= link_to "#{I18n.t :return_btn}", calls_path, class: "btn btn-sm btn-flatgreen" %>
+  </div>
 <% else %>
   <%= simple_form_for :call, url: adminmarkdone_path, method: :post do |f| %>
   <div class="form-inputs align-items-start">
@@ -34,6 +53,8 @@
     <% end %>
     <div class="action">
     <%= f.button :submit, "#{I18n.t "accept"}", class: "btn btn-sm btn-flatgreen" %>
+    <%= link_to "#{I18n.t :return_btn}", calls_path, class: "btn btn-sm btn-flatgreen" %>
+
     </div>
   <% end %>
 <% end %>

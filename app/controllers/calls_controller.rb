@@ -29,7 +29,26 @@ class CallsController < ApplicationController
   end
 
   def overview
+    @caller = Call.new
     @calls = Call.where(admindone: false, done: true)
+    if !params["call"].nil?
+      if !params["call"]["donetime"].empty?
+        if !params["call"]["created_at"].empty?
+          date1 = Date.strptime(params[:call][:donetime], '%m/%d/%Y')
+          date2 = Date.strptime(params[:call][:created_at], '%m/%d/%Y')
+          date1 > date2 ? @calls = @calls.where(donetime: date2..date1) : @calls = @calls.where(donetime: date1..date2)
+          @caller.donetime = params[:call][:donetime]
+          @caller.created_at = params[:call][:created_at]
+        else
+        @calls = @calls.where(donetime: Date.strptime(params[:call][:donetime], '%m/%d/%Y'))
+        @caller.donetime = params[:call][:donetime]
+        end
+      end
+      if !params["call"]["city_id"].empty?
+        @calls = @calls.where(city: params["call"]["city_id"])
+        @caller.city_id = params["call"]["city_id"].to_i
+      end
+    end
   end
 
   def markdone
