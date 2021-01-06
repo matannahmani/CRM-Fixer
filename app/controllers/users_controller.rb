@@ -74,6 +74,7 @@ class UsersController < ApplicationController
     def filter_search
       # SET FORM
       city_id = params["user"]["city_id"]
+      @user_name = params["user"]["name"]
       region_id = params["user"]["region"]["name"]
       help_opts = params["user"]["help_option_ids"]
       help_opts = help_opts.reject(&:empty?).map(&:to_i)
@@ -81,14 +82,13 @@ class UsersController < ApplicationController
       @user_cities = city_id.reject(&:empty?).map(&:to_i)
       # @user = help_opts == "true" if user != ""
       @region_ids = region_id.reject(&:empty?).map(&:to_i)
-      # binding.pry
-      # SEARCH
       if @region_ids.empty? && !@user_cities.empty? # region not selected
         @users = User.where(city_id: city_id)
       elsif !@region_ids.empty?
         @users = User.joins(:city).where(cities: { region_id: region_id })
       end
       @users = @users.joins(:user_options).where(user_options: { help_option_id: help_opts }) unless help_opts.empty?
+      @users = @users.where(name: @user_name) unless @user_name.empty?
     end
 
     def set_user

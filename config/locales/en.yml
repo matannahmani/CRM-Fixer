@@ -1,210 +1,154 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
-# en:
-#   errors:
-#   #   call:
-#     format:
-#       "%{message}"
-#   activerecord:
-#       user:
-#         email: "איימל"
-#         password: "סיסמה"
-#       errors:
-#         models:
-#           call:
-#             attributes:
-#               blank: "אנא מלא שדה זה"
-#       models:
-#         user:
-#           attributes:
-#             email:
-#               blank: "נדרש"
-#               too_short: "is too short (minimum is %{count} characters)"
-#             password:
-#               blank: "נדרשת"
-#               confirmation: "does not match"
-#               too_short: "is too short (minimum is %{count} characters)"
-#         devise:
-#           attributes:
-#             login: "error"
+---
 en:
+  accept: Save
+  accepted: Accepted
+  action: Actions
   activerecord:
     attributes:
-      user:
-        email: "Email"
-        created_at: "Created at"
-        adminlevel: "Authority"
-        password: "Password"
-        password_confirmation: "Confirm password"
-        name: "First name"
-        lastname: "Last name"
-        phone: "Phone"
-        address: "Address"
-        user: "Volunteer"
-        city: "City"
-        remember_me: "Remember me"
-        israelid: "Israeli id"
-        student: "Student?"
-        gender: "Gender"
-        birthday: "Birthday"
-        healthcheck: "Health Policy"
-        getupdates: "Allow updates"
-        availability: "Availability"
-        langauges: "Langauges"
-        help_options: "Help Options"
-        help_option: "I neeed help at"
-        joinlocal: "Join local community"
-        lastcontact: "Last contact date"
-        contactname: "Name of contact"
-        keepvolunteer: "Continue volunteering"
-        pastvolunteervolume: "Past volunteering volume"
-        pastvolunteer: "Past volunteering locations"
-        volunteerusefull: "Do you think volunteering was useful"
-        workfield: "Work field"
-        specality: "Specality"
-        helpcalls: "Intrested in helping calling center"
-        helplocal: "Solidarity near home?"
-        solidaritycampus: "Solidarity in campus"
-        campus: "Campus?"
-        campusactivity: "Campus Activities"
-        studentactivist: "Taking part in student consult?"
-        intrestedinsolidarity: "Intrested in staying at Solidarity?"
-        localwhatsapp: "Part of local whatsapp group?"
-        othermentions: "Other mentions"
-        helpoperations: "Help region operations center?"
-        solidaritylocaladdress: "Address"
-      city:
-        name: "Name"
-        region: "Region"
-      region:
-        name: "Name"
       call:
-        name: "Name"
-        lastname: "Last name"
-        phone: "Phone"
-        email: "Email"
-        city: "City"
-        description: "Description"
-        help_options: "How would you like us to help you"
-        descriptionlabel: "Write in your own words.."
-        healthcheck: "Health Policy"
-        done: "Status"
-        user: "Volunteer"
-        address: "Address"
-        availability: "Availability"
-        availabilitylabel: "When are you available for help.."
-        created_at: "Created at"
-        donetime: "Done at"
+        address: Address
+        availability: Availability
+        availabilitylabel: When are you available for help..
+        city: City
+        created_at: Created at
+        description: Description
+        descriptionlabel: Write in your own words..
+        done: Status
+        donetime: Done at
+        email: Email
+        healthcheck: Health Policy
+        help_options: How would you like us to help you
+        lastname: Last name
+        name: Name
+        phone: Phone
+        user: Volunteer
+      city:
+        name: Name
+        region: Region
       help_option:
-        descriptionvol: "Volunteer View"
-        descriptioncall: "Call View"
+        descriptioncall: Call View
+        descriptionvol: Volunteer View
+      region:
+        name: Region
+      user:
+        address: Address
+        adminlevel: Authority
+        availability: Availability
+        birthday: Birthday
+        campus: Campus?
+        campusactivity: Campus Activities
+        city: City
+        contactname: Name of contact
+        created_at: Created at
+        email: Email
+        gender: Gender
+        getupdates: Allow updates
+        healthcheck: Health Policy
+        help_option: I neeed help at
+        help_options: Help Options
+        helpcalls: Intrested in helping calling center
+        helplocal: Solidarity near home?
+        helpoperations: Help region operations center?
+        intrestedinsolidarity: Intrested in staying at Solidarity?
+        israelid: Israeli id
+        joinlocal: Join local community
+        keepvolunteer: Continue volunteering
+        langauges: Langauges
+        lastcontact: Last contact date
+        lastname: Last name
+        localwhatsapp: Part of local whatsapp group?
+        name: First name
+        othermentions: Other mentions
+        password: Password
+        password_confirmation: Confirm password
+        pastvolunteer: Past volunteering locations
+        pastvolunteervolume: Past volunteering volume
+        phone: Phone
+        remember_me: Remember me
+        solidaritycampus: Solidarity in campus
+        solidaritylocaladdress: Address
+        specality: Specality
+        student: Student?
+        studentactivist: Taking part in student consult?
+        user: Volunteer
+        volunteerusefull: Do you think volunteering was useful
+        workfield: Work field
     errors:
       messages:
-        record_invalid: "Validations Failed: %{errors}"
+        record_invalid: 'Validations Failed: %{errors}'
     models:
       name:
         attributes:
-          email: "name"
-  login: "Login to your account" # HEAD TEXT
-  signup_btn: "Signup"
-  login_btn: "Login"
-  forgot_password: "Forgot your password?"
-  forgot_password_btn: "Reset password"
-  forgot_password_short: "Reset password"
-  return_btn: "Back"
-  female: "Female"
-  male: "Male"
-  footer: "Developed by Matan Nahmani at Eren Fixer for Solidarity"
-  adminpanel_btn: "Control Panel"
-  newcall_btn: "Open Call"
-  volcard_btn: "Volunteer Card"
-  logout_btn: "Logout"
-  call_panel_btn: "Calls Panel"
-  region_panel_btn: "Regions Panel"
-  city_panel_btn: "Cities Panel"
-  helpoptions_panel_btn: "Help Options Panel"
-  volunteer_panel_btn: "Volunteers Panel"
-  show_all: "Show All"
-  not_taken: "Not Taken"
-  accepted: "Accepted"
-  accept: "Save"
-  not_accepted: "Not Accepted"
-  true: "Yes"
-  false: "No"
-  status_close: "Closed"
-  status_open: "Open"
-  status_work_label: "Processed"
-  export: "Export"
-  action: "Actions"
-  delete: "Destroy"
-  update: "Update"
-  update_btn: "Edit"
-  show: "Show"
-  new: "New"
-  search: "Filter"
-  healthcheck-text: "By accepting the call you agree to the Health Check Policy"
-  call: "Call"
-  update_call: "Update Call"
-  create_call: "New Call"
-  call_number: "Call ID"
-  take_call: "Take Call"
-  untake_call: "Release Call"
-  noinput: "No Input"
-  create_city: "New City"
-  create_city_btn: "Create City"
-  update_city: "Edit City"
-  city_id: "City ID"
-  all_cites_btn: "All Cities"
-  confirm: "Are you sure?"
-  update_region: "Edit Region"
-  create_region: "New Region"
-  region_id: "Region ID"
-  helpoption_id: "HelpOption ID"
-  create_helpoption: "New Help Option"
-  update_helpoption: "Edit Help Option"
-  create_user: "New User"
-  update_user: "Update User"
-  adminlevel: "Admin Level"
-  vol: "Volunteer"
-  caller: "Caller"
-  super: "Admin"
-  admin: "Supervisor Admin"
-  user_id: "User ID"
-  continute: "Continue"
-  stop: "Stop"
-  markdone_call: "Mark as Done"
-  call_done_panel_btn: "Calls Updates Panel"
-  call_updates_title: "Calls News Panel"
-  no_new_calls: "There isn't any new updates"
-  call_opener: "Call opened by"
-  call_taker: "Volunteer name"
-  closed_date: "Done Date"
+          email: name
+  admin: Supervisor Admin
+  adminlevel: Admin Level
+  adminpanel_btn: Control Panel
+  all_cites_btn: All Cities
+  call: Call
+  call_done_panel_btn: Calls Updates Panel
+  call_number: Call ID
+  call_opener: Call opened by
+  call_panel_btn: Calls Panel
+  call_taker: Volunteer name
+  call_updates_title: Calls News Panel
+  caller: Caller
+  city_id: City ID
+  city_panel_btn: Cities Panel
+  closed_date: Done Date
+  confirm: Are you sure?
+  continute: Continue
+  create_call: New Call
+  create_city: New City
+  create_city_btn: Create City
+  create_helpoption: New Help Option
+  create_reigon: New Region
+  create_user: New User
+  delete: Destroy
+  export: Export
+  'false': 'No'
+  female: Female
+  footer: Developed by Matan Nahmani at Eren Fixer for Solidarity
+  forgot_password: Forgot your password?
+  forgot_password_btn: Reset password
+  forgot_password_short: Reset password
+  healthcheck-text: By accepting the call you agree to the Health Check Policy
+  helpoption_id: HelpOption ID
+  helpoptions_panel_btn: Help Options Panel
+  login: Login to your account
+  login_btn: Login
+  logout_btn: Logout
+  male: Male
+  markdone_call: Mark as Done
+  new: New
+  newcall_btn: Open Call
+  no_new_calls: There isn't any new updates
+  noinput: No Input
+  not_accepted: Not Accepted
+  not_taken: Not Taken
+  region_id: Region ID
+  region_panel_btn: Regions Panel
+  return_btn: Back
+  search: Filter
+  show: Show
+  show_all: Show All
+  signup_btn: Signup
+  status_close: Closed
+  status_open: Open
+  status_work_label: Processed
+  stop: Stop
+  super: Admin
+  take_call: Take Call
+  'true': 'Yes'
+  untake_call: Release Call
+  update: Update
+  update_btn: Edit
+  update_call: Update Call
+  update_city: Edit City
+  update_helpoption: Edit Help Option
+  update_region: Edit Region
+  create_region: New Region
+  update_user: Update User
+  user_id: User ID
+  vol: Volunteer
+  volcard_btn: Volunteer Card
+  volunteer_panel_btn: Volunteers Panel

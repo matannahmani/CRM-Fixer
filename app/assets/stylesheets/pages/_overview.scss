@@ -11,14 +11,16 @@
 }
 .cardclose{
   position: absolute;
-  left: -100%;
+  right: 90%;
+  left: 0%;
   top: 0;
+  width: 50px;
 }
 .right_dir{
-  left: 100%;
-  margin-left: 26px;
+  left: 90%;
+  right: 0%;
+  width: 80px;
 }
-.right-dir{
-  margin-left: -26px;
-  margin-right: 0px;
+@media only screen and (max-width: 768px){
+.right_dir {top: -12px;left: 80%;}
 }

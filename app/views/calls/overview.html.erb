@@ -12,7 +12,7 @@
               <%= f.label :create_at, "#{I18n.t "closed_date"}"%>
               <%= f.text_field :donetime, data:{ provide:'datepicker' } %>
             </div>
-            <span class="hidemobile">|</span>
+            <span class="hidemobile">-</span>
             <span class="hidedesktop">--------------------</span>
             <div class="form-group select optional call_city">
               <%= f.label :create_at, "#{I18n.t "closed_date"}"%>
@@ -37,17 +37,17 @@
         <span><%= call.user.nil? ? "#{I18.t :not_taken}" : "#{t :call_taker} : #{call.user.fullname}" %></span>
         <span><%= "#{t "activerecord.attributes.call.city"} : #{call.city.name}" %></span>
         <% if locale == :he %>
-          <div class="callactions">
+          <div class="callactions flex-wrap justify-content-center mr-0">
             <%= link_to "#{I18n.t "show"}", call, class: "btn btn-sm btn-flatgreen" %>
             <%= link_to "#{I18n.t :markdone_call}", adminmarkdone_path(call: {call.id => "1"}), method: :post, class: "btn btn-sm btn-flatgreen" %>
-            <%= f.input call.id.to_s,label: "#{I18n.t :markdone_call}", as: :boolean, wrapper_html: {class: "cardclose"} %>
           </div>
+            <%= f.input call.id.to_s,label: "סגור", as: :boolean, wrapper_html: {class: "cardclose"} %>
           <% else %>
-            <div class="callactions right-dir">
+            <div class="callactions flex-wrap justify-content-center mr-0">
               <%= link_to "#{I18n.t "show"}", call, class: "btn btn-sm btn-flatgreen" %>
               <%= link_to "#{I18n.t :markdone_call}", adminmarkdone_path(call: {call.id => "1"}), method: :post, class: "btn btn-sm btn-flatgreen" %>
-              <%= f.input call.id.to_s,label: "#{I18n.t :markdone_call}", as: :boolean, wrapper_html: {class: "cardclose right_dir"} %>
             </div>
+              <%= f.input call.id.to_s,label: "Close", as: :boolean, wrapper_html: {class: "cardclose right_dir"} %>
           <% end %>
       </div>
     <% end %>

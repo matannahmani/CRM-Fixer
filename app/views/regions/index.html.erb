@@ -15,18 +15,18 @@
         <% @regions.each do |region| %>
           <tr>
             <td><%= region.name %></td>
-            <td><%= link_to 'צפייה', region %></td>
-            <td><%= link_to 'עריכה', edit_region_path(region) %></td>
-            <td><%= link_to 'מחיקה', region, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to "#{I18n.t "show"}", region %></td>
+            <td><%= link_to "#{I18n.t "update"}", edit_region_path(region) %></td>
+            <td><%= link_to "#{I18n.t "delete"}", region, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       </tbody>
     </table>
     <br>
     <div class="d-flex justify-content-center flex-wrap"">
-      <%= link_to 'יצירת איזור', new_region_path, class: "btn btn-sm btn-main" %>
-      <%= link_to 'מסך ראשי', adminpanel_path, class: "btn btn-sm btn-main" %>
-      <button class="btn btn-sm btn-main" id="exportexl">EXPORT</button>
+        <%= link_to "#{I18n.t "create_region"}", new_region_path,class: "btn btn-sm btn-main" %>
+        <%= link_to "#{I18n.t "adminpanel_btn"}", adminpanel_path, class: "btn btn-sm btn-main" %>
+        <button class="btn btn-sm btn-main" id="exportexl"><%= t :export%></button>
     </div>
   </div>
 </div>

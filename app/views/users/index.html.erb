@@ -3,6 +3,7 @@
   <div class="index-page">
     <h2 class="headline-text"><%= I18n.t :volunteer_panel_btn%></h2>
     <%= simple_form_for @user, url: users_path, method: "GET", html: { class: 'form-inline', multipart: true } do |f| %>
+      <%= f.input :name, input_html: {value: @user_name} %>
       <%= f.association :city, selected: @user_cities, :include_blank => "#{I18n.t :show_all}", input_html: { multiple: true, class: 'js-selectable' } %>
       <%= f.simple_fields_for :region, @region do |t| %>
         <%= t.input :name, selected: @region_ids, :collection => Region.all, :include_blank => "#{I18n.t :show_all}", input_html:{ multiple: true, class: 'js-selectable' } %>
