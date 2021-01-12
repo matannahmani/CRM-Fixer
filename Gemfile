@@ -92,3 +92,5 @@ gem "bootstrap-datepicker-rails", "~> 1.9"
 gem "rails-i18n", "~> 5.1"
 
 gem "activerecord-import", "~> 1.0"
+
+gem "kaminari", "~> 1.2"

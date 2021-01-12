@@ -4,7 +4,7 @@ class CitiesController < ApplicationController
   # GET /cities
   # GET /cities.json
   def index
-    @cities = City.all
+    @cities = City.all.order(created_at: :desc).page(params[:page])
     @city = City.new
     return if params["city"].nil? # breaks if no filter input
 

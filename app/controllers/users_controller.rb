@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.all.order(created_at: :desc).page(params[:page])
     @user = User.new
     @region = Region.new
     @help_choice = ""

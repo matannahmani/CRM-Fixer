@@ -47,6 +47,16 @@
  .volbg{
   background-image:url(/images/vol.png);
  }
+ .pagination{
+  justify-content: center;
+ }
+ .page-link{
+  color: #ff2287;
+ }
+ .page-item.active .page-link{
+  background: #ff2287;
+  border: none;
+ }
  // font-family: 'Heebo', sans-serif;
  // font-family: 'Rubik', sans-serif;
  // font-family: 'Bellefair', serif;

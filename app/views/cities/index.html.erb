@@ -28,6 +28,7 @@
           <% end %>
         </tbody>
       </table>
+        <%= paginate @cities %>
       <br>
       <div class="d-flex justify-content-center flex-wrap"">
         <%= link_to "#{I18n.t "create_city_btn"}", new_city_path,class: "btn btn-sm btn-main" %>

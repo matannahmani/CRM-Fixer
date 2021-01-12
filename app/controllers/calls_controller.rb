@@ -7,7 +7,7 @@ class CallsController < ApplicationController
   # GET /calls
   # GET /calls.json
   def index
-    @calls = Call.all
+    @calls = Call.all.order(created_at: :desc).page(params[:page])
     @call = Call.new
     @region = Region.new
     @user_show = ""

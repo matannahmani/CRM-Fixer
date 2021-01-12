@@ -50,6 +50,7 @@
         <% end %>
       </tbody>
     </table>
+    <%= paginate @users %>
     <br>
     <div class="d-flex justify-content-center flex-wrap">
       <%= link_to "#{I18n.t :adminpanel_btn}", adminpanel_path, class: "btn btn-sm btn-main" %>
