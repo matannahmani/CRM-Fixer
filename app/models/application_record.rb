@@ -13,5 +13,4 @@ class ApplicationRecord < ActiveRecord::Base
       errors.add(:email, :blank, message: 'אנא הזן כתובת דוא"ל תקנית')
     end
   end
-
 end

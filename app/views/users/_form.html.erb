@@ -32,7 +32,7 @@
         <%= f.input :workfield %>
         <%= f.input :specality %>
         <%= f.input :langauges, selected: @user.langauges, collection: ["אנגלית","רוסית","גרמנית","פורטוגזית"], input_html: {multiple: true, class: 'js-selectable-w80'} %>
-        <%= f.input :availability, include_hidden: false, collection: User.availabilitylist, input_html: {multiple: true, class: 'js-selectable-w80'} %>
+        <%= f.input :availability, input_html: {class: 'js-selectable-w80'} %>
         <%= f.input :pastvolunteervolume, as: :string %>
         <%= f.input :pastvolunteer %>
         <%= f.input :keepvolunteer %>

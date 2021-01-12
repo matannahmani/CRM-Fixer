@@ -58,7 +58,9 @@ document.addEventListener('turbolinks:load', () => {
       $('.js-selectable').select2(option1);
       $('.js-select').select2(option2);
       $('.js-selectable-xl').select2(option3);
-      $('.js-selectable-w80').select2(option4);
+      $('.js-selectable-w80').select2({...option4,tags: true});
+
+      // $('.tags').select2({tags: true});
   });
   let solidlocal = document.getElementById("user_helplocal");
   let scrolldown = document.getElementById("scrolldown");

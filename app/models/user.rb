@@ -1,7 +1,8 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  before_validation :checkphone, :checkemail, :checkage?
+  # before_validation :checkphone, :checkemail, :checkage?
+  before_validation :checkemail
   after_create { self.healthcheck = true }
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
@@ -27,7 +28,7 @@ class User < ApplicationRecord
   VOLUENNTER = 0 # VOL
 
   def opts?
-    errors.add(:help_options, :blank, message: 'לא יכול להיות ריק') if user_options.empty?
+    # errors.add(:help_options, :blank, message: 'לא יכול להיות ריק') if user_options.empty?
   end
   def checkage?
     errors.add(:birthday, :blank, message: 'הצטרפות פתוחה רק לגילי 14-75') unless birthday.in?(Date.today.year - 75..Date.today.year - 14)

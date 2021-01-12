@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_08_105218) do
+ActiveRecord::Schema.define(version: 2021_01_12_092821) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -100,14 +100,14 @@ ActiveRecord::Schema.define(version: 2020_10_08_105218) do
     t.boolean "keepvolunteer"
     t.string "pastvolunteervolume"
     t.boolean "volunteerusefull"
-    t.string "availability", array: true
+    t.string "availability"
     t.string "workfield"
     t.string "specality"
     t.string "pastvolunteer"
     t.boolean "helplocal"
     t.boolean "helpcalls"
     t.boolean "solidaritycampus"
-    t.string "campus", array: true
+    t.string "campus"
     t.string "campusactivity"
     t.boolean "studentactivist"
     t.boolean "intrestedinsolidarity"

@@ -83,7 +83,6 @@ gem "sassc", "~> 2.4"
 
 gem "jquery-rails", "~> 4.4"
 
-
 gem "bootstrap-sass", "~> 3.4"
 
 gem "select2-rails", "~> 4.0"
@@ -92,6 +91,4 @@ gem "bootstrap-datepicker-rails", "~> 1.9"
 
 gem "rails-i18n", "~> 5.1"
 
-gem "i18n-tasks", "~> 0.9.33"
-
-gem "easy_translate", "~> 0.5.1"
+gem "activerecord-import", "~> 1.0"
